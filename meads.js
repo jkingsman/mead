@@ -79,7 +79,8 @@ const meadData = [{
         'timeline': [
             // date, notes
             ['2017-10-09 1830', 'Must prepared.'],
-            ['2017-10-09 1930', 'Carboy airlocked.']
+            ['2017-10-09 1930', 'Carboy airlocked.'],
+            ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.']
         ],
         'gravReadings': [
             // date, OG, notes
@@ -148,7 +149,8 @@ const meadData = [{
         'timeline': [
             // date, notes
             ['2017-10-09 1830', 'Must prepared.'],
-            ['2017-10-09 1930', 'Carboy airlocked.']
+            ['2017-10-09 1930', 'Carboy airlocked.'],
+            ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.']
         ],
         'gravReadings': [
             // date, OG, notes
