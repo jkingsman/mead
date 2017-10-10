@@ -1,5 +1,5 @@
 // fields that should NOT be automatically filled
-const nonAutofillFields = ['ingredients', 'timeline', 'gravReadings'];
+const nonAutofillFields = ['ingredients', 'timeline', 'gravReadings', 'images'];
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
