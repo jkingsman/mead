@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Kiwi Meadery Lookup</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <style type="text/css">
+        #serial {
+            font-size: 35px;
+            width: 25%;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Kiwi Meadery</a>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Your Mead's Story</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Enter your serial and find out more about your mead. Bottle serials begin with B (e.g. "B0005") and fermentation serials begin with F (e.g. "F0006").</h5>
+            </div>
+            <div class="row center">
+                <div class="input-field col s12">
+                    <input placeholder="B0005" id="serial" type="text">
+                </div>
+            </div>
+            <div class="row center">
+                <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light orange">Find my mead!</a>
+            </div>
+            <br><br>
+
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="dataModal" class="modal">
+        <div class="modal-content">
+            <h3><span id="meadData_type"></span></h3>
+            <p><strong>Batch Serial: </strong>F<span id="meadData_batchID"></span></p>
+            <p><strong>Bottle Serial Range: </strong>B<span id="meadData_bottleRangeMin"></span> - B<span id="meadData_bottleRangeMax"></span></p>
+            <p><strong>Recipe Code: </strong><span id="meadData_recipe"></span></p>
+            <p><strong>Batch Size: </strong><span id="meadData_size"></span></p>
+            <p id="meadData_notes"></p>
+            <strong>Ingredients:</strong>
+            <ul class="browser-default" id="meadData_ingredients"></ul>
+            <strong>Timeline:</strong>
+            <ul class="browser-default" id="meadData_timeline"></ul>
+            <strong>Gravity Readings:</strong>
+            <ul class="browser-default" id="meadData_gravity"></ul>
+            <p><strong>Suggested opening date: </strong><span id="meadData_suggestedOpeningDate"></span></p>
+            <p><strong>Tasting notes: </strong>
+                <span id="meadData_tastingNotes"></span>
+            </p>
+            <p class="italic">Promised bottles: <span id="meadData_promisedBottles"></span></p>
+            <div class="slider">
+                <ul class="slides" id="meadData_images">
+                </ul>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <footer class="page-footer orange">
+        <div class="container">
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <a class="orange-text text-lighten-3" href="http://jacksbrain.com">MIT Licensed 2017</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="meads.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
