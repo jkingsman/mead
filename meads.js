@@ -60,7 +60,7 @@ const meadData = [{
         ],
         'images': ['f1mustevening.jpg', 'mixedmusts.jpg', 'musts.jpg', 'ingredients.jpg'],
         'tastingNotes': '',
-        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2019-04) or longer for optimum taste!',
+        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
         'promisedBottles': 'B1-3 JWK, B4 MMa, B5 MBa',
     },
     {
@@ -92,7 +92,7 @@ const meadData = [{
         ],
         images: ['f2bubbling.gif', 'f2mustevening.jpg', 'mixedmusts.jpg', 'f2must.jpg', 'musts.jpg', 'ingredients.jpg', 'f2yeast.jpg'],
         'tastingNotes': '',
-        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2019-04) or longer for optimum taste!',
+        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
         'promisedBottles': 'B6-7 JWK, B8 HLu, B9 MWe, B10 JFe',
     }
 ];
