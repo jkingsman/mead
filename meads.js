@@ -33,7 +33,7 @@ const meadData = [{
         'type': 'Semi-Dry Mead',
         'recipe': 'Jutini-α',
         'bottleRangeMin': 6,
-        'bottleRangeMax': 11,
+        'bottleRangeMax': 10,
         'size': '1 gal.',
         'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead! Making .5 gal of starsan soln (1oz/5gal H20 = .1oz/.5gal). Sharing between two bottles. Honey, then yeast + DAP + hulls, then water and agitate for 3 mins.',
         'ingredients': [
@@ -56,6 +56,6 @@ const meadData = [{
         images: ['mixedmusts.jpg', 'f2must.jpg', 'musts.jpg', 'ingredients.jpg', 'f2yeast.jpg'],
         'tastingNotes': '',
         'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2019-04) or longer for optimum taste!',
-        'promisedBottles': 'B1-2 JWK, B3 MWe, B4 JFe'
+        'promisedBottles': 'B6-8 JWK, B9 MWe, B10 JFe'
     }
 ];
