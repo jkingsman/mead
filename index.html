@@ -49,7 +49,6 @@
             <h3><span id="meadData_type"></span></h3>
             <p><strong>Batch Serial: </strong>F<span id="meadData_batchID"></span></p>
             <p><strong>Bottle Serial Range: </strong>B<span id="meadData_bottleRangeMin"></span> - B<span id="meadData_bottleRangeMax"></span></p>
-            <p><strong>Recipe Code: </strong><span id="meadData_recipe"></span></p>
             <p><strong>Batch Size: </strong><span id="meadData_size"></span></p>
             <p id="meadData_notes"></p>
             <strong>Ingredients:</strong>
@@ -62,6 +61,12 @@
             <p><strong>Tasting notes: </strong>
                 <span id="meadData_tastingNotes"></span>
             </p>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">Recipe:&nbsp;<span id="meadData_recipeName"></span></div>
+                    <div class="collapsible-body"><span id="meadData_recipe"></span></div>
+                </li>
+            </ul>
             <p class="italic">Promised bottles: <span id="meadData_promisedBottles"></span></p>
             <div class="slider">
                 <ul class="slides" id="meadData_images">

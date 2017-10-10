@@ -72,14 +72,14 @@ Simple introductory Mead.
 - 1 Campden tablet, crushed
 
 ### Prep
-Clean 1 gal. carboy with StarSan soln.
+Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
 Add room temperature honey, then room temperature distilled water until volume of must is 1L.
 
 Pour dry yeast into must, and add DAP with yeast hulls.
 
-Seal carboy and shake vigorously for 5 minutes. Take and record gravity reading if desired. Seal carboy and fill airlock with vodka.
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Seal carboy and fill airlock with vodka.
 
 Place in dark location at 60 - 75 degrees F.
 

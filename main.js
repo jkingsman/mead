@@ -1,6 +1,11 @@
 // fields that should NOT be automatically filled
 const nonAutofillFields = ['ingredients', 'timeline', 'gravReadings'];
 
+String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+};
+
 // draw a given batch into the modal
 function drawBatch(batch) {
     $("[id^='meadData_']").each(function(elem) {
@@ -10,7 +15,8 @@ function drawBatch(batch) {
     // draw autofills -- fields whose name matches 1-1 with a page field
     for (var field in batch) {
         if (nonAutofillFields.indexOf(field) === -1) {
-            $('#meadData_' + field).html(batch[field]);
+            var lineBreaksReplaced = String(batch[field]).replaceAll("\n", "<br />")
+            $('#meadData_' + field).html(lineBreaksReplaced);
         }
     }
 
