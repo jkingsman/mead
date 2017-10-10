@@ -54,7 +54,7 @@ function drawBatch(batch) {
         $('.slider').slider();
     }
 
-    new QRCode(document.getElementById("qrcode"), window.location.href);
+    new QRCode(document.getElementById('meadData_qrcode'), window.location.href);
 }
 
 // check if valid batch; return index if so and -1 if not
