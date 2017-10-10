@@ -1,3 +1,5 @@
+/* jshint esversion:6 */
+
 // fields that should NOT be automatically filled
 const nonAutofillFields = ['ingredients', 'timeline', 'gravReadings', 'images'];
 
@@ -15,7 +17,7 @@ function drawBatch(batch) {
     // draw autofills -- fields whose name matches 1-1 with a page field
     for (var field in batch) {
         if (nonAutofillFields.indexOf(field) === -1) {
-            var lineBreaksReplaced = String(batch[field]).replaceAll("\n", "<br />")
+            var lineBreaksReplaced = String(batch[field]).replaceAll("\n", "<br />");
             $('#meadData_' + field).html(lineBreaksReplaced);
         }
     }
@@ -23,22 +25,28 @@ function drawBatch(batch) {
     // populate ingredients
     batch.ingredients.forEach(function(ingredient) {
         $('#meadData_ingredients').append('<li>' + ingredient + '</li>');
-    })
+    });
 
     // populate timeline ingredients
     batch.timeline.forEach(function(entry) {
         $('#meadData_timeline').append('<li><strong>' + entry[0] + '</strong>: ' + entry[1] + '</li>');
-    })
+    });
 
     // calculate ABV and populate SG
     var originalGravity = batch.gravReadings[0][1];
     batch.gravReadings.forEach(function(gravReading) {
         let abv = Math.round((originalGravity - gravReading[1]) * 13125) / 100;
         $('#meadData_gravity').append('<li><strong>' + gravReading[0] + '</strong>: ' + gravReading[1] + ' (' + abv + '% ABV); ' + gravReading[2] + '</li>');
-    })
+    });
+
+    // populate recipe
+    var converter = new showdown.Converter();
+    var renderedRecipe = converter.makeHtml(recipes[batch.recipeName]);
+    $('#meadData_recipe').html(renderedRecipe);
 
     // dynamically add images to page
     if(batch.images.length > 0){
+        $('#meadData_imageContainer').append('<div class="slider"><ul class="slides" id="meadData_images"></ul></div>');
         batch.images.forEach(function(image) {
             $('#meadData_images').append('<li><img src="img/' + image + '"></li>');
         });
@@ -46,6 +54,7 @@ function drawBatch(batch) {
         $('.slider').slider();
     }
 
+    new QRCode(document.getElementById("qrcode"), window.location.href);
 }
 
 // check if valid batch; return index if so and -1 if not
@@ -86,6 +95,7 @@ function lookup() {
         return;
     }
 
+    window.location.hash = rawID;
     drawBatch(meadData[dataID]);
     $('#dataModal').modal('open');
 }
