@@ -94,7 +94,13 @@ function lookup() {
 $(document).ready(function() {
     // initialize modal handling and focus the input field
     $('.modal').modal();
-    $('input:text:visible:first').focus();
+    $('#serial').focus();
+
+    if(window.location.hash.length > 1){
+        var id = window.location.hash.slice(1);
+        $('#serial').val(id);
+        lookup();
+    }
 });
 
 // handle enter keypress in input box

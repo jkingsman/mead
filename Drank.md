@@ -44,7 +44,7 @@ Modified for longer brew times.
 Instead of waiting two days before chill-down, wait one week, burping every 48 hours or sooner if bottle is dangerously pressurized (bottom bulging/rounded, etc.). When chilling, allow two days in fridge for yeast to settle before siphoning
 
 ### Executions
-#### ~2011-09-15? Date uncertain -- Wabozu'
+#### ~2012-09-15? Date uncertain -- Wabozu'
 Came out lovely and hot and spicy, but man oh man did the carbonation disappear quickly. No measurable change in OG; maaaybe 2% if I recall?
 
 --------------
