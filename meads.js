@@ -52,16 +52,17 @@ const meadData = [{
             ['2017-10-09 1830', 'Must prepared.'],
             ['2017-10-09 1930', 'Carboy airlocked.'],
             ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.'],
-            ['2017-10-10 0030', 'Bubble from yeast every minute or two']
+            ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
+            ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth']
         ],
         'gravReadings': [
             // date, OG, notes
             ['2017-10-09', 1.12, 'Pitched']
         ],
-        'images': ['f1mustevening.jpg', 'mixedmusts.jpg', 'musts.jpg', 'ingredients.jpg'],
+        'images': ['f1mustevening.jpg', 'mixedmusts.jpg', 'musts.jpg', 'ingredients.jpg', 'bundled.jpg'],
         'tastingNotes': '',
         'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-        'promisedBottles': 'B1-3 JWK, B4 MMa, B5 MBa',
+        'promisedBottles': 'B1-2 JWK, B3 CBa, B4 MMa, B5 MBa',
     },
     {
         'batchID': 2,
@@ -84,13 +85,14 @@ const meadData = [{
             ['2017-10-09 1830', 'Must prepared.'],
             ['2017-10-09 1930', 'Carboy airlocked.'],
             ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'],
-            ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!']
+            ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
+            ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth']
         ],
         'gravReadings': [
             // date, OG, notes
             ['2017-10-09', 1.11, 'Pitched']
         ],
-        images: ['f2bubbling.gif', 'f2mustevening.jpg', 'mixedmusts.jpg', 'f2must.jpg', 'musts.jpg', 'ingredients.jpg', 'f2yeast.jpg'],
+        images: ['f2bubbling.gif', 'f2mustevening.jpg', 'mixedmusts.jpg', 'f2must.jpg', 'musts.jpg', 'ingredients.jpg', 'f2yeast.jpg', 'bundled.jpg'],
         'tastingNotes': '',
         'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
         'promisedBottles': 'B6-7 JWK, B8 HLu, B9 MWe, B10 JFe',
