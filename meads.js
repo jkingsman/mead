@@ -241,7 +241,7 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
-    'Duduhu-α': `Hot ginger mead
+    'Duduhu\'': `Hot ginger mead
 
 **Voume Produced:** 1 gallon
 
