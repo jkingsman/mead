@@ -27,7 +27,7 @@ const meadData = [{
             ['2017-10-09', 1.09, 'Pitched']
         ],
         'images': [],
-        'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross.',
+        'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
         'suggestedOpeningDate': '',
         'promisedBottles': 'All mine'
     },
@@ -131,11 +131,11 @@ Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 
 
 ### Rack'n'Pack
 At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan'd 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle.  Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe.`,
-    'Jutini\'': `Simple introductory semi-dry Mead.
+    'Jutini\'': `Simple semi-dry mead
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 - 2 weeks
+**Brew time:** 2 weeks primary, 2 week stabilization
 
 **Age time:** 3 - 6 months
 
@@ -156,25 +156,20 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is 1L.
+Add room temperature honey, then room temperature distilled water until volume of must is 1 gal.
 
 Pour dry yeast into must, and add DAP with yeast hulls.
 
-Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Seal carboy and fill airlock with vodka.
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
 Place in dark location at 60 - 75 degrees F.
 
-Signs of fermentation should appear in 24-48 hours. Fermentation should complete in 1-2 weeks. This is highly variable depending upon dozens of factors.
-
-### Rack'n'Pack
-When fermentation is complete (confirm with gravity reading), add crushed campden tablet and siphon mead into new vessel while leaving sediment in bottom of carboy.
-
-When the mead is clear enough to read newsprint through it, it's ready to bottle.`,
-    'Jutini-α': `Simple introductory semi-dry Mead.
+After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
+    'Jutini-α': `Simple semi-dry mead
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 - 2 weeks
+**Brew time:** 2 weeks primary, 2 week stabilization
 
 **Age time:** 3 - 6 months
 
@@ -195,18 +190,92 @@ When the mead is clear enough to read newsprint through it, it's ready to bottle
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is 1L.
+Add room temperature honey, then room temperature distilled water until volume of must is 1 gal.
 
 Pour dry yeast into must, and add DAP with yeast hulls.
 
-Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Seal carboy and fill airlock with vodka.
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
 Place in dark location at 60 - 75 degrees F.
 
-Signs of fermentation should appear in 24-48 hours. Fermentation should complete in 1-2 weeks. This is highly variable depending upon dozens of factors.
+After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
+    'Soravo\'': `Hot \'n\' dry
 
-### Rack'n'Pack
-When fermentation is complete (confirm with gravity reading), add crushed campden tablet and siphon mead into new vessel while leaving sediment in bottom of carboy.
+**Voume Produced:** 1 gallon
 
-When the mead is clear enough to read newsprint through it, it's ready to bottle.`
+**Brew time:** 1 month primary, 1 month oaking/secondary, 2 weeks stabilization
+
+**Age time:** 6 months
+
+### Ingredients
+- 3 lbs honey
+- 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
+- 0.5 tsp LD Carlson Energizer (yeast hulls)
+- 5 grams Lavlin EC-1118
+- 4 Carolina Reaper chilis
+- 1 Med. toast oak spiral
+- Distilled water to 1 gal.
+
+### Equipment/Misc.
+- 1 gal. carboy
+- Airlock
+- StarSan soln.
+- 1 Campden tablet, crushed
+
+### Prep
+Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
+
+### Recipe
+Add room temperature honey, then room temperature distilled water until volume of must is short of 1 gal. Pour dry yeast into must, and add DAP with yeast hulls.
+
+Seal carboy and shake vigorously for 4 minutes.
+
+Take and record gravity reading if desired.
+
+Simmer chopped and de-seeded chilis in 1/4 cup of water for ten minutes; pour into must through muslin and tie off muslin.
+
+Fill with water to 1 gal. Airlock carboy.
+
+Place in dark location at 60 - 75 degrees F.
+
+After 1 month, rack off peppers and into new vessel with oak spiral.
+
+After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
+    'Duduhu-α': `Semi-dry ginger bomb
+
+**Voume Produced:** 1 gallon
+
+**Brew time:** 3 weeks primary, 2 week stabilization
+
+**Age time:** 6-12 months
+
+### Ingredients
+- 3.5 lbs honey
+- 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
+- 0.5 tsp LD Carlson Energizer (yeast hulls)
+- 1 lb raw ginger, peeled and pulverized
+- 5 grams Lavlin 71B-1122
+- Distilled water to 1 gal.
+
+### Equipment/Misc.
+- 1 gal. carboy
+- Airlock
+- StarSan soln.
+- 1 Campden tablet, crushed
+
+### Prep
+Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
+
+### Recipe
+Add room temperature honey, then room temperature distilled water until volume of must is shy of 1 gal.
+
+Pour dry yeast into must, and add DAP with yeast hulls.
+
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.
+
+Add ginger after peeling and pulverizing, fill to 1 gal., put into carboy, and airlock.
+
+Place in dark location at 60 - 75 degrees F.
+
+After three weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`
 };
