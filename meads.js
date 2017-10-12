@@ -100,7 +100,7 @@ const meadData = [{
 ];
 
 const recipes = {
-    'Wabozu\'': `A PET bottle ginger ale, with a fiery kick, light carbonation, and a short lifespan.
+    'Wabozu\'': `Fiery ginger ale
 
 **Volume Produced:** 2 liters
 
@@ -131,7 +131,7 @@ Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 
 
 ### Rack'n'Pack
 At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan'd 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle.  Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe.`,
-    'Jutini\'': `Simple semi-dry mead
+    'Jutini\'': `Simple sweet mead
 
 **Voume Produced:** 1 gallon
 
@@ -199,7 +199,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 Place in dark location at 60 - 75 degrees F.
 
 After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
-    'Soravo\'': `Hot \'n\' dry
+    'Soravo\'': `Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
 
@@ -241,7 +241,7 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
-    'Duduhu-α': `Semi-dry ginger bomb
+    'Duduhu-α': `Hot ginger mead
 
 **Voume Produced:** 1 gallon
 
