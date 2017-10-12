@@ -101,6 +101,30 @@ function lookup() {
 }
 
 
+function drawRecipes(){
+    for(var recipe in recipes){
+        var converter = new showdown.Converter();
+        var renderedRecipe = converter.makeHtml(recipes[recipe]);
+        var usedIn = [];
+        meadData.forEach(function(batch){
+            if(batch.recipeName === recipe){
+                usedIn.push(batch.batchID);
+            }
+        });
+
+        var usedInString = 'Not used';
+        if(usedIn.length > 0){
+            usedInString = "Batch usage: " + usedIn.join(', ');
+        }
+
+        $('#recipeEntryContainer').append(`<li>
+            <div class="collapsible-header">${recipe} -- ${recipes[recipe].split('\n')[0]} (${usedInString})</div>
+            <div class="collapsible-body">${renderedRecipe}</div>
+        </li>`);
+    }
+}
+
+
 $(document).ready(function() {
     // initialize modal handling and focus the input field
     $('.modal').modal();
@@ -111,6 +135,8 @@ $(document).ready(function() {
         $('#serial').val(id);
         lookup();
     }
+
+    drawRecipes();
 });
 
 // handle enter keypress in input box

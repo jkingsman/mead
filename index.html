@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kiwi Meadery -- Batch  Lookup</title>
+    <title>Kiwi Meadery -- Batch Lookup</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <style type="text/css">
@@ -25,20 +25,37 @@
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-            <br><br>
-            <h1 class="header center orange-text">Your Mead's Story</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">Enter your serial and find out more about your mead (or what will soon be your mead!). Bottle serials begin with B (e.g. "B5") and fermentation serials begin with F (e.g. "F2").</h5>
-            </div>
-            <div class="row center">
-                <div class="input-field col s12">
-                    <input placeholder="B0005" id="serial" type="text">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#lookup">Mead Lookup</a></li>
+                        <li class="tab col s3"><a href="#recipes">Recipes</a></li>
+                    </ul>
+                </div>
+                <div id="lookup" class="col s12">
+                    <br><br>
+                    <h1 class="header center orange-text">Your Mead's Story</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Enter your serial and find out more about your mead (or what will soon be your mead!). Bottle serials begin with B (e.g. "B5") and fermentation serials begin with F (e.g. "F2").</h5>
+                    </div>
+                    <div class="row center">
+                        <div class="input-field col s12">
+                            <input placeholder="B0005" id="serial" type="text">
+                        </div>
+                    </div>
+                    <div class="row center">
+                        <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light orange">Find my mead!</a>
+                    </div>
+                    <br><br>
+                </div>
+                <div id="recipes" class="col s12">
+                    <h3>Recipe Browser</h3>
+                    <ul class="collapsible" data-collapsible="accordion" id="recipeEntryContainer">
+
+                    </ul>
                 </div>
             </div>
-            <div class="row center">
-                <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light orange">Find my mead!</a>
-            </div>
-            <br><br>
+
 
         </div>
     </div>
@@ -46,8 +63,7 @@
     <!-- Modal Structure -->
     <div id="dataModal" class="modal">
         <div class="modal-content">
-            <h3><span id="meadData_type"></span></h3>
-            (click to see more)
+            <h3><span id="meadData_type"></span></h3> (click to see more)
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
                     <div class="collapsible-header"><i class="material-icons">colorize</i>Batch Data</div>
