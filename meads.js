@@ -1,6 +1,6 @@
 /* jshint esversion: 6 */
 
-const meadData = [{
+var meadData = [{
         'batchID': 0,
         'type': 'Dry Ginger Ale',
         'recipeName': 'Wabozu\'',
@@ -99,7 +99,7 @@ const meadData = [{
     }
 ];
 
-const recipes = {
+var recipes = {
     'Wabozu\'': `Fiery ginger ale
 
 **Volume Produced:** 2 liters

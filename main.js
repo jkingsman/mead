@@ -1,7 +1,7 @@
 /* jshint esversion:6 */
 
 // fields that should NOT be automatically filled
-const nonAutofillFields = ['ingredients', 'timeline', 'gravReadings', 'images'];
+var nonAutofillFields = ['ingredients', 'timeline', 'gravReadings', 'images'];
 
 String.prototype.replaceAll = function(search, replacement) {
     var target = this;
