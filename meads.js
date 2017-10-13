@@ -8,12 +8,9 @@ var meadData = [{
         'bottleRangeMax': 0,
         'size': '2L',
         'notes': 'Very first brew; super dry ginger ale.',
-        'ingredients': [
-            '1.5 oz. finely grated fresh ginger (the younger the better; microplane suggested)',
-            '6 oz. table sugar',
-            '7.5 cups filtered water',
-            '1/8 teaspoon (should be around 750mg) champagne yeast (Red Star Premier Blanc formerly known as Pastuer Champagne)',
-            '2 tablespoons freshly squeezed lemon juice'
+        'openingDate': '2017-09-11',
+        'bottleDistribution': [
+            ['1', 'JWK']
         ],
         'timeline': [
             // date, notes
@@ -28,8 +25,6 @@ var meadData = [{
         ],
         'images': [],
         'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
-        'suggestedOpeningDate': '',
-        'promisedBottles': 'All mine'
     },
     {
         'batchID': 1,
@@ -38,14 +33,14 @@ var meadData = [{
         'bottleRangeMin': 1,
         'bottleRangeMax': 5,
         'size': '1 gal.',
-        'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead! Making .5 gal of starsan soln (1oz/5gal H20 = .1oz/.5gal). Sharing between two bottles. Honey, then yeast + DAP + hulls, then water and agitate for 3 mins.',
-        'ingredients': [
-            '3.5lbs honey (3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey)',
-            'Tap water to 1 gal.',
-            '1 tsp LD Carlson nutrient (diammonium phosphate)',
-            '.5 tsp LD Carlson energizer (yeast hulls)',
-            '5 grams Safale US-05 yeast',
-            '.5 Campden tablet (crushed); introduced at rerack'
+        'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+        'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+        'bottleDistribution': [
+            ['1', 'JKi'],
+            ['2', 'JKi'],
+            ['3', 'CBa'],
+            ['4', 'MMa'],
+            ['5', 'MBa']
         ],
         'timeline': [
             // date, notes
@@ -59,10 +54,8 @@ var meadData = [{
             // date, OG, notes
             ['2017-10-09', 1.12, 'Pitched']
         ],
-        'images': ['f1mustevening.jpg', 'mixedmusts.jpg', 'musts.jpg', 'ingredients.jpg', 'bundled.jpg'],
-        'tastingNotes': '',
-        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-        'promisedBottles': 'B1-2 JWK, B3 CBa, B4 MMa, B5 MBa',
+        'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
+        'img/tastingNotes': ''
     },
     {
         'batchID': 2,
@@ -71,14 +64,14 @@ var meadData = [{
         'bottleRangeMin': 6,
         'bottleRangeMax': 10,
         'size': '1 gal.',
-        'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead! Making .5 gal of starsan soln (1oz/5gal H20 = .1oz/.5gal). Sharing between two bottles. Honey, then yeast + DAP + hulls, then water and agitate for 3 mins.',
-        'ingredients': [
-            '3.5lbs honey (3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey)',
-            'Tap water to 1 gal.',
-            '1 tsp LD Carlson nutrient (diammonium phosphate)',
-            '.5 tsp LD Carlson energizer (yeast hulls)',
-            '5 grams Lavlin 71B-1122 yeast',
-            '.5 Campden tablet (crushed); introduced at rerack'
+        'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey. Promised bottles: B6-7 JWK, B8 HLu, B9 MWe, B10 JFe.',
+        'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+        'bottleDistribution': [
+            ['6', 'JKi'],
+            ['7', 'JKi'],
+            ['8', 'HLu'],
+            ['9', 'MWe'],
+            ['10', 'JFe']
         ],
         'timeline': [
             // date, notes
@@ -92,10 +85,8 @@ var meadData = [{
             // date, OG, notes
             ['2017-10-09', 1.11, 'Pitched']
         ],
-        images: ['f2bubbling.gif', 'f2mustevening.jpg', 'mixedmusts.jpg', 'f2must.jpg', 'musts.jpg', 'ingredients.jpg', 'f2yeast.jpg', 'bundled.jpg'],
-        'tastingNotes': '',
-        'suggestedOpeningDate': '2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-        'promisedBottles': 'B6-7 JWK, B8 HLu, B9 MWe, B10 JFe',
+        images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
+        'img/tastingNotes': '',
     }
 ];
 

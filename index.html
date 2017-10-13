@@ -15,24 +15,33 @@
         .italic {
             font-style: italic;
         }
+
+        td {
+            padding: 0px !important;
+            vertical-align: top;
+        }
+
+        .dateCol {
+            min-width: 130px;
+        }
     </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Kiwi Meadery</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Kiwi Mead</a>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <div class="row">
                 <div class="col s12">
                     <ul class="tabs">
-                        <li class="tab col s3"><a class="active" href="#lookup">Mead Lookup</a></li>
+                        <li class="tab col s3"><a class="active" href="#pageContent">Mead Lookup</a></li>
                         <li class="tab col s3"><a href="#recipes">Recipes</a></li>
                     </ul>
                 </div>
-                <div id="lookup" class="col s12">
+                <div id="pageContent" class="col s12">
                     <br><br>
                     <h1 class="header center orange-text">Your Mead's Story</h1>
                     <div class="row center">
@@ -46,7 +55,6 @@
                     <div class="row center">
                         <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light orange">Find my mead!</a>
                     </div>
-                    <br><br>
                 </div>
                 <div id="recipes" class="col s12">
                     <h3>Recipe Browser</h3>
@@ -55,72 +63,11 @@
                     </ul>
                 </div>
             </div>
-
-
-        </div>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="dataModal" class="modal">
-        <div class="modal-content">
-            <h3><span id="meadData_type"></span></h3> (click to see more)
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">colorize</i>Batch Data</div>
-                    <div class="collapsible-body">
-                        <p><strong>Fermentation Serial: </strong>F<span id="meadData_batchID"></span></p>
-                        <p><strong>Bottle Serial Range: </strong>B<span id="meadData_bottleRangeMin"></span> - B<span id="meadData_bottleRangeMax"></span></p>
-                        <p><strong>Batch Size: </strong><span id="meadData_size"></span></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">subject</i>Batch Notes</div>
-                    <div class="collapsible-body">
-                        <p id="meadData_notes"></p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">bubble_chart</i>Process Details &amp; Timeline</div>
-                    <div class="collapsible-body">
-                        <strong>Ingredients:</strong>
-                        <ul class="browser-default" id="meadData_ingredients"></ul>
-                        <strong>Timeline:</strong>
-                        <ul class="browser-default" id="meadData_timeline"></ul>
-                        <strong>Gravity Readings:</strong>
-                        <ul class="browser-default" id="meadData_gravity"></ul>
-                        <p><strong>Suggested opening date: </strong><span id="meadData_suggestedOpeningDate"></span></p>
-                        <p><strong>Tasting notes: </strong>
-                            <span id="meadData_tastingNotes"></span>
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">toc</i>Recipe:&nbsp;<span id="meadData_recipeName"></span></div>
-                    <div class="collapsible-body">
-                        <span id="meadData_recipe"></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">build</i>Meta</div>
-                    <div class="collapsible-body">
-                        <p class="italic">Promised bottles: <span id="meadData_promisedBottles"></span></p>
-                        QR code for URL:
-                        <div id="meadData_qrcode"></div>
-                    </div>
-                </li>
-            </ul>
-            <div id="meadData_imageContainer">
-
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
         </div>
     </div>
 
     <footer class="page-footer orange">
         <div class="container">
-
         </div>
         <div class="footer-copyright">
             <div class="container">
@@ -128,9 +75,84 @@
             </div>
         </div>
     </footer>
+
+    <script id="meadTemplate" type="text/x-handlebars-template">
+        <h3>{{ type }}</h3>
+        <div class="row">
+            <div class="col m6">
+                <h5>Batch &amp; Bottle</h5>
+                <strong>Batch: </strong>F{{ batchID }}<br />
+                <strong>Bottle Range: </strong>B{{ bottleRangeMin }} - B{{ bottleRangeMax }}<br />
+                <strong>Brew Date: </strong>{{ timeline.[0].[0] }}<br />
+                <strong>Batch Size: </strong>{{ size }}<br />
+                <strong>Suggested Opening Date: </strong>{{ openingDate }}
+                <br /><br />
+                <h5>Recipe Notes</h5> {{{ notes }}}
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header">Click to view full recipe ({{ recipeName }})</div>
+                        <div class="collapsible-body">{{{ markdown recipe }}}</div>
+                    </li>
+                </ul>
+                <h5>Tasting Notes</h5> {{{ tastingNotes }}}
+                <h5>Media</h5>
+                <div class="slider" style="max-width: 500px;">
+                    <ul class="slides">
+                        {{#each images}}
+                        <li>
+                            <img src="{{ this }}">
+                        </li>
+                        {{/each }}
+                </div>
+            </div>
+            <div class="col m6">
+                <h5>Timeline</h5>
+                <table>
+                    {{#each timeline }}
+                    <tr>
+                        <td class="dateCol">
+                            <strong>{{ this.[0] }}</strong>
+                        </td>
+                        <td>
+                            {{ this.[1] }}
+                        </td>
+                    </tr>
+                    {{/each }}
+                </table>
+                <h5>Gravity Readings</h5>
+                <table>
+                    {{#each gravReadings }}
+                    <tr>
+                        <td class="dateCol">
+                            <strong>{{ this.[0] }}</strong>
+                        </td>
+                        <td>
+                            {{ this.[2] }}
+                        </td>
+                        <td>
+                            {{ this.[1] }}SG ({{ this.[3] }}% ABV)
+                        </td>
+                    </tr>
+                    {{/each }}
+                </table>
+                <h5>Bottle Distribution</h5>
+                <ul>
+                    {{#each bottleDistribution}}
+                    <li>
+                        B{{ this.[0] }} to {{ this.[1] }}
+                    </li>
+                    {{/each }}
+                </ul>
+                <h5>QR Code</h5>
+                <div id="qrCode"></div>
+            </div>
+        </div>
+    </script>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="//cdn.rawgit.com/showdownjs/showdown/1.7.6/dist/showdown.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script type="text/javascript" src="qrcode.min.js"></script>
     <script type="text/javascript" src="meads.js"></script>
     <script type="text/javascript" src="main.js"></script>

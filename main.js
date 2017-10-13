@@ -1,60 +1,36 @@
 /* jshint esversion:6 */
 
-// fields that should NOT be automatically filled
-var nonAutofillFields = ['ingredients', 'timeline', 'gravReadings', 'images'];
-
-String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.replace(new RegExp(search, 'g'), replacement);
-};
+Handlebars.registerHelper("markdown", function(text) {
+    var converter = new showdown.Converter();
+    var renderedRecipe = converter.makeHtml(text);
+    return renderedRecipe;
+});
 
 // draw a given batch into the modal
 function drawBatch(batch) {
-    $("[id^='meadData_']").each(function(elem) {
-        $(this).empty();
-    });
+    // inject recipe
+    batch.recipe = recipes[batch.recipeName];
 
-    // draw autofills -- fields whose name matches 1-1 with a page field
-    for (var field in batch) {
-        if (nonAutofillFields.indexOf(field) === -1) {
-            var lineBreaksReplaced = String(batch[field]).replaceAll("\n", "<br />");
-            $('#meadData_' + field).html(lineBreaksReplaced);
-        }
-    }
-
-    // populate ingredients
-    batch.ingredients.forEach(function(ingredient) {
-        $('#meadData_ingredients').append('<li>' + ingredient + '</li>');
-    });
-
-    // populate timeline ingredients
-    batch.timeline.forEach(function(entry) {
-        $('#meadData_timeline').append('<li><strong>' + entry[0] + '</strong>: ' + entry[1] + '</li>');
-    });
-
-    // calculate ABV and populate SG
+    // inject gravity calculations
     var originalGravity = batch.gravReadings[0][1];
-    batch.gravReadings.forEach(function(gravReading) {
+    batch.gravReadings = batch.gravReadings.map(function(gravReading) {
         let abv = Math.round((originalGravity - gravReading[1]) * 13125) / 100;
-        $('#meadData_gravity').append('<li><strong>' + gravReading[0] + '</strong>: ' + gravReading[1] + ' (' + abv + '% ABV); ' + gravReading[2] + '</li>');
+        gravReading.push(abv);
+        return gravReading;
     });
 
-    // populate recipe
-    var converter = new showdown.Converter();
-    var renderedRecipe = converter.makeHtml(recipes[batch.recipeName]);
-    $('#meadData_recipe').html(renderedRecipe);
+    // compile template
+    var source = $('#meadTemplate').html();
+    var template = Handlebars.compile(source);
+    var html = template(batch);
+    $('#pageContent').html(html);
 
-    // dynamically add images to page
-    if(batch.images.length > 0){
-        $('#meadData_imageContainer').append('<div class="slider"><ul class="slides" id="meadData_images"></ul></div>');
-        batch.images.forEach(function(image) {
-            $('#meadData_images').append('<li><img src="img/' + image + '"></li>');
-        });
+    // populate QR code
+    new QRCode(document.getElementById('qrCode'), window.location.href);
 
-        $('.slider').slider();
-    }
-
-    new QRCode(document.getElementById('meadData_qrcode'), window.location.href);
+    // materialize init
+    $('.collapsible').collapsible();
+    $('.slider').slider();
 }
 
 // check if valid batch; return index if so and -1 if not
@@ -101,24 +77,24 @@ function lookup() {
 }
 
 
-function drawRecipes(){
-    for(var recipe in recipes){
+function drawRecipes() {
+    for (var recipe in recipes) {
         var converter = new showdown.Converter();
         var renderedRecipe = converter.makeHtml(recipes[recipe]);
         var usedIn = [];
-        meadData.forEach(function(batch){
-            if(batch.recipeName === recipe){
+        meadData.forEach(function(batch) {
+            if (batch.recipeName === recipe) {
                 usedIn.push(batch.batchID);
             }
         });
 
         var usedInString = 'Not used';
-        if(usedIn.length > 0){
+        if (usedIn.length > 0) {
             usedInString = "Batch usage: " + usedIn.join(', ');
         }
 
         $('#recipeEntryContainer').append(`<li>
-            <div class="collapsible-header">${recipe} -- ${recipes[recipe].split('\n')[0]} (${usedInString})</div>
+            <div class="collapsible-header"><strong>${recipe}</strong>&nbsp;${recipes[recipe].split('\n')[0]} (${usedInString})</div>
             <div class="collapsible-body">${renderedRecipe}</div>
         </li>`);
     }
@@ -130,7 +106,7 @@ $(document).ready(function() {
     $('.modal').modal();
     $('#serial').focus();
 
-    if(window.location.hash.length > 1){
+    if (window.location.hash.length > 1) {
         var id = window.location.hash.slice(1);
         $('#serial').val(id);
         lookup();
