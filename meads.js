@@ -151,7 +151,7 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 month primary, 2 week secondary/stabilization
+**Brew time:** 2 week primary, 2 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
@@ -183,7 +183,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 month primary, 2 week secondary/stabilization
+**Brew time:** 2 week primary, 2 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
@@ -216,7 +216,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 month primary, 1 month oaking/secondary, 2 weeks stabilization
+**Brew time:** 1 month primary, 1 month oaking/secondary, 2 week stabilization
 
 ### Ingredients
 - 3 lbs honey
@@ -257,7 +257,7 @@ After another month, rack off oak and add crushed Campden tablet. Let sit for tw
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 month primary, 2 month (or to taste) secondary, 2 week stabilization
+**Brew time:** 1 month primary, 2 month (or to taste) secondary, 2 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
