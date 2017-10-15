@@ -55,7 +55,7 @@ var meadData = [{
             ['2017-10-09', 1.12, 'Pitched']
         ],
         'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
-        'img/tastingNotes': ''
+        'tastingNotes': ''
     },
     {
         'batchID': 2,
@@ -86,7 +86,7 @@ var meadData = [{
             ['2017-10-09', 1.11, 'Pitched']
         ],
         images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
-        'img/tastingNotes': '',
+        'tastingNotes': '',
     }
 ];
 

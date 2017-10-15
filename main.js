@@ -82,11 +82,13 @@ function drawRecipes() {
         var converter = new showdown.Converter();
         var renderedRecipe = converter.makeHtml(recipes[recipe]);
         var usedIn = [];
+        /* jshint ignore:start */
         meadData.forEach(function(batch) {
             if (batch.recipeName === recipe) {
                 usedIn.push(batch.batchID);
             }
         });
+        /* jshint ignore:end */
 
         var usedInString = 'Not used';
         if (usedIn.length > 0) {
