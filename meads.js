@@ -97,8 +97,6 @@ var recipes = {
 
 **Brew time:** 2 days
 
-**Age time:** 1 day
-
 ### Ingredients
 - 1.5 oz. finely grated fresh ginger (the younger the better; microplane suggested)
 - 6 oz. table sugar
@@ -126,9 +124,7 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 2 weeks primary, 2 week stabilization
-
-**Age time:** 3 - 6 months
+**Brew time:** 1 month primary, 2 week secondary/stabilization
 
 ### Ingredients
 - 3.5 lbs honey
@@ -160,9 +156,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 2 weeks primary, 2 week stabilization
-
-**Age time:** 3 - 6 months
+**Brew time:** 1 month primary, 2 week secondary/stabilization
 
 ### Ingredients
 - 3.5 lbs honey
@@ -195,8 +189,6 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 **Voume Produced:** 1 gallon
 
 **Brew time:** 1 month primary, 1 month oaking/secondary, 2 weeks stabilization
-
-**Age time:** 6 months
 
 ### Ingredients
 - 3 lbs honey
@@ -232,13 +224,11 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
-    'Duduhu\'': `Hot ginger metheglin
+    'Duduhu\'': `Ginger metheglin
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 2 month primary, 2 week stabilization
-
-**Age time:** 6-12 months
+**Brew time:** 1 month primary, 2 month (or to taste) secondary, 2 week stabilization
 
 ### Ingredients
 - 3.5 lbs honey
@@ -264,9 +254,9 @@ Pour dry yeast into must, and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.
 
-Add ginger after peeling and cubing, fill to 1 gal., put into carboy, and airlock.
+Fill to 1 gal., put into carboy, and airlock.Place in dark location at 60 - 75 degrees F.
 
-Place in dark location at 60 - 75 degrees F.
+After one month, rack onto peeled and cubed ginger.
 
-After three weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`
+After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`
 };
