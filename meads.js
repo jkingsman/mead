@@ -98,7 +98,11 @@ var meadData = [{
         'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
         'openingDate': '2018-10-24',
         'bottleDistribution': [
-            ['All', 'Chartio Team']
+            ['11', 'JKi'],
+            ['12', 'Chartio Team'],
+            ['13', 'Chartio Team'],
+            ['14', 'Chartio Team'],
+            ['15', 'Chartio Team']
         ],
         'timeline': [
             // date, notes
