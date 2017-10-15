@@ -64,7 +64,7 @@ var meadData = [{
         'bottleRangeMin': 6,
         'bottleRangeMax': 10,
         'size': '1 gal.',
-        'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey. Promised bottles: B6-7 JWK, B8 HLu, B9 MWe, B10 JFe.',
+        'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
         'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
         'bottleDistribution': [
             ['6', 'JKi'],
@@ -86,6 +86,29 @@ var meadData = [{
             ['2017-10-09', 1.11, 'Pitched']
         ],
         images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
+        'tastingNotes': '',
+    },
+    {
+        'batchID': 3,
+        'type': 'Chartio Metheglin',
+        'recipeName': 'Duduhu\'',
+        'bottleRangeMin': 11,
+        'bottleRangeMax': 15,
+        'size': '1 gal.',
+        'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+        'openingDate': '2018-10-24',
+        'bottleDistribution': [
+            ['All', 'Chartio Team']
+        ],
+        'timeline': [
+            // date, notes
+            ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
+        ],
+        'gravReadings': [
+            // date, OG, notes
+            ['2017-10-24', 1.0, 'Pitched']
+        ],
+        images: [],
         'tastingNotes': '',
     }
 ];
