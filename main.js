@@ -14,7 +14,7 @@ function drawBatch(batch) {
     // inject gravity calculations
     var originalGravity = batch.gravReadings[0][1];
     batch.gravReadings = batch.gravReadings.map(function(gravReading) {
-        let abv = Math.round((originalGravity - gravReading[1]) * 13125) / 100;
+        let abv = Math.round((originalGravity - gravReading[1]) * 13271.5) / 100;
         gravReading.push(abv);
         return gravReading;
     });
