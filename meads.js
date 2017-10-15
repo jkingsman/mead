@@ -232,11 +232,11 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
-    'Duduhu\'': `Hot ginger mead
+    'Duduhu\'': `Hot ginger metheglin
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 3 weeks primary, 2 week stabilization
+**Brew time:** 2 month primary, 2 week stabilization
 
 **Age time:** 6-12 months
 
@@ -244,7 +244,7 @@ After another month, rack off oak and add crushed Campden tablet. Let sit for tw
 - 3.5 lbs honey
 - 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
 - 0.5 tsp LD Carlson Energizer (yeast hulls)
-- 1 lb raw ginger, peeled and pulverized
+- 1 lb raw ginger, peeled and cubed
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
 
@@ -264,7 +264,7 @@ Pour dry yeast into must, and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.
 
-Add ginger after peeling and pulverizing, fill to 1 gal., put into carboy, and airlock.
+Add ginger after peeling and cubing, fill to 1 gal., put into carboy, and airlock.
 
 Place in dark location at 60 - 75 degrees F.
 
