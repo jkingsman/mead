@@ -164,6 +164,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 - 0.5 tsp LD Carlson Energizer (yeast hulls)
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
+- Xylitol to taste (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
@@ -183,7 +184,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 
 Place in dark location at 60 - 75 degrees F.
 
-After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
+After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
     'Soravo\'': `Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
@@ -198,6 +199,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 - 4 Carolina Reaper chilis
 - 1 Med. toast oak spiral
 - Distilled water to 1 gal.
+- Xylitol to taste (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
@@ -223,7 +225,7 @@ Place in dark location at 60 - 75 degrees F.
 
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
-After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, then bottle.`,
+After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
     'Duduhu\'': `Ginger metheglin
 
 **Voume Produced:** 1 gallon
@@ -237,6 +239,7 @@ After another month, rack off oak and add crushed Campden tablet. Let sit for tw
 - 1 lb raw ginger, peeled and cubed
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
+- Xylitol to taste (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
@@ -258,5 +261,5 @@ Fill to 1 gal., put into carboy, and airlock.Place in dark location at 60 - 75 d
 
 After one month, rack onto peeled and cubed ginger.
 
-After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`
+After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`
 };
