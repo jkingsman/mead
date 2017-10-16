@@ -26,7 +26,25 @@ function drawBatch(batch) {
     $('#pageContent').html(html);
 
     // populate QR code
-    new QRCode(document.getElementById('qrCode'), window.location.href);
+    var qrOptions = {
+        render: 'image',
+        crisp: true,
+        ecLevel: 'H',
+        size: 300,
+        fill: '#000',
+        back: '#fff',
+        text: window.location.href,
+        mode: 'image',
+        mSize: 50,
+        mPosX: 50,
+        mPosY: 50,
+        image: document.getElementById('kiwiBuffer'),
+        minVersion: 10,
+    };
+
+    var el = kjua(qrOptions);
+    document.getElementById('qrCode').innerHTML = '';
+    document.getElementById('qrCode').appendChild(el);
 
     // materialize init
     $('.collapsible').collapsible();
