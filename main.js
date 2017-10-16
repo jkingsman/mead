@@ -30,7 +30,7 @@ function drawBatch(batch) {
         render: 'image',
         crisp: true,
         ecLevel: 'H',
-        size: 300,
+        size: 512,
         fill: '#000',
         back: '#fff',
         text: window.location.href,
@@ -39,10 +39,11 @@ function drawBatch(batch) {
         mPosX: 50,
         mPosY: 50,
         image: document.getElementById('kiwiBuffer'),
-        minVersion: 10,
+        minVersion: 5,
     };
 
     var el = kjua(qrOptions);
+    el.style = 'width: 512px; height: 512px;';
     document.getElementById('qrCode').innerHTML = '';
     document.getElementById('qrCode').appendChild(el);
 
