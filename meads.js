@@ -288,5 +288,5 @@ Fill to 1 gal., put into carboy, and airlock.Place in dark location at 60 - 75 d
 
 After one month, rack onto peeled and cubed ginger.
 
-After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`
+After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`
 };
