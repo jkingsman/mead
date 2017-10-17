@@ -115,7 +115,7 @@ function drawRecipes() {
         /* jshint ignore:start */
         meadData.forEach(function(batch) {
             if (batch.recipeName === recipe) {
-                usedIn.push(batch.batchID);
+                usedIn.push("F" + ("000000000000" + batch.batchID).substr(-serialPadding, serialPadding));
             }
         });
         /* jshint ignore:end */

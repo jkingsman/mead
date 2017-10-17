@@ -259,9 +259,9 @@ After another month, rack off oak and add crushed Campden tablet. Let sit for tw
 - 3.5 lbs honey
 - 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
 - 0.5 tsp LD Carlson Energizer (yeast hulls)
-- 1 lb raw ginger, peeled and cubed
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
+- 1 lb raw ginger, peeled and cubed
 - Xylitol to taste (optional)
 
 ### Equipment/Misc.
@@ -280,7 +280,7 @@ Pour dry yeast into must, and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.
 
-Fill to 1 gal., put into carboy, and airlock.Place in dark location at 60 - 75 degrees F.
+Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 degrees F.
 
 After one month, rack onto peeled and cubed ginger.
 
