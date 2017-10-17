@@ -52,5 +52,5 @@ function generateName(length, version) {
 }
 
 function name() {
-    generateName(6, 0);
+    console.log(generateName(6, 0));
 }

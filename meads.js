@@ -166,9 +166,9 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is 1 gal.
+Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.
 
-Pour dry yeast into must, and add DAP with yeast hulls.
+Pour dry yeast into must and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
@@ -199,9 +199,9 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is 1 gal.
+Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.
 
-Pour dry yeast into must, and add DAP with yeast hulls.
+Pour dry yeast into must and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
@@ -234,7 +234,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is short of 1 gal. Pour dry yeast into must, and add DAP with yeast hulls.
+Add room temperature honey, then room temperature spring or tap water until volume of must is short of 1 gal. Pour dry yeast into must and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes.
 
@@ -274,9 +274,9 @@ After another month, rack off oak and add crushed Campden tablet. Let sit for tw
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Add room temperature honey, then room temperature distilled water until volume of must is shy of 1 gal.
+Add room temperature honey then room temperature spring or tap water until volume of must is shy of 1 gal.
 
-Pour dry yeast into must, and add DAP with yeast hulls.
+Pour dry yeast into must and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.
 
@@ -284,5 +284,41 @@ Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 
 
 After one month, rack onto peeled and cubed ginger.
 
-After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`
+After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`,
+    'Watuda\'': `Sweet metheglin
+
+**Voume Produced:** 1 gallon
+
+**Brew time:** 2 week primary, 2 week stabilization/clarifying
+
+### Ingredients
+- 3.5 lbs honey
+- 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
+- 0.5 tsp LD Carlson Energizer (yeast hulls)
+- 5 grams Safale US-05 yeast
+- 1 vanilla bean
+- 1 cinnamon stick
+- Distilled water to 1 gal.
+
+### Equipment/Misc.
+- 1 gal. carboy
+- Airlock
+- StarSan soln.
+- 1 Campden tablet, crushed
+
+### Prep
+Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
+
+### Recipe
+Boil vanilla bean and cinnamon stick in 1 cup water for 10 minutes.
+
+Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.
+
+Pour dry yeast into must, add cinnamon and vanilla with water, and add DAP with yeast hulls.
+
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
+
+Place in dark location at 60 - 75 degrees F.
+
+After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`
 };
