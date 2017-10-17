@@ -31,7 +31,7 @@ function drawBatch(batch) {
     var html = template(batch);
     $('#pageContent').html(html);
 
-    // populate QR code
+    // generate QR code
     var qrOptions = {
         render: 'image',
         crisp: true,
@@ -48,9 +48,18 @@ function drawBatch(batch) {
         minVersion: 5,
     };
     var el = kjua(qrOptions);
-    el.style = 'width: 100%; max-width: 256px; height: auto;';
-    document.getElementById('qrCode').innerHTML = '';
-    document.getElementById('qrCode').appendChild(el);
+
+    // render into place on the page and add batch text
+    var qrCodeContainer = document.getElementById('qrCode');
+    qrCodeContainer.innerHTML = '<h3>' + batch.descriptor + '</h3>';
+    qrCodeContainer.prepend(el);
+
+    // convert to canvas -> data URI and render into image
+    html2canvas(qrCodeContainer, {
+        onrendered: function(canvas) {
+            document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
+        }
+    });
 
     // materialize init
     $('.collapsible').collapsible();
