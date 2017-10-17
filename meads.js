@@ -2,7 +2,6 @@
 
 var meadData = [{
     'batchID': 0,
-    'type': 'Dry Ginger Ale',
     'recipeName': 'Wabozu\'',
     'bottleRangeMin': 0,
     'bottleRangeMax': 0,
@@ -27,7 +26,6 @@ var meadData = [{
     'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
 }, {
     'batchID': 1,
-    'type': 'Sweet Mead',
     'recipeName': 'Jutini\'',
     'bottleRangeMin': 1,
     'bottleRangeMax': 5,
@@ -57,7 +55,6 @@ var meadData = [{
     'tastingNotes': ''
 }, {
     'batchID': 2,
-    'type': 'Semi-Dry Mead',
     'recipeName': 'Jutini-α',
     'bottleRangeMin': 6,
     'bottleRangeMax': 10,
@@ -87,7 +84,6 @@ var meadData = [{
     'tastingNotes': '',
 }, {
     'batchID': 3,
-    'type': 'Chartio Metheglin',
     'recipeName': 'Duduhu\'',
     'bottleRangeMin': 11,
     'bottleRangeMax': 15,
@@ -114,7 +110,7 @@ var meadData = [{
 }];
 
 var recipes = {
-    'Wabozu\'': `Fiery ginger ale
+    'Wabozu\'': `## Fiery Ginger Ale
 
 **Volume Produced:** 2 liters
 
@@ -143,7 +139,7 @@ Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 
 
 ### Rack'n'Pack
 At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan'd 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle.  Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe.`,
-    'Jutini\'': `Simple sweet mead
+    'Jutini\'': `## Simple Sweet Mead
 
 **Voume Produced:** 1 gallon
 
@@ -175,7 +171,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 Place in dark location at 60 - 75 degrees F.
 
 After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
-    'Jutini-α': `Simple semi-dry mead
+    'Jutini-α': `## Simple Semi-dry Mead
 
 **Voume Produced:** 1 gallon
 
@@ -208,7 +204,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 Place in dark location at 60 - 75 degrees F.
 
 After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Soravo\'': `Reaper Capsicumel
+    'Soravo\'': `## Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
 
@@ -249,7 +245,7 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Duduhu\'': `Ginger metheglin
+    'Duduhu\'': `## Ginger Metheglin
 
 **Voume Produced:** 1 gallon
 
@@ -285,7 +281,7 @@ Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 
 After one month, rack onto peeled and cubed ginger.
 
 After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`,
-    'Watuda\'': `Sweet metheglin
+    'Watuda\'': `## Sweet metheglin
 
 **Voume Produced:** 1 gallon
 

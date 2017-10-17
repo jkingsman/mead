@@ -12,10 +12,17 @@ Handlebars.registerHelper("padserial", function(text) {
     return ("000000000000" + text).substr(-serialPadding, serialPadding);
 });
 
+function getCleanFirstRecipeLine(recipe){
+    return recipe.split('\n')[0].replace(new RegExp('## ', 'g'), '');
+}
+
 // draw a given batch
 function drawBatch(batch) {
     // inject recipe
     batch.recipe = recipes[batch.recipeName];
+
+    // inject batch name from recipe
+    batch.type = getCleanFirstRecipeLine(batch.recipe);
 
     // inject gravity calculations
     var originalGravity = batch.gravReadings[0][1];
@@ -135,7 +142,7 @@ function drawRecipes() {
         }
 
         $('#recipeEntryContainer').append(`<li>
-            <div class="collapsible-header"><strong>${recipe}</strong>&nbsp;${recipes[recipe].split('\n')[0]} (${usedInString})</div>
+            <div class="collapsible-header"><strong>${recipe}</strong>&nbsp;${getCleanFirstRecipeLine(recipes[recipe])} (${usedInString})</div>
             <div class="collapsible-body">${renderedRecipe}</div>
         </li>`);
     }
