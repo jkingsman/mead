@@ -154,6 +154,10 @@ $(document).ready(function() {
     }
 
     drawRecipes();
+
+    window.onhashchange = function() {
+        window.location.reload();
+    };
 });
 
 // handle enter keypress in input box
