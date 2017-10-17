@@ -245,7 +245,7 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Duduhu\'': `## Ginger Metheglin
+    'Duduhu\'': `## Spicy Ginger Metheglin
 
 **Voume Produced:** 1 gallon
 
@@ -281,7 +281,7 @@ Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 
 After one month, rack onto peeled and cubed ginger.
 
 After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`,
-    'Watuda\'': `## Sweet metheglin
+    'Watuda\'': `## Sweet Metheglin
 
 **Voume Produced:** 1 gallon
 
