@@ -47,7 +47,6 @@ function drawBatch(batch) {
         image: document.getElementById('kiwiBuffer'),
         minVersion: 5,
     };
-
     var el = kjua(qrOptions);
     el.style = 'width: 100%; max-width: 256px; height: auto;';
     document.getElementById('qrCode').innerHTML = '';
@@ -101,7 +100,7 @@ function lookup() {
     window.location.hash = paddedSerial;
 
     var batchData = meadData[dataID];
-    batchData.descriptor = paddedSerial
+    batchData.descriptor = paddedSerial;
 
     drawBatch(meadData[dataID]);
     $('#dataModal').modal('open');

@@ -1,121 +1,117 @@
 /* jshint esversion: 6 */
 
 var meadData = [{
-        'batchID': 0,
-        'type': 'Dry Ginger Ale',
-        'recipeName': 'Wabozu\'',
-        'bottleRangeMin': 0,
-        'bottleRangeMax': 0,
-        'size': '2L',
-        'notes': 'Very first brew; super dry ginger ale.',
-        'openingDate': '2017-09-11',
-        'bottleDistribution': [
-            ['1', 'JWK']
-        ],
-        'timeline': [
-            // date, notes
-            ['2012-09-09', 'Must prepared.'],
-            ['2017-09-10', 'Burped.'],
-            ['2017-09-11', 'Consumed.']
-        ],
-        'gravReadings': [
-            // date, OG, notes
-            ['2017-10-09', 1.1, 'Pitched'],
-            ['2017-10-09', 1.09, 'Pitched']
-        ],
-        'images': [],
-        'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
-    },
-    {
-        'batchID': 1,
-        'type': 'Sweet Mead',
-        'recipeName': 'Jutini\'',
-        'bottleRangeMin': 1,
-        'bottleRangeMax': 5,
-        'size': '1 gal.',
-        'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-        'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-        'bottleDistribution': [
-            ['1', 'JKi'],
-            ['2', 'JKi'],
-            ['3', 'CBa'],
-            ['4', 'MMa'],
-            ['5', 'MBa']
-        ],
-        'timeline': [
-            // date, notes
-            ['2017-10-09 1830', 'Must prepared.'],
-            ['2017-10-09 1930', 'Carboy airlocked.'],
-            ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.'],
-            ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
-            ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth']
-        ],
-        'gravReadings': [
-            // date, OG, notes
-            ['2017-10-09', 1.12, 'Pitched']
-        ],
-        'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
-        'tastingNotes': ''
-    },
-    {
-        'batchID': 2,
-        'type': 'Semi-Dry Mead',
-        'recipeName': 'Jutini-α',
-        'bottleRangeMin': 6,
-        'bottleRangeMax': 10,
-        'size': '1 gal.',
-        'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-        'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-        'bottleDistribution': [
-            ['6', 'JKi'],
-            ['7', 'JKi'],
-            ['8', 'HLu'],
-            ['9', 'MWe'],
-            ['10', 'JFe']
-        ],
-        'timeline': [
-            // date, notes
-            ['2017-10-09 1830', 'Must prepared.'],
-            ['2017-10-09 1930', 'Carboy airlocked.'],
-            ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'],
-            ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
-            ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth']
-        ],
-        'gravReadings': [
-            // date, OG, notes
-            ['2017-10-09', 1.11, 'Pitched']
-        ],
-        images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
-        'tastingNotes': '',
-    },
-    {
-        'batchID': 3,
-        'type': 'Chartio Metheglin',
-        'recipeName': 'Duduhu\'',
-        'bottleRangeMin': 11,
-        'bottleRangeMax': 15,
-        'size': '1 gal.',
-        'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-        'openingDate': '2018-10-24',
-        'bottleDistribution': [
-            ['11', 'JKi'],
-            ['12', 'Chartio Team'],
-            ['13', 'Chartio Team'],
-            ['14', 'Chartio Team'],
-            ['15', 'Chartio Team']
-        ],
-        'timeline': [
-            // date, notes
-            ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
-        ],
-        'gravReadings': [
-            // date, OG, notes
-            ['2017-10-24', 1.0, 'Pitched']
-        ],
-        images: [],
-        'tastingNotes': '',
-    }
-];
+    'batchID': 0,
+    'type': 'Dry Ginger Ale',
+    'recipeName': 'Wabozu\'',
+    'bottleRangeMin': 0,
+    'bottleRangeMax': 0,
+    'size': '2L',
+    'notes': 'Very first brew; super dry ginger ale.',
+    'openingDate': '2017-09-11',
+    'bottleDistribution': [
+        ['1', 'JWK']
+    ],
+    'timeline': [
+        // date, notes
+        ['2012-09-09', 'Must prepared.'],
+        ['2017-09-10', 'Burped.'],
+        ['2017-09-11', 'Consumed.']
+    ],
+    'gravReadings': [
+        // date, OG, notes
+        ['2017-10-09', 1.1, 'Pitched'],
+        ['2017-10-09', 1.09, 'Pitched']
+    ],
+    'images': [],
+    'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
+}, {
+    'batchID': 1,
+    'type': 'Sweet Mead',
+    'recipeName': 'Jutini\'',
+    'bottleRangeMin': 1,
+    'bottleRangeMax': 5,
+    'size': '1 gal.',
+    'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    'bottleDistribution': [
+        ['1', 'JKi'],
+        ['2', 'JKi'],
+        ['3', 'CBa'],
+        ['4', 'MMa'],
+        ['5', 'MBa']
+    ],
+    'timeline': [
+        // date, notes
+        ['2017-10-09 1830', 'Must prepared.'],
+        ['2017-10-09 1930', 'Carboy airlocked.'],
+        ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.'],
+        ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
+        ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth']
+    ],
+    'gravReadings': [
+        // date, OG, notes
+        ['2017-10-09', 1.12, 'Pitched']
+    ],
+    'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
+    'tastingNotes': ''
+}, {
+    'batchID': 2,
+    'type': 'Semi-Dry Mead',
+    'recipeName': 'Jutini-α',
+    'bottleRangeMin': 6,
+    'bottleRangeMax': 10,
+    'size': '1 gal.',
+    'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    'bottleDistribution': [
+        ['6', 'JKi'],
+        ['7', 'JKi'],
+        ['8', 'HLu'],
+        ['9', 'MWe'],
+        ['10', 'JFe']
+    ],
+    'timeline': [
+        // date, notes
+        ['2017-10-09 1830', 'Must prepared.'],
+        ['2017-10-09 1930', 'Carboy airlocked.'],
+        ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'],
+        ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
+        ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth']
+    ],
+    'gravReadings': [
+        // date, OG, notes
+        ['2017-10-09', 1.11, 'Pitched']
+    ],
+    images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
+    'tastingNotes': '',
+}, {
+    'batchID': 3,
+    'type': 'Chartio Metheglin',
+    'recipeName': 'Duduhu\'',
+    'bottleRangeMin': 11,
+    'bottleRangeMax': 15,
+    'size': '1 gal.',
+    'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    'openingDate': '2018-10-24',
+    'bottleDistribution': [
+        ['11', 'JKi'],
+        ['12', 'Chartio Team'],
+        ['13', 'Chartio Team'],
+        ['14', 'Chartio Team'],
+        ['15', 'Chartio Team']
+    ],
+    'timeline': [
+        // date, notes
+        ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
+    ],
+    'gravReadings': [
+        // date, OG, notes
+        ['2017-10-24', 1.0, 'Pitched']
+    ],
+    images: [],
+    'tastingNotes': '',
+}];
 
 var recipes = {
     'Wabozu\'': `Fiery ginger ale
