@@ -6,6 +6,10 @@ Handlebars.registerHelper("markdown", function(text) {
     return renderedRecipe;
 });
 
+Handlebars.registerHelper("padserial", function(text) {
+    return ("0000" + text).substr(-4,4);
+});
+
 // draw a given batch into the modal
 function drawBatch(batch) {
     // inject recipe
