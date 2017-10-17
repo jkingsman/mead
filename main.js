@@ -90,7 +90,13 @@ function lookup() {
         return;
     }
 
-    window.location.hash = rawID;
+    var paddedSerial = idType + ("0000" + idNumber).substr(-4,4);
+    // set hash to ID
+    window.location.hash = paddedSerial;
+
+    var batchData = meadData[dataID];
+    batchData.descriptor = paddedSerial
+
     drawBatch(meadData[dataID]);
     $('#dataModal').modal('open');
 }

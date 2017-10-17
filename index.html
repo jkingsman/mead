@@ -42,10 +42,9 @@
                     </ul>
                 </div>
                 <div id="pageContent" class="col s12">
-                    <br><br>
                     <h1 class="header center orange-text">Your Mead's Story</h1>
                     <div class="row center">
-                        <h5 class="header col s12 light">Enter your serial and find out more about your mead (or what will soon be your mead!). Bottle serials begin with B (e.g. "B5") and fermentation serials begin with F (e.g. "F2").</h5>
+                        <h5 class="header col s12 light">Enter your serial and find out more about your mead!</h5>
                     </div>
                     <div class="row center">
                         <div class="input-field col s12">
@@ -53,7 +52,7 @@
                         </div>
                     </div>
                     <div class="row center">
-                        <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light orange">Find my mead!</a>
+                        <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light blue">Find my mead!</a>
                     </div>
                 </div>
                 <div id="recipes" class="col s12">
@@ -66,7 +65,8 @@
         </div>
     </div>
 
-    <img id="kiwiBuffer" style="display: none;" src="kiwi.png"/> <!-- image buffer for QR code image reading -->
+    <img id="kiwiBuffer" style="display: none;" src="kiwi.png" />
+    <!-- image buffer for QR code image reading -->
 
     <footer class="page-footer orange">
         <div class="container">
@@ -80,6 +80,7 @@
 
     <script id="meadTemplate" type="text/x-handlebars-template">
         <h3>{{ type }}</h3>
+        <h4>Serial: {{ descriptor }}</h4>
         <div class="row">
             <div class="col m6">
                 <h5>Batch &amp; Bottle</h5>
@@ -88,7 +89,7 @@
                 <strong>Brew Date: </strong>{{ timeline.[0].[0] }}<br />
                 <strong>Batch Size: </strong>{{ size }}<br />
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
-                <br /><br />
+
                 <h5>Recipe Notes</h5> {{{ notes }}}
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
@@ -96,7 +97,30 @@
                         <div class="collapsible-body">{{{ markdown recipe }}}</div>
                     </li>
                 </ul>
-                <h5>Tasting Notes</h5> {{{ tastingNotes }}}
+
+                <h5>Timeline</h5> {{#each timeline }}
+                <p>
+                    <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
+                </p>
+                {{/each }} {{#if tastingNotes}}
+                <h5>Tasting Notes</h5> {{ tastingNotes }}{{/if }}
+
+                <h5>Gravity Readings</h5> {{#each gravReadings }}
+                <p>
+                    <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
+                </p>
+                {{/each }}
+
+                <h5>Bottle Distribution</h5>
+                <ul>
+                    {{#each bottleDistribution}}
+                    <li>
+                        B{{ this.[0] }} to {{ this.[1] }}
+                    </li>
+                    {{/each }}
+                </ul>
+            </div>
+            <div class="col m6">
                 <h5>Media</h5>
                 <div class="slider" style="max-width: 500px;">
                     <ul class="slides">
@@ -106,30 +130,7 @@
                         </li>
                         {{/each }}
                 </div>
-            </div>
-            <div class="col m6">
-                <h5>Timeline</h5>
-                    {{#each timeline }}
-                    <p>
-                        <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
-                    </p>
 
-                    {{/each }}
-                <h5>Gravity Readings</h5>
-                <table>
-                    {{#each gravReadings }}
-                    <p>
-                        <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
-                    </p>
-                    {{/each }}
-                <h5>Bottle Distribution</h5>
-                <ul>
-                    {{#each bottleDistribution}}
-                    <li>
-                        B{{ this.[0] }} to {{ this.[1] }}
-                    </li>
-                    {{/each }}
-                </ul>
                 <h5>QR Code</h5>
                 <div id="qrCode"></div>
             </div>
@@ -140,7 +141,8 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="//cdn.rawgit.com/showdownjs/showdown/1.7.6/dist/showdown.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
-    <script type="text/javascript" src="qrcode.min.js"></script> <!-- https://github.com/davidshimjs/qrcodejs -->
+    <script type="text/javascript" src="qrcode.min.js"></script>
+    <!-- https://github.com/davidshimjs/qrcodejs -->
     <script type="text/javascript" src="meads.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="naming.js"></script>
