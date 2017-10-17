@@ -12,7 +12,7 @@ Handlebars.registerHelper("padserial", function(text) {
     return ("000000000000" + text).substr(-serialPadding, serialPadding);
 });
 
-// draw a given batch into the modal
+// draw a given batch
 function drawBatch(batch) {
     // inject recipe
     batch.recipe = recipes[batch.recipeName];
