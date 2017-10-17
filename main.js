@@ -43,7 +43,7 @@ function drawBatch(batch) {
     };
 
     var el = kjua(qrOptions);
-    el.style = 'width: 512px; height: 512px;';
+    el.style = 'width: 100%; max-width: 256px; height: auto;';
     document.getElementById('qrCode').innerHTML = '';
     document.getElementById('qrCode').appendChild(el);
 

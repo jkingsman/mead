@@ -25,7 +25,7 @@
             min-width: 130px;
         }
     </style>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -109,34 +109,19 @@
             </div>
             <div class="col m6">
                 <h5>Timeline</h5>
-                <table>
                     {{#each timeline }}
-                    <tr>
-                        <td class="dateCol">
-                            <strong>{{ this.[0] }}</strong>
-                        </td>
-                        <td>
-                            {{ this.[1] }}
-                        </td>
-                    </tr>
+                    <p>
+                        <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
+                    </p>
+
                     {{/each }}
-                </table>
                 <h5>Gravity Readings</h5>
                 <table>
                     {{#each gravReadings }}
-                    <tr>
-                        <td class="dateCol">
-                            <strong>{{ this.[0] }}</strong>
-                        </td>
-                        <td>
-                            {{ this.[2] }}
-                        </td>
-                        <td>
-                            {{ this.[1] }}SG ({{ this.[3] }}% ABV)
-                        </td>
-                    </tr>
+                    <p>
+                        <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
+                    </p>
                     {{/each }}
-                </table>
                 <h5>Bottle Distribution</h5>
                 <ul>
                     {{#each bottleDistribution}}
