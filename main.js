@@ -1,5 +1,7 @@
 /* jshint esversion:6 */
 
+var serialPadding = 4;
+
 Handlebars.registerHelper("markdown", function(text) {
     var converter = new showdown.Converter();
     var renderedRecipe = converter.makeHtml(text);
@@ -7,7 +9,7 @@ Handlebars.registerHelper("markdown", function(text) {
 });
 
 Handlebars.registerHelper("padserial", function(text) {
-    return ("0000" + text).substr(-4,4);
+    return ("000000000000" + text).substr(-serialPadding, serialPadding);
 });
 
 // draw a given batch into the modal
@@ -94,7 +96,7 @@ function lookup() {
         return;
     }
 
-    var paddedSerial = idType + ("0000" + idNumber).substr(-4,4);
+    var paddedSerial = idType + ("000000000000" + idNumber).substr(-serialPadding, serialPadding);
     // set hash to ID
     window.location.hash = paddedSerial;
 
