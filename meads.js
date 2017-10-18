@@ -54,7 +54,7 @@ var meadData = [{
     ],
     images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
     tastingNotes: '',
-    status: 'SG measurement for first fermentation completion check pending 2017-10-23'
+    status: ['Fermenting', 'SG measurement for first fermentation completion check', '2017-10-23']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
@@ -84,7 +84,7 @@ var meadData = [{
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
     tastingNotes: '',
-    status: 'SG measurement for first fermentation completion check pending 2017-10-23'
+    status: ['Fermenting', 'SG measurement for first fermentation completion check', '2017-10-23']
 }, {
     batchID: 3,
     recipeName: 'Duduhu',
@@ -110,7 +110,7 @@ var meadData = [{
     ],
     images: [],
     tastingNotes: '',
-    status: 'SG measurement for first fermentation completion check pending 2017-11-24'
+    status: ['To be pitched', 'pitching', '2017-10-24']
 }];
 
 var recipes = {

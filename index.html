@@ -110,7 +110,7 @@
         <ul>
             {{#if this.status}}
             <li>
-                <a href="/#F{{padserial this.batchID }}">F{{padserial this.batchID }}</a>: {{ this.status }}
+                <a href="/#F{{padserial this.batchID }}">F{{padserial this.batchID }}</a>: {{ this.status.[0] }}. Next step is {{ this.status.[1] }} (pending {{ this.status.[2] }}).
             </li>
             {{/if }}
         </ul>
