@@ -53,7 +53,8 @@
 
 <body>
     <nav class="orange lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img id="logo" src="assets/kiwi_orig.png" /><span class="hide-on-small-only">Mead Kiwi</span></a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo"><img id="logo" src="assets/kiwi_orig.png" /><span class="hide-on-small-only">Mead Kiwi</span></a>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
@@ -76,6 +77,9 @@
                     </div>
                     <div class="row center">
                         <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light blue">Find my mead!</a>
+                    </div>
+                    <div id="currentStatusContainer">
+
                     </div>
                 </div>
                 <div id="recipes" class="col s12">
@@ -100,6 +104,18 @@
             </div>
         </div>
     </footer>
+
+    <script id="currentStatusTemplate" type="text/x-handlebars-template">
+        <h4>Current Meads</h4> {{#each this }}
+        <ul>
+            {{#if this.status}}
+            <li>
+                <a href="/#F{{padserial this.batchID }}">F{{padserial this.batchID }}</a>: {{ this.status }}
+            </li>
+            {{/if }}
+        </ul>
+        {{/each }}
+    </script>
 
     <script id="meadTemplate" type="text/x-handlebars-template">
         <h3>{{ type }}</h3>

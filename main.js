@@ -12,7 +12,11 @@ Handlebars.registerHelper("padserial", function(text) {
     return ("000000000000" + text).substr(-serialPadding, serialPadding);
 });
 
-function getCleanFirstRecipeLine(recipe){
+Handlebars.registerHelper("titlefromname", function(name) {
+    return getCleanFirstRecipeLine(recipes[name]);
+});
+
+function getCleanFirstRecipeLine(recipe) {
     return recipe.split('\n')[0].replace(new RegExp('## ', 'g'), '');
 }
 
@@ -160,6 +164,12 @@ $(document).ready(function() {
         lookup();
     }
 
+    // compile template and render current status
+    var source = $('#currentStatusTemplate').html();
+    var template = Handlebars.compile(source);
+    var html = template(meadData);
+    $('#currentStatusContainer').html(html);
+
     drawRecipes();
 });
 
@@ -169,3 +179,7 @@ $("#serial").on('keyup', function(e) {
         lookup();
     }
 });
+
+window.onhashchange = function() {
+    window.location.reload();
+};

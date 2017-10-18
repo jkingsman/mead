@@ -1,45 +1,46 @@
 /* jshint esversion: 6 */
 
 var meadData = [{
-    'batchID': 0,
-    'recipeName': 'Wabozu\'',
-    'bottleRangeMin': 0,
-    'bottleRangeMax': 0,
-    'size': '2L',
-    'notes': 'Very first brew; super dry ginger ale.',
-    'openingDate': '2017-09-11',
-    'bottleDistribution': [
+    batchID: 0,
+    recipeName: 'Wabozu',
+    bottleRangeMin: 0,
+    bottleRangeMax: 0,
+    size: '2L',
+    notes: 'Very first brew; super dry ginger ale.',
+    openingDate: '2017-09-11',
+    bottleDistribution: [
         ['1', 'JWK']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2012-09-09', 'Must prepared.'],
         ['2017-09-10', 'Burped.'],
         ['2017-09-11', 'Consumed.']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.1, 'Pitched'],
         ['2017-10-09', 1.09, 'Pitched']
     ],
-    'images': [],
-    'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
+    images: [],
+    tastingNotes: 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
+    status: ''
 }, {
-    'batchID': 1,
-    'recipeName': 'Jutini\'',
-    'bottleRangeMin': 1,
-    'bottleRangeMax': 5,
-    'size': '1 gal.',
-    'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-    'bottleDistribution': [
+    batchID: 1,
+    recipeName: 'Jutini',
+    bottleRangeMin: 1,
+    bottleRangeMax: 5,
+    size: '1 gal.',
+    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    bottleDistribution: [
         ['1', 'JKi'],
         ['2', 'JKi'],
         ['3', 'CBa'],
         ['4', 'MMa'],
         ['5', 'MBa']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-09 1830', 'Must prepared.'],
         ['2017-10-09 1930', 'Carboy airlocked.'],
@@ -47,28 +48,29 @@ var meadData = [{
         ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
         ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.12, 'Pitched']
     ],
-    'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
-    'tastingNotes': ''
+    images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
+    tastingNotes: '',
+    status: 'SG measurement for first fermentation completion check pending 2017-10-23'
 }, {
-    'batchID': 2,
-    'recipeName': 'Jutini-α',
-    'bottleRangeMin': 6,
-    'bottleRangeMax': 10,
-    'size': '1 gal.',
-    'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-    'bottleDistribution': [
+    batchID: 2,
+    recipeName: 'Jutini-α',
+    bottleRangeMin: 6,
+    bottleRangeMax: 10,
+    size: '1 gal.',
+    notes: 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    bottleDistribution: [
         ['6', 'JKi'],
         ['7', 'JKi'],
         ['8', 'HLu'],
         ['9', 'MWe'],
         ['10', 'JFe']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-09 1830', 'Must prepared.'],
         ['2017-10-09 1930', 'Carboy airlocked.'],
@@ -76,41 +78,43 @@ var meadData = [{
         ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
         ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.11, 'Pitched']
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
-    'tastingNotes': '',
+    tastingNotes: '',
+    status: 'SG measurement for first fermentation completion check pending 2017-10-23'
 }, {
-    'batchID': 3,
-    'recipeName': 'Duduhu\'',
-    'bottleRangeMin': 11,
-    'bottleRangeMax': 15,
-    'size': '1 gal.',
-    'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': '2018-10-24',
-    'bottleDistribution': [
+    batchID: 3,
+    recipeName: 'Duduhu',
+    bottleRangeMin: 11,
+    bottleRangeMax: 15,
+    size: '1 gal.',
+    notes: 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: '2018-10-24',
+    bottleDistribution: [
         ['11', 'JKi'],
         ['12', 'Chartio Team'],
         ['13', 'Chartio Team'],
         ['14', 'Chartio Team'],
         ['15', 'Chartio Team']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-24', 1.0, 'Pitched']
     ],
     images: [],
-    'tastingNotes': '',
+    tastingNotes: '',
+    status: 'SG measurement for first fermentation completion check pending 2017-11-24'
 }];
 
 var recipes = {
-    'Wabozu\'': `## Fiery Ginger Ale
+    Wabozu: `## Fiery Ginger Ale
 
 **Volume Produced:** 2 liters
 
@@ -139,7 +143,7 @@ Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 
 
 ### Rack'n'Pack
 At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan'd 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle.  Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe.`,
-    'Jutini\'': `## Simple Sweet Mead
+    Jutini: `## Simple Sweet Mead
 
 **Voume Produced:** 1 gallon
 
@@ -204,7 +208,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 Place in dark location at 60 - 75 degrees F.
 
 After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Soravo\'': `## Reaper Capsicumel
+    Soravo: `## Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
 
@@ -245,7 +249,7 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Duduhu\'': `## Spicy Ginger Metheglin
+    Duduhu: `## Spicy Ginger Metheglin
 
 **Voume Produced:** 1 gallon
 
@@ -281,7 +285,7 @@ Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 
 After one month, rack onto peeled and cubed ginger.
 
 After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`,
-    'Watuda\'': `## Sweet Metheglin
+    Watuda: `## Sweet Metheglin
 
 **Voume Produced:** 1 gallon
 
