@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kiwi Meadery -- Batch Lookup</title>
+    <title>Mead Kiwi -- Batch Lookup</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,6 +27,10 @@
             min-width: 130px;
         }
 
+        #pageContent h1 {
+            margin: .5rem 0 .5rem 0;
+        }
+
         #qrCode {
             background-color: #f6c729;
             width: fit-content;
@@ -38,12 +42,18 @@
             padding-bottom: 10px;
             font-weight: bold;
         }
+
+        #logo {
+            width: 50px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
     <nav class="orange lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Kiwi Mead</a>
+        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img id="logo" src="assets/kiwi_orig.png" /><span class="hide-on-small-only">Mead Kiwi</span></a>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
