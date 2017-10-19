@@ -110,7 +110,7 @@
         <ul>
             {{#if this.status}}
             <li>
-                <a href="/#F{{padserial this.batchID }}">F{{padserial this.batchID }}</a>: {{ this.status.[0] }}. Next step is {{ this.status.[1] }} (pending {{ this.status.[2] }}).
+                <a href="/#F{{padSerial this.batchID }}">F{{padSerial this.batchID }}</a>: {{ this.status.[0] }}. Next step is {{ this.status.[1] }} (pending {{ this.status.[2] }}/{{daysFromNow this.status.[2] }} days).
             </li>
             {{/if }}
         </ul>
@@ -123,8 +123,8 @@
         <div class="row">
             <div class="col m6">
                 <h5>Batch &amp; Bottle</h5>
-                <strong>Batch: </strong>F{{padserial batchID }}<br />
-                <strong>Bottle Range: </strong>B{{padserial bottleRangeMin }} - B{{padserial bottleRangeMax }}<br />
+                <strong>Batch: </strong>F{{padSerial batchID }}<br />
+                <strong>Bottle Range: </strong>B{{padSerial bottleRangeMin }} - B{{padSerial bottleRangeMax }}<br />
                 <strong>Brew Date: </strong>{{ timeline.[0].[0] }}<br />
                 <strong>Batch Size: </strong>{{ size }}<br />
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}

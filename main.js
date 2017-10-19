@@ -8,12 +8,15 @@ Handlebars.registerHelper("markdown", function(text) {
     return renderedRecipe;
 });
 
-Handlebars.registerHelper("padserial", function(text) {
+Handlebars.registerHelper("padSerial", function(text) {
     return ("000000000000" + text).substr(-serialPadding, serialPadding);
 });
 
-Handlebars.registerHelper("titlefromname", function(name) {
-    return getCleanFirstRecipeLine(recipes[name]);
+Handlebars.registerHelper("daysFromNow", function(date) {
+    var today = new Date();
+    var then = new Date(date);
+    var dayDiff = Math.floor(((((then - today) / 1000) / 60) / 60) / 24) + 1;
+    return dayDiff;
 });
 
 function getCleanFirstRecipeLine(recipe) {
