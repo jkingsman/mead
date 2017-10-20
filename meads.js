@@ -2,7 +2,7 @@
 
 var meadData = [{
     'batchID': 0,
-    'recipeName': 'Wabozu\'',
+    'recipeName': 'Wabozu',
     'bottleRangeMin': 0,
     'bottleRangeMax': 0,
     'size': '2L',
@@ -26,7 +26,7 @@ var meadData = [{
     'tastingNotes': 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
 }, {
     'batchID': 1,
-    'recipeName': 'Jutini\'',
+    'recipeName': 'Jutini',
     'bottleRangeMin': 1,
     'bottleRangeMax': 5,
     'size': '1 gal.',
@@ -84,7 +84,7 @@ var meadData = [{
     'tastingNotes': '',
 }, {
     'batchID': 3,
-    'recipeName': 'Duduhu\'',
+    'recipeName': 'Duduhu',
     'bottleRangeMin': 11,
     'bottleRangeMax': 15,
     'size': '1 gal.',
@@ -110,7 +110,7 @@ var meadData = [{
 }];
 
 var recipes = {
-    'Wabozu\'': `## Fiery Ginger Ale
+    'Wabozu': `## Fiery Ginger Ale
 
 **Volume Produced:** 2 liters
 
@@ -139,7 +139,7 @@ Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 
 
 ### Rack'n'Pack
 At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan'd 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle.  Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe.`,
-    'Jutini\'': `## Simple Sweet Mead
+    'Jutini': `## Simple Sweet Mead
 
 **Voume Produced:** 1 gallon
 
@@ -204,7 +204,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 Place in dark location at 60 - 75 degrees F.
 
 After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Soravo\'': `## Reaper Capsicumel
+    'Soravo': `## Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
 
@@ -245,11 +245,11 @@ Place in dark location at 60 - 75 degrees F.
 After 1 month, rack off peppers and into new vessel with oak spiral.
 
 After another month, rack off oak and add crushed Campden tablet. Let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
-    'Duduhu\'': `## Spicy Ginger Metheglin
+    'Duduhu': `## Spicy Ginger Metheglin
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 1 month primary, 2 month (or to taste) secondary, 2 week stabilization/clarifying
+**Brew time:** 3 week primary, 2 month (or to taste) secondary, 2 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
@@ -281,7 +281,7 @@ Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 
 After one month, rack onto peeled and cubed ginger.
 
 After two months (or to taste) on ginger, rack onto crushed campden and let sit for two weeks or until clear. Backsweeten with xylitol if necessary (rerack out of clarification carboy so stirring is possible), then bottle.`,
-    'Watuda\'': `## Sweet Metheglin
+    'Watuda': `## Sweet Metheglin
 
 **Voume Produced:** 1 gallon
 
@@ -311,6 +311,43 @@ Boil vanilla bean and cinnamon stick in 1 cup water for 10 minutes.
 Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.
 
 Pour dry yeast into must, add cinnamon and vanilla with water, and add DAP with yeast hulls.
+
+Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
+
+Place in dark location at 60 - 75 degrees F.
+
+After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
+    'Melawa': `## Sweet Metheglin w/ Herbs
+
+**Voume Produced:** 1 gallon
+
+**Brew time:** 2 week primary, 2 week stabilization/clarifying
+
+### Ingredients
+- 3.5 lbs honey
+- 1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)
+- 0.5 tsp LD Carlson Energizer (yeast hulls)
+- 5 grams Safale US-05 yeast
+- 1 vanilla bean
+- 1 cinnamon stick
+- 30 grams (assuming 1 gal = 5 bottles * 2 herb scoops per bottle * 3 gram scoop = 30 grams) herbs
+- Distilled water to 1 gal.
+
+### Equipment/Misc.
+- 1 gal. carboy
+- Airlock
+- StarSan soln.
+- 1 Campden tablet, crushed
+
+### Prep
+Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
+
+### Recipe
+Bring vanilla bean, cinnamon stick, and herbs in 1 cup water to boil for 5 minutes.
+
+Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.
+
+Pour dry yeast into must, add cinnamon and vanilla with water, herbal extract, and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
