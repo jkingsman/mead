@@ -343,11 +343,11 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
 
 ### Recipe
-Bring vanilla bean, cinnamon stick, and herbs in 1 cup water to boil for 5 minutes.
+Bring vanilla bean, cinnamon stick, and stirred/de-clumped herbs in 1 cup water to boil for 5 minutes.
 
 Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.
 
-Pour dry yeast into must, add cinnamon and vanilla with water, herbal extract, and add DAP with yeast hulls.
+Pour dry yeast into must, add boiled mixture, and add DAP with yeast hulls.
 
 Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.
 
