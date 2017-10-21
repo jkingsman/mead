@@ -53,7 +53,8 @@
 
 <body>
     <nav class="orange lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo"><img id="logo" src="assets/kiwi_orig.png" /><span class="hide-on-small-only">Mead Kiwi</span></a>
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo"><img id="logo" src="assets/kiwi_orig.png" /><span class="hide-on-small-only">Mead Kiwi</span></a>
     </nav>
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
@@ -76,6 +77,9 @@
                     </div>
                     <div class="row center">
                         <a onclick="lookup();" id="download-button" class="btn-large waves-effect waves-light blue">Find my mead!</a>
+                    </div>
+                    <div id="currentStatusContainer">
+
                     </div>
                 </div>
                 <div id="recipes" class="col s12">
@@ -101,14 +105,26 @@
         </div>
     </footer>
 
+    <script id="currentStatusTemplate" type="text/x-handlebars-template">
+        <h4>Current Meads</h4> {{#each this }}
+        <ul>
+            {{#if this.status}}
+            <li>
+                <a href="/#F{{padSerial this.batchID }}">F{{padSerial this.batchID }}</a>: {{ this.status.[0] }}. Next step is {{ this.status.[1] }} (pending {{ this.status.[2] }}/{{daysFromNow this.status.[2] }} days).
+            </li>
+            {{/if }}
+        </ul>
+        {{/each }}
+    </script>
+
     <script id="meadTemplate" type="text/x-handlebars-template">
         <h3>{{ type }}</h3>
         <h4>Serial: {{ descriptor }}</h4>
         <div class="row">
             <div class="col m6">
                 <h5>Batch &amp; Bottle</h5>
-                <strong>Batch: </strong>F{{padserial batchID }}<br />
-                <strong>Bottle Range: </strong>B{{padserial bottleRangeMin }} - B{{padserial bottleRangeMax }}<br />
+                <strong>Batch: </strong>F{{padSerial batchID }}<br />
+                <strong>Bottle Range: </strong>B{{padSerial bottleRangeMin }} - B{{padSerial bottleRangeMax }}<br />
                 <strong>Brew Date: </strong>{{ timeline.[0].[0] }}<br />
                 <strong>Batch Size: </strong>{{ size }}<br />
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
