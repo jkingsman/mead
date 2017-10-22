@@ -19,8 +19,6 @@ var meadData = [{
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-09', 1.1, 'Pitched'],
-        ['2017-10-09', 1.09, 'Pitched']
     ],
     images: [],
     tastingNotes: 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
@@ -50,7 +48,7 @@ var meadData = [{
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-09', 1.12, 'Pitched']
+        ['2017-10-09', 1.112, 'Pitched']
     ],
     images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
     tastingNotes: '',
@@ -80,7 +78,7 @@ var meadData = [{
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-09', 1.11, 'Pitched']
+        ['2017-10-09', 1.110, 'Pitched']
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
     tastingNotes: '',
