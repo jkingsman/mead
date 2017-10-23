@@ -1,17 +1,18 @@
 /* jshint esversion:6 */
 
-var serialPadding = 4;
-
+// convert markdown to HTML
 Handlebars.registerHelper("markdown", function(text) {
     var converter = new showdown.Converter();
     var renderedRecipe = converter.makeHtml(text);
     return renderedRecipe;
 });
 
+// left pad serial with zeroes
 Handlebars.registerHelper("padSerial", function(text) {
-    return ("000000000000" + text).substr(-serialPadding, serialPadding);
+    return leftPadSerial(text);
 });
 
+// convert given date into days remaining until/negative days past
 Handlebars.registerHelper("daysFromNow", function(date) {
     var today = new Date();
     var then = new Date(date);
@@ -21,7 +22,12 @@ Handlebars.registerHelper("daysFromNow", function(date) {
     return dayDiff;
 });
 
+function leftPadSerial(serial, serialPadding = 4){
+    return ("000000000000" + serial).substr(-serialPadding, serialPadding);
+}
+
 function getCleanFirstRecipeLine(recipe) {
+    // scrub markdown from first line (short description) of recipe
     return recipe.split('\n')[0].replace(new RegExp('## ', 'g'), '');
 }
 
@@ -69,10 +75,10 @@ function drawBatch(batch) {
 
     // render into place on the page and add batch text
     var qrCodeContainer = document.getElementById('qrCode');
-    qrCodeContainer.innerHTML = '<h3>' + batch.descriptor + '</h3>';
+    qrCodeContainer.innerHTML = '<h3>' + batch.id + '</h3>';
     qrCodeContainer.prepend(el);
 
-    // convert to canvas -> data URI and render into image
+    // convert to canvas -> data URI and render into image that includes code and batch/bottle
     html2canvas(qrCodeContainer, {
         onrendered: function(canvas) {
             document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
@@ -106,10 +112,11 @@ function checkValidBottle(bottleID) {
 
 // validate ID and call draw function
 function lookup() {
-    var rawID = $('#serial').val();
-    var idType = rawID[0].toUpperCase();
-    var idNumber = Number(rawID.slice(1));
+    var rawID = $('#serial').val(); // full ID
+    var idType = rawID[0].toUpperCase(); // first char (B or F)
+    var idNumber = Number(rawID.slice(1)); // numerical component
 
+    // check correct bottle/batch accordingly
     var dataID = -1;
     if (idType === 'B') {
         dataID = checkValidBottle(idNumber);
@@ -122,17 +129,16 @@ function lookup() {
         return;
     }
 
-    var paddedSerial = idType + ("000000000000" + idNumber).substr(-serialPadding, serialPadding);
-    // set hash to ID
+    // generate padded serial and set shortlink
+    var paddedSerial = idType + leftPadSerial(idNumber);
     window.location.hash = paddedSerial;
 
-    var batchData = meadData[dataID];
-    batchData.descriptor = paddedSerial;
+    // inject padded serial
+    meadData[dataID].id = paddedSerial;
 
+    // draw the batch
     drawBatch(meadData[dataID]);
-    $('#dataModal').modal('open');
 }
-
 
 function drawRecipes() {
     for (var recipe in recipes) {
@@ -142,7 +148,7 @@ function drawRecipes() {
         /* jshint ignore:start */
         meadData.forEach(function(batch) {
             if (batch.recipeName === recipe) {
-                usedIn.push("F" + ("000000000000" + batch.batchID).substr(-serialPadding, serialPadding) + " (" + batch.timeline[0][0] + ")");
+                usedIn.push("F" + leftPadSerial(batch.batchID) + " (" + batch.timeline[0][0] + ")");
             }
         });
         /* jshint ignore:end */
@@ -165,6 +171,7 @@ $(document).ready(function() {
     $('.modal').modal();
     $('#serial').focus();
 
+    // check for shortlink presence
     if (window.location.hash.length > 1) {
         var id = window.location.hash.slice(1);
         $('#serial').val(id);
@@ -187,6 +194,7 @@ $("#serial").on('keyup', function(e) {
     }
 });
 
+// hacky fix to make the page relaod when you click links to different meads
 window.onhashchange = function() {
     window.location.reload();
 };
