@@ -21,7 +21,9 @@ var meadData = [{
         // date, OG, notes
     ],
     images: [],
-    tastingNotes: 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.',
+    tastingNotes: [
+        ['2017-09-11', 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.']
+    ],
     status: ''
 }, {
     'batchID': 1,
@@ -44,15 +46,19 @@ var meadData = [{
         ['2017-10-09 1930', 'Carboy airlocked.'],
         ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.'],
         ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
-        ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth']
+        ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth'],
+        ['2017-10-23', 'Softly bubbling, maybe one per minute. Racked onto half a Campden tablet for secondary and had a taste.']
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-09', 1.112, 'Pitched']
+        ['2017-10-09', 1.112, 'Pitched'],
+        ['2017-10-23', 1.058, 'Racked off lees onto Campden to secondary']
     ],
     images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
-    tastingNotes: '',
-    status: ['Fermenting', 'SG measurement for first fermentation completion check', '2017-10-23']
+    tastingNotes: [
+        ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.']
+    ],
+    status: ['In Secondary', 'Rack onto bentonite', '2017-11-06']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
@@ -74,41 +80,45 @@ var meadData = [{
         ['2017-10-09 1930', 'Carboy airlocked.'],
         ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'],
         ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
-        ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth']
+        ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth'],
+        ['2017-10-23', 'No bubbling. Racked onto half a Campden tablet for secondary and had a taste.']
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-09', 1.110, 'Pitched']
+        ['2017-10-09', 1.110, 'Pitched'],
+        ['2017-10-23', 1.005, 'Racked off lees onto Campden to secondary']
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
-    tastingNotes: '',
-    status: ['Fermenting', 'SG measurement for first fermentation completion check', '2017-10-23']
+    tastingNotes: [
+        ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.']
+    ],
+    status: ['In Secondary', 'Rack onto bentonite', '2017-11-06']
 }, {
-    'batchID': 3,
-    'recipeName': 'Duduhu',
-    'bottleRangeMin': 11,
-    'bottleRangeMax': 15,
-    'size': '1 gal.',
-    'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': '2018-10-24',
-    'bottleDistribution': [
-        ['11', 'JKi'],
-        ['12', 'Chartio Team'],
-        ['13', 'Chartio Team'],
-        ['14', 'Chartio Team'],
-        ['15', 'Chartio Team']
-    ],
-    timeline: [
-        // date, notes
-        ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
-    ],
-    gravReadings: [
-        // date, OG, notes
-        ['2017-10-24', 1.0, 'Pitched']
-    ],
-    images: [],
-    tastingNotes: '',
-    status: ['To be pitched', 'pitching', '2017-10-24']
+    // 'batchID': 3,
+    // 'recipeName': 'Duduhu',
+    // 'bottleRangeMin': 11,
+    // 'bottleRangeMax': 15,
+    // 'size': '1 gal.',
+    // 'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    // 'openingDate': '2018-10-24',
+    // 'bottleDistribution': [
+    //     ['11', 'JKi'],
+    //     ['12', 'Chartio Team'],
+    //     ['13', 'Chartio Team'],
+    //     ['14', 'Chartio Team'],
+    //     ['15', 'Chartio Team']
+    // ],
+    // timeline: [
+    //     // date, notes
+    //     ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
+    // ],
+    // gravReadings: [
+    //     // date, OG, notes
+    //     ['2017-10-24', 1.0, 'Pitched']
+    // ],
+    // images: [],
+    // tastingNotes: '',
+    // status: ['To be pitched', 'pitching', '2017-10-24']
 }];
 
 var recipes = {
@@ -145,7 +155,7 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 2 week primary, 2 week stabilization/clarifying
+**Brew time:** 2 week primary, 2 week secondary, 1 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
@@ -153,6 +163,7 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 - 0.5 tsp LD Carlson Energizer (yeast hulls)
 - 5 grams Safale US-05 yeast
 - Distilled water to 1 gal.
+- 1 tbsp bentonite (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
@@ -172,12 +183,12 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 
 Place in dark location at 60 - 75 degrees F.
 
-After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, then bottle.`,
+After two weeks, rack off lees onto half a crushed Campden tablet. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. After a week or when clear, bottle.`,
     'Jutini-α': `## Simple Semi-dry Mead
 
 **Voume Produced:** 1 gallon
 
-**Brew time:** 2 week primary, 2 week stabilization/clarifying
+**Brew time:** 2 week primary, 2 week secondary, 1 week stabilization/clarifying
 
 ### Ingredients
 - 3.5 lbs honey
@@ -186,6 +197,7 @@ After two weeks, check for fermentation completion via SG check. Once complete, 
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
 - Xylitol to taste (optional)
+- 1 tbsp bentonite (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
@@ -205,7 +217,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 
 Place in dark location at 60 - 75 degrees F.
 
-After two weeks, check for fermentation completion via SG check. Once complete, rack onto crushed campden and let sit for two weeks or until clear, backsweeten with xylitol if necessary, then bottle.`,
+After two weeks, rack off lees onto half a crushed Campden tablet. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. After a week or when clear, backsweeten with xylitol if necessary and bottle.`,
     Soravo: `## Reaper Capsicumel
 
 **Voume Produced:** 1 gallon

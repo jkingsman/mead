@@ -119,13 +119,13 @@
 
     <script id="meadTemplate" type="text/x-handlebars-template">
         <h3>{{ type }}</h3>
-        <h4>Serial: {{ descriptor }}</h4>
+        <h4>Serial: {{ id }}</h4>
         <div class="row">
             <div class="col m6">
                 <h5>Batch &amp; Bottle</h5>
                 <strong>Batch: </strong>F{{padSerial batchID }}<br />
                 <strong>Bottle Range: </strong>B{{padSerial bottleRangeMin }} - B{{padSerial bottleRangeMax }}<br />
-                <strong>Brew Date: </strong>{{ timeline.[0].[0] }}<br />
+                <strong>Pitch Date: </strong>{{ timeline.[0].[0] }}<br />
                 <strong>Batch Size: </strong>{{ size }}<br />
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
 
@@ -137,14 +137,18 @@
                     </li>
                 </ul>
 
-                {{#if timeline }}<h5>Timeline</h5>{{/if }} {{#each timeline }}
+                {{#if timeline }}
+                <h5>Timeline</h5>{{/if }} {{#each timeline }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
-                {{/each }} {{#if tastingNotes}}
-                <h5>Tasting Notes</h5> {{ tastingNotes }}{{/if }}
-
-                {{#if gravReadings }}<h5>Gravity Readings</h5>{{/if }} {{#each gravReadings }}
+                {{/each }} {{#if tastingNotes }}
+                <h5>Tasting Notes</h5>{{/if }} {{#each tastingNotes }}
+                <p>
+                    <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
+                </p>
+                {{/each }} {{#if gravReadings }}
+                <h5>Gravity Readings</h5>{{/if }} {{#each gravReadings }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
                 </p>
