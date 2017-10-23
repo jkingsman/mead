@@ -15,7 +15,9 @@ Handlebars.registerHelper("padSerial", function(text) {
 Handlebars.registerHelper("daysFromNow", function(date) {
     var today = new Date();
     var then = new Date(date);
-    var dayDiff = Math.floor(((((then - today) / 1000) / 60) / 60) / 24) + 1;
+    var timeDiff = then - today;
+    var dayDiff = Math.floor(((((timeDiff / 1000) / 60)  + today.getTimezoneOffset()) / 60) / 24) + 1;
+
     return dayDiff;
 });
 
