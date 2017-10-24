@@ -163,13 +163,14 @@ At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep,
 - 0.5 tsp LD Carlson Energizer (yeast hulls)
 - 5 grams Safale US-05 yeast
 - Distilled water to 1 gal.
-- 1 tbsp bentonite (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
 - Airlock
 - StarSan soln.
 - 1 Campden tablet, crushed
+- 0.5 tsp potassium sorbate
+- 1 tbsp bentonite (optional)
 
 ### Prep
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
@@ -183,7 +184,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 
 Place in dark location at 60 - 75 degrees F.
 
-After two weeks, rack off lees onto half a crushed Campden tablet. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. After a week or when clear, bottle.`,
+After two weeks, rack off lees onto crushed Campden tablet and potassium sorbate. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite and gently agitate to mix. After a week or when clear, bottle.`,
     'Jutini-α': `## Simple Semi-dry Mead
 
 **Voume Produced:** 1 gallon
@@ -197,13 +198,14 @@ After two weeks, rack off lees onto half a crushed Campden tablet. After another
 - 5 grams Lavlin 71B-1122
 - Distilled water to 1 gal.
 - Xylitol to taste (optional)
-- 1 tbsp bentonite (optional)
 
 ### Equipment/Misc.
 - 1 gal. carboy
 - Airlock
 - StarSan soln.
 - 1 Campden tablet, crushed
+- 0.5 tsp potassium sorbate
+- 1 tbsp bentonite (optional)
 
 ### Prep
 Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.
@@ -217,7 +219,7 @@ Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading 
 
 Place in dark location at 60 - 75 degrees F.
 
-After two weeks, rack off lees onto half a crushed Campden tablet. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. After a week or when clear, backsweeten with xylitol if necessary and bottle.`,
+After two weeks, rack off lees onto crushed Campden tablet and potassium sorbate. After another two weeks, optionally rack onto hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite and gently agitate to mix. After a week or when clear, backsweeten with xylitol if necessary and bottle.`,
     Soravo: `## Reaper Capsicumel
 
 **Voume Produced:** 1 gallon
