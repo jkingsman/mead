@@ -94,31 +94,31 @@ var meadData = [{
     ],
     status: ['In Secondary', 'Rack onto bentonite', '2017-11-06']
 }, {
-    // 'batchID': 3,
-    // 'recipeName': 'Duduhu',
-    // 'bottleRangeMin': 11,
-    // 'bottleRangeMax': 15,
-    // 'size': '1 gal.',
-    // 'notes': 'Celebratory metheglin for my first day at Chartio!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    // 'openingDate': '2018-10-24',
-    // 'bottleDistribution': [
-    //     ['11', 'JKi'],
-    //     ['12', 'Chartio Team'],
-    //     ['13', 'Chartio Team'],
-    //     ['14', 'Chartio Team'],
-    //     ['15', 'Chartio Team']
-    // ],
-    // timeline: [
-    //     // date, notes
-    //     ['2017-10-24 1830', 'Must prepared. First day at Chartio, WOOO!'],
-    // ],
-    // gravReadings: [
-    //     // date, OG, notes
-    //     ['2017-10-24', 1.0, 'Pitched']
-    // ],
-    // images: [],
-    // tastingNotes: '',
-    // status: ['To be pitched', 'pitching', '2017-10-24']
+    'batchID': 3,
+    'recipeName': 'Duduhu',
+    'bottleRangeMin': 11,
+    'bottleRangeMax': 15,
+    'size': '1 gal.',
+    'notes': 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.)<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    'openingDate': '2018-10-24',
+    'bottleDistribution': [
+        ['11', 'JKi'],
+        ['12', 'Chartio Team'],
+        ['13', 'Chartio Team'],
+        ['14', 'Chartio Team'],
+        ['15', 'Chartio Team']
+    ],
+    timeline: [
+        // date, notes
+        ['2017-10-25 2130', 'Must prepared. Day after first day at Chartio, WOOO!'],
+    ],
+    gravReadings: [
+        // date, OG, notes
+        ['2017-10-25', 1.13, 'Pitched']
+    ],
+    images: [],
+    tastingNotes: '',
+    status: ['In primary', 'reracking onto ginger', '2017-11-08']
 }];
 
 var recipes = {
