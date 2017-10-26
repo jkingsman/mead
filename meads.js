@@ -9,6 +9,7 @@ var meadData = [{
     'notes': 'Very first brew; super dry ginger ale.',
     'openingDate': '2017-09-11',
     'bottleDistribution': [
+        // bottle #, person
         ['1', 'JWK']
     ],
     timeline: [
@@ -22,9 +23,10 @@ var meadData = [{
     ],
     images: [],
     tastingNotes: [
+        // date, notes
         ['2017-09-11', 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.']
     ],
-    status: ''
+    status: []
 }, {
     'batchID': 1,
     'recipeName': 'Jutini',
@@ -34,6 +36,7 @@ var meadData = [{
     'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
     'bottleDistribution': [
+        // bottle #, person
         ['1', 'JKi'],
         ['2', 'JKi'],
         ['3', 'CBa'],
@@ -56,9 +59,11 @@ var meadData = [{
     ],
     images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
     tastingNotes: [
+        // date, notes
         ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.']
     ],
-    status: ['In Secondary', 'Rack onto bentonite', '2017-11-06']
+    // Status is [0]; next step is [1] on [2]
+    status: ['In Secondary', 'racking onto bentonite', '2017-11-06']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
@@ -68,6 +73,7 @@ var meadData = [{
     notes: 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
     bottleDistribution: [
+        // bottle #, person
         ['6', 'JKi'],
         ['7', 'JKi'],
         ['8', 'HLu'],
@@ -90,9 +96,11 @@ var meadData = [{
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
     tastingNotes: [
+        // date, notes
         ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.']
     ],
-    status: ['In Secondary', 'Rack onto bentonite', '2017-11-06']
+    // Status is [0]; next step is [1] on [2]
+    status: ['In Secondary', 'racking onto bentonite', '2017-11-06']
 }, {
     'batchID': 3,
     'recipeName': 'Duduhu',
@@ -102,6 +110,7 @@ var meadData = [{
     'notes': 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.)<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     'openingDate': '2018-10-24',
     'bottleDistribution': [
+        // bottle #, person
         ['11', 'JKi'],
         ['12', 'Chartio Team'],
         ['13', 'Chartio Team'],
@@ -117,7 +126,8 @@ var meadData = [{
         ['2017-10-25', 1.13, 'Pitched']
     ],
     images: [],
-    tastingNotes: '',
+    tastingNotes: [],
+    // Status is [0]; next step is [1] on [2]
     status: ['In primary', 'reracking onto ginger', '2017-11-08']
 }];
 
