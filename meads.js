@@ -121,6 +121,7 @@ var meadData = [{
         // date, notes
         ['2017-10-25 2130', 'Must prepared. Day after first day at Chartio, WOOO!'],
         ['2017-10-26 2130', 'Zero airlock activity. Switched airlocks from hat style to sideways-S; hoping for activity tomorrow.'],
+        ['2017-10-29 1400', 'Zero airlock activity. Rehydrated and pitched another 5 grams of Lavlin 71-B; fingers crossed! Rehydrated in a bit too much water but hopefully it\'s alright -- cooled yeast by titrating must into mixing vessel to bring them down to temperature.'],
     ],
     gravReadings: [
         // date, OG, notes
