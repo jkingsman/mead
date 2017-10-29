@@ -120,6 +120,7 @@ var meadData = [{
     timeline: [
         // date, notes
         ['2017-10-25 2130', 'Must prepared. Day after first day at Chartio, WOOO!'],
+        ['2017-10-26 2130', 'Zero airlock activity. Switched airlocks from hat style to sideways-S; hoping for activity tomorrow.'],
     ],
     gravReadings: [
         // date, OG, notes
