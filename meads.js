@@ -122,6 +122,7 @@ var meadData = [{
         ['2017-10-25 2130', 'Must prepared. Day after first day at Chartio, WOOO!'],
         ['2017-10-26 2130', 'Zero airlock activity. Switched airlocks from hat style to sideways-S; hoping for activity tomorrow.'],
         ['2017-10-29 1400', 'Zero airlock activity. Rehydrated and pitched another 5 grams of Lavlin 71-B; fingers crossed! Rehydrated in a bit too much water but hopefully it\'s alright -- cooled yeast by titrating must into mixing vessel to bring them down to temperature.'],
+        ['2017-10-30 0800', 'We have bubbles every two seconds! IT LIVES!!'],
     ],
     gravReadings: [
         // date, OG, notes
@@ -130,7 +131,7 @@ var meadData = [{
     images: [],
     tastingNotes: [],
     // Status is [0]; next step is [1] on [2]
-    status: ['In primary', 'reracking onto ginger', '2017-11-08']
+    status: ['In primary', 'reracking onto ginger', '2017-11-20']
 }];
 
 var recipes = {
