@@ -63,7 +63,7 @@ var meadData = [{
         ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['In Secondary', 'racking onto bentonite', '2017-11-06']
+    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
@@ -100,7 +100,7 @@ var meadData = [{
         ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['In Secondary', 'racking onto bentonite', '2017-11-06']
+    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
 }, {
     'batchID': 3,
     'recipeName': 'Duduhu',
