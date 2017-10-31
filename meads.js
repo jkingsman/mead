@@ -128,7 +128,7 @@ var meadData = [{
         // date, OG, notes
         ['2017-10-25', 1.13, 'Pitched']
     ],
-    images: [],
+    images: ['img/f3bubbling.gif', 'img/f3bubblesandgunk.jpg', 'img/f3wrapped.jpg'],
     tastingNotes: [],
     // Status is [0]; next step is [1] on [2]
     status: ['In primary', 'reracking onto ginger', '2017-11-20']
