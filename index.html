@@ -48,6 +48,10 @@
             margin-top: 10px;
             margin-right: 10px;
         }
+
+        .marginLeft15 {
+            margin-left: 15px;
+        }
     </style>
 </head>
 
@@ -117,6 +121,48 @@
         {{/each }}
     </script>
 
+    <script id="recipeTemplate" type="text/x-handlebars-template">
+        <li>
+            <div class="collapsible-header"><strong>{{ name }}</strong>&nbsp;({{ usedInString }})</div>
+            <div class="collapsible-body">
+                <h4>{{ type }}</h4>
+                <strong>Volume: </strong>{{ volume }}<br />
+                <strong>Brewtime</strong>
+                <ul>
+                    {{#each brewTime }}
+                    <li class="marginLeft15">
+                        {{ this }}
+                    </li>
+                    {{/each }}
+                </ul>
+                <strong>Ingredients</strong>
+                <ul>
+                    {{#each ingredients }}
+                    <li class="marginLeft15">
+                        {{ this }}
+                    </li>
+                    {{/each }}
+                </ul>
+                <strong>Equipment/Misc</strong>
+                <ul>
+                    {{#each equipmentMisc }}
+                    <li class="marginLeft15">
+                        {{ this }}
+                    </li>
+                    {{/each }}
+                </ul>
+                <strong>Recipe</strong>
+                <ol>
+                    {{#each recipe }}
+                    <li>
+                        {{ this }}
+                    </li>
+                    {{/each }}
+                </ol>
+            </div>
+        </li>
+    </script>
+
     <script id="meadTemplate" type="text/x-handlebars-template">
         <h3>{{ type }}</h3>
         <h4>Serial: {{ id }}</h4>
@@ -133,7 +179,42 @@
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header">Click to view full recipe ({{ recipeName }})</div>
-                        <div class="collapsible-body">{{{ markdown recipe }}}</div>
+                        <div class="collapsible-body">
+                            <h4>{{ recipe.type }}</h4>
+                            <strong>Volume: </strong>{{ recipe.volume }}<br />
+                            <strong>Brewtime</strong>
+                            <ul>
+                                {{#each recipe.brewTime }}
+                                <li class="marginLeft15">
+                                    {{ this }}
+                                </li>
+                                {{/each }}
+                            </ul>
+                            <strong>Ingredients</strong>
+                            <ul>
+                                {{#each recipe.ingredients }}
+                                <li class="marginLeft15">
+                                    {{ this }}
+                                </li>
+                                {{/each }}
+                            </ul>
+                            <strong>Equipment/Misc</strong>
+                            <ul>
+                                {{#each recipe.equipmentMisc }}
+                                <li class="marginLeft15">
+                                    {{ this }}
+                                </li>
+                                {{/each }}
+                            </ul>
+                            <strong>Recipe</strong>
+                            <ol>
+                                {{#each recipe.recipe }}
+                                <li>
+                                    {{ this }}
+                                </li>
+                                {{/each }}
+                            </ol>
+                        </div>
                     </li>
                 </ul>
 
@@ -184,7 +265,6 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="//cdn.rawgit.com/showdownjs/showdown/1.7.6/dist/showdown.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
     <script type="text/javascript" src="qrcode.min.js"></script>

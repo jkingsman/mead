@@ -26,18 +26,10 @@ function leftPadSerial(serial, serialPadding = 4){
     return ("000000000000" + serial).substr(-serialPadding, serialPadding);
 }
 
-function getCleanFirstRecipeLine(recipe) {
-    // scrub markdown from first line (short description) of recipe
-    return recipe.split('\n')[0].replace(new RegExp('## ', 'g'), '');
-}
-
 // draw a given batch
 function drawBatch(batch) {
     // inject recipe
     batch.recipe = recipes[batch.recipeName];
-
-    // inject batch name from recipe
-    batch.type = getCleanFirstRecipeLine(batch.recipe);
 
     // inject gravity calculations
     if (batch.gravReadings.length > 0) {
@@ -141,9 +133,11 @@ function lookup() {
 }
 
 function drawRecipes() {
+    var source = $('#recipeTemplate').html();
+    var template = Handlebars.compile(source);
     for (var recipe in recipes) {
-        var converter = new showdown.Converter();
-        var renderedRecipe = converter.makeHtml(recipes[recipe]);
+
+        // determine which recipes it was used in
         var usedIn = [];
         /* jshint ignore:start */
         meadData.forEach(function(batch) {
@@ -158,13 +152,13 @@ function drawRecipes() {
             usedInString = "Batch usage: " + usedIn.join(', ');
         }
 
-        $('#recipeEntryContainer').append(`<li>
-            <div class="collapsible-header"><strong>${recipe}</strong>&nbsp;${getCleanFirstRecipeLine(recipes[recipe])} (${usedInString})</div>
-            <div class="collapsible-body">${renderedRecipe}</div>
-        </li>`);
+        // roll into big object for display
+        var rolledRecipe = recipes[recipe];
+        rolledRecipe.name = recipe;
+        rolledRecipe.usedInString = usedInString;
+        $('#recipeEntryContainer').append(template(rolledRecipe));
     }
 }
-
 
 $(document).ready(function() {
     // initialize modal handling and focus the input field
