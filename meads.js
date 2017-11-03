@@ -109,7 +109,7 @@ var meadData = [{
     bottleRangeMin: 11,
     bottleRangeMax: 15,
     size: '1 gal.',
-    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shope.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shop<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: '2018-10-24',
     bottleDistribution: [
         // bottle #, person
