@@ -1,41 +1,41 @@
 /* jshint esversion: 6 */
 
 var meadData = [{
-    'batchID': 0,
-    'recipeName': 'Wabozu',
-    'bottleRangeMin': 0,
-    'bottleRangeMax': 0,
-    'size': '2L',
-    'notes': 'Very first brew; super dry ginger ale.',
-    'openingDate': '2017-09-11',
-    'bottleDistribution': [
+    batchID: 0,
+    recipeName: 'Wabozu',
+    bottleRangeMin: 0,
+    bottleRangeMax: 0,
+    size: '2L',
+    notes: 'Very first brew; super dry ginger ale.',
+    openingDate: '2017-09-11',
+    bottleDistribution: [
         // bottle #, person
         ['1', 'JWK']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2012-09-09', 'Must prepared.'],
         ['2017-09-10', 'Burped.'],
         ['2017-09-11', 'Consumed.']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
     ],
-    'images': [],
-    'tastingNotes': [
+    images: [],
+    tastingNotes: [
         // date, notes
         ['2017-09-11', 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.']
     ],
-    'status': []
+    status: []
 }, {
-    'batchID': 1,
-    'recipeName': 'Jutini',
-    'bottleRangeMin': 1,
-    'bottleRangeMax': 5,
-    'size': '1 gal.',
-    'notes': 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-    'bottleDistribution': [
+    batchID: 1,
+    recipeName: 'Jutini',
+    bottleRangeMin: 1,
+    bottleRangeMax: 5,
+    size: '1 gal.',
+    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    bottleDistribution: [
         // bottle #, person
         ['1', 'JKi'],
         ['2', 'JKi'],
@@ -43,7 +43,7 @@ var meadData = [{
         ['4', 'MMa'],
         ['5', 'MBa']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-09 1830', 'Must prepared.'],
         ['2017-10-09 1930', 'Carboy airlocked.'],
@@ -52,27 +52,27 @@ var meadData = [{
         ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth'],
         ['2017-10-23', 'Softly bubbling, maybe one per minute. Racked onto half a Campden tablet for secondary and had a taste.']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.112, 'Pitched'],
         ['2017-10-23', 1.058, 'Racked off lees onto Campden to secondary']
     ],
-    'images': ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
-    'tastingNotes': [
+    images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
+    tastingNotes: [
         // date, notes
         ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.']
     ],
     // Status is [0]; next step is [1] on [2]
-    'status': ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
+    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
 }, {
-    'batchID': 2,
-    'recipeName': 'Jutini-α',
-    'bottleRangeMin': 6,
-    'bottleRangeMax': 10,
-    'size': '1 gal.',
-    'notes': 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
-    'bottleDistribution': [
+    batchID: 2,
+    recipeName: 'Jutini-α',
+    bottleRangeMin: 6,
+    bottleRangeMax: 10,
+    size: '1 gal.',
+    notes: 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    bottleDistribution: [
         // bottle #, person
         ['6', 'JKi'],
         ['7', 'JKi'],
@@ -80,7 +80,7 @@ var meadData = [{
         ['9', 'MWe'],
         ['10', 'JFe']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-09 1830', 'Must prepared.'],
         ['2017-10-09 1930', 'Carboy airlocked.'],
@@ -89,27 +89,27 @@ var meadData = [{
         ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth'],
         ['2017-10-23', 'No bubbling. Racked onto half a Campden tablet for secondary and had a taste.']
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.110, 'Pitched'],
         ['2017-10-23', 1.005, 'Racked off lees onto Campden to secondary']
     ],
-    'images': ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
-    'tastingNotes': [
+    images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
+    tastingNotes: [
         // date, notes
         ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.']
     ],
     // Status is [0]; next step is [1] on [2]
-    'status': ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
+    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
 }, {
-    'batchID': 3,
-    'recipeName': 'Duduhu',
-    'bottleRangeMin': 11,
-    'bottleRangeMax': 15,
-    'size': '1 gal.',
-    'notes': 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.)<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    'openingDate': '2018-10-24',
-    'bottleDistribution': [
+    batchID: 3,
+    recipeName: 'Duduhu',
+    bottleRangeMin: 11,
+    bottleRangeMax: 15,
+    size: '1 gal.',
+    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.)<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: '2018-10-24',
+    bottleDistribution: [
         // bottle #, person
         ['11', 'JKi'],
         ['12', 'Chartio Team'],
@@ -117,21 +117,21 @@ var meadData = [{
         ['14', 'Chartio Team'],
         ['15', 'Chartio Team']
     ],
-    'timeline': [
+    timeline: [
         // date, notes
         ['2017-10-25 2130', 'Must prepared. Day after first day at Chartio, WOOO!'],
         ['2017-10-26 2130', 'Zero airlock activity. Switched airlocks from hat style to sideways-S; hoping for activity tomorrow.'],
         ['2017-10-29 1400', 'Zero airlock activity. Rehydrated and pitched another 5 grams of Lavlin 71-B; fingers crossed! Rehydrated in a bit too much water but hopefully it\'s alright -- cooled yeast by titrating must into mixing vessel to bring them down to temperature.'],
         ['2017-10-30 0800', 'We have bubbles every two seconds! IT LIVES!!'],
     ],
-    'gravReadings': [
+    gravReadings: [
         // date, OG, notes
         ['2017-10-25', 1.13, 'Pitched']
     ],
-    'images': ['img/f3bubbling.gif', 'img/f3bubblesandgunk.jpg', 'img/f3wrapped.jpg'],
-    'tastingNotes': [],
+    images: ['img/f3bubbling.gif', 'img/f3bubblesandgunk.jpg', 'img/f3wrapped.jpg'],
+    tastingNotes: [],
     // Status is [0]; next step is [1] on [2]
-    'status': ['In primary', 'reracking onto ginger', '2017-11-20']
+    status: ['In primary', 'reracking onto ginger', '2017-11-20']
 }];
 
 var recipes = {
@@ -157,7 +157,7 @@ var recipes = {
             'Place ginger, sugar, and 1/2 cup of the water into a saucepan over medium-high heat. Stir until the sugar dissolves. Remove from heat, cover, and allow to steep for 1 hour.',
             'Pour the syrup through a fine strainer, cheese cloth over a bowl, or t-shirt, using pressure to get all the juice out of the mixture. Rapidly chill in an ice bath and stir until the mixture reaches 70 degrees F.',
             'Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 cups of water. Shake vigorously for five minutes. Let sit in a dark place at room temperature.',
-            'At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan\'d 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle. Take and record gravity reading if desired. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe',
+            'At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan\'d 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle. SG check. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe',
         ]
     },
     Jutini: {
@@ -184,12 +184,13 @@ var recipes = {
             '1 tbsp bentonite (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
-            'Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
-            'After two weeks, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two weeks, rack off lees into sanitized carboy for aging.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
         ]
     },
     'Jutini-α': {
@@ -216,12 +217,47 @@ var recipes = {
             '1 tbsp bentonite (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
-            'Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
-            'After two weeks, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two weeks, rack off lees into sanitized carboy for aging.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+        ]
+    },
+    Firogo: {
+        type: 'Simple Ultra-dry Jet Fuel Mead',
+        volume: '1 gal',
+        brewTime: [
+            '2 week primary',
+            '2 week secondary',
+            '1 week stabilization/clarifying',
+        ],
+        ingredients: [
+            '3.5 lbs honey',
+            '1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)',
+            '0.5 tsp LD Carlson Energizer (yeast hulls)',
+            '5 grams Lavlin EC-1118',
+            'Spring or tap water to 1 gal.',
+            'Xylitol to taste (optional)',
+        ],
+        equipmentMisc: [
+            '1 gal. carboy',
+            'Airlock',
+            'StarSan soln.',
+            '1 Campden tablet, crushed',
+            '0.5 tsp potassium sorbate',
+            '1 tbsp bentonite (optional)',
+        ],
+        recipe: [
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
+            'Pour dry yeast into must and add DAP with yeast hulls.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
+            'Place in dark location at 60 - 75 degrees F.',
+            'After two weeks, rack off lees into sanitized carboy for aging.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, optionally backsweeten and bottle.',
         ]
     },
     Soravo: {
@@ -251,15 +287,15 @@ var recipes = {
             '1 tbsp bentonite (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln. .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is short of 1 gal. Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes.',
-            'Take and record gravity reading if desired.',
+            'SG check.',
             'Simmer chopped and de-seeded chilis in 1/4 cup of water for ten minutes; pour into must through muslin and tie off muslin.',
             'Fill with water to 1 gal. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After 1 month, rack off peppers and into new vessel with oak spiral. SG check.',
-            'After another month, rack off oak onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, optionally backsweeten with xylitol and bottle.',
+            'After another month, rack off oak onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a two weeks or when clear, optionally backsweeten with xylitol and bottle.',
         ]
     },
     Duduhu: {
@@ -288,12 +324,13 @@ var recipes = {
             '1 tbsp bentonite (optional)',
         ],
         recipe: [
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is shy of 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
-            'Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check.',
             'Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 degrees F.',
             'After one month, rack onto peeled and cubed ginger. SG check.',
-            'After two months (or to taste) on ginger, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, optionally backsweeten with xylitol and bottle.',
+            'After two months (or to taste) on ginger, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After two weeks or when clear, optionally backsweeten with xylitol and bottle.',
         ]
     },
     Watuda: {
@@ -322,12 +359,14 @@ var recipes = {
             '1 tbsp bentonite (optional)',
         ],
         recipe: [
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Boil vanilla bean and cinnamon stick in 1 cup water for 10 minutes.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must, add cinnamon and vanilla with water, and add DAP with yeast hulls.',
-            'Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
-            'After two weeks, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two weeks, rack off lees into sanitized carboy.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
         ]
     },
     Melawa: {
@@ -356,14 +395,14 @@ var recipes = {
             '0.5 tsp potassium sorbate',
         ],
         recipe: [
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
             'Bring vanilla bean and cinnamon stick to boil for 5 minutes.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
-            'Seal carboy and shake vigorously for 4 minutes. Take and record gravity reading if desired. Airlock carboy.',
+            'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
-            'After two weeks, bring herbs to boil in 1/4 cup water. Pitch mixture and gently agitate.',
-            'After two weeks, rack onto crushed campden and potassium sorbate and let sit for two weeks or until clear, then bottle.',
-            'After two weeks, SG check. Bottle.'
+            'After two weeks, bring herbs to boil in 1/4 cup water. Pitch mixture into santizied carboy and rack mead off lees and onto herbs.',
+            'After two more eeks, rack onto crushed campden and potassium sorbate and let sit for two weeks or until SG reading stabilizes, then bottle.',
         ]
     },
 };
