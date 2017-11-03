@@ -50,7 +50,8 @@ var meadData = [{
         ['2017-10-09 2230', 'Very few bubbles; some tiny surface ones but only ~10% coverage.'],
         ['2017-10-10 0030', 'Bubble from yeast every minute or two'],
         ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth'],
-        ['2017-10-23', 'Softly bubbling, maybe one per minute. Racked onto half a Campden tablet for secondary and had a taste.']
+        ['2017-10-23', 'Softly bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.'],
+        ['2017-10-29', 'Zero airlock activity'],
     ],
     gravReadings: [
         // date, OG, notes
@@ -87,7 +88,8 @@ var meadData = [{
         ['2017-10-09 2230', 'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'],
         ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
         ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth'],
-        ['2017-10-23', 'No bubbling. Racked onto half a Campden tablet for secondary and had a taste.']
+        ['2017-10-23', 'No bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.'],
+        ['2017-10-29', 'Zero airlock activity']
     ],
     gravReadings: [
         // date, OG, notes
@@ -107,7 +109,7 @@ var meadData = [{
     bottleRangeMin: 11,
     bottleRangeMax: 15,
     size: '1 gal.',
-    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.)<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shope.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: '2018-10-24',
     bottleDistribution: [
         // bottle #, person
