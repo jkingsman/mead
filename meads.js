@@ -386,7 +386,7 @@ var recipes = {
             '5 grams Safale US-05 yeast',
             '1 vanilla bean',
             '1 cinnamon stick',
-            '30 grams (assuming 1 gal = 5 bottles * 2 herb scoops per bottle * 3 gram scoop = 30 grams) herbs',
+            '45 grams (assuming 1 gal = 5 bottles * 3 herb scoops per bottle * 3 gram scoop = 45 grams) herbs',
             'Spring or tap water to 1 gal.',
         ],
         equipmentMisc: [
