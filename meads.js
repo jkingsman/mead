@@ -183,7 +183,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -192,7 +192,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
-            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
         ]
     },
     'Jutini-α': {
@@ -216,7 +216,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -225,7 +225,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
-            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
         ]
     },
     Firogo: {
@@ -250,7 +250,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -259,7 +259,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
-            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, optionally backsweeten and bottle.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, optionally backsweeten and bottle.',
         ]
     },
     Soravo: {
@@ -286,7 +286,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -297,7 +297,7 @@ var recipes = {
             'Fill with water to 1 gal. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After 1 month, rack off peppers and into new vessel with oak spiral. SG check.',
-            'After another month, rack off oak onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a two weeks or when clear, optionally backsweeten with xylitol and bottle.',
+            'After another month, rack off oak onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a two weeks or when clear, optionally backsweeten with xylitol and bottle.',
         ]
     },
     Duduhu: {
@@ -323,7 +323,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -332,7 +332,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check.',
             'Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 degrees F.',
             'After one month, rack onto peeled and cubed ginger. SG check.',
-            'After two months (or to taste) on ginger, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After two weeks or when clear, optionally backsweeten with xylitol and bottle.',
+            'After two months (or to taste) on ginger, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After two weeks or when clear, optionally backsweeten with xylitol and bottle.',
         ]
     },
     Watuda: {
@@ -358,7 +358,7 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1 tbsp bentonite (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
         ],
         recipe: [
             'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
@@ -368,7 +368,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy.',
-            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated (stir into half cup of boiling water and let sit for 24 hours) bentonite. SG check. After a week or when clear, bottle.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
         ]
     },
     Melawa: {
