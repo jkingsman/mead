@@ -52,16 +52,19 @@ var meadData = [{
         ['2017-10-11 1415', 'Bubbles every two to three seconds; moved to warmed surroundings with towel around carboy for light and warmth'],
         ['2017-10-23', 'Softly bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.'],
         ['2017-10-29', 'Zero airlock activity'],
+        ['2017-11-07', 'Racked onto other half of campden, potassium sorbate, and bentonite'],
     ],
     gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.112, 'Pitched'],
-        ['2017-10-23', 1.058, 'Racked off lees onto Campden to secondary']
+        ['2017-10-23', 1.058, 'Racked off lees onto Campden to secondary'],
+        ['2017-11-07', 1.054, 'Racked off onto fixatives and finer']
     ],
     images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
     tastingNotes: [
         // date, notes
-        ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.']
+        ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.'],
+        ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.']
     ],
     // Status is [0]; next step is [1] on [2]
     status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
@@ -89,17 +92,20 @@ var meadData = [{
         ['2017-10-10 0030', 'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'],
         ['2017-10-11 1415', 'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth'],
         ['2017-10-23', 'No bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.'],
-        ['2017-10-29', 'Zero airlock activity']
+        ['2017-10-29', 'Zero airlock activity'],
+        ['2017-11-07', 'Racked onto other half of campden, potassium sorbate, and bentonite'],
     ],
     gravReadings: [
         // date, OG, notes
         ['2017-10-09', 1.110, 'Pitched'],
-        ['2017-10-23', 1.005, 'Racked off lees onto Campden to secondary']
+        ['2017-10-23', 1.005, 'Racked off lees onto Campden to secondary'],
+        ['2017-11-07', 0.998, 'Racked off onto fixatives and finer']
     ],
     images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
     tastingNotes: [
         // date, notes
-        ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.']
+        ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.'],
+        ['2017-11-07', 'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age.']
     ],
     // Status is [0]; next step is [1] on [2]
     status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
