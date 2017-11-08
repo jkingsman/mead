@@ -160,7 +160,8 @@ var recipes = {
             'Pour the syrup through a fine strainer, cheese cloth over a bowl, or t-shirt, using pressure to get all the juice out of the mixture. Rapidly chill in an ice bath and stir until the mixture reaches 70 degrees F.',
             'Pour the syrup into a 2L PET bottle and add yeast, lemon juice, and remaining 7 cups of water. Shake vigorously for five minutes. Let sit in a dark place at room temperature.',
             'At 2 days, burp and refrigerate bottle. Allow 24 hours for yeast to fall asleep, then siphon off into another StarSan\'d 2L soda bottle, leaving the flocculated yeast at the bottom of the first bottle. SG check. Keep chilled and drink quickly; the carbonation will not last long -- 3 days is safe',
-        ]
+        ],
+        fdaIngredients: 'water, sugar, ginger, lemon juice, yeast'
     },
     Jutini: {
         type: 'Simple Sweet Mead',
@@ -193,7 +194,8 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
             'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
     'Jutini-α': {
         type: 'Simple Semi-dry Mead',
@@ -226,7 +228,8 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
             'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
     Firogo: {
         type: 'Simple Ultra-dry Jet Fuel Mead',
@@ -260,7 +263,8 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy for aging.',
             'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, optionally backsweeten and bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
     Soravo: {
         type: 'Reaper Capsicumel',
@@ -274,7 +278,7 @@ var recipes = {
             '3 lbs honey',
             '1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)',
             '0.5 tsp LD Carlson Energizer (yeast hulls)',
-            '5 grams Lavlin EC-1118',
+            '5 grams Safale US-05',
             '4 Carolina Reaper chilis',
             '1 Med. toast oak spiral',
             'Spring or tap water to 1 gal.',
@@ -298,7 +302,8 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After 1 month, rack off peppers and into new vessel with oak spiral. SG check.',
             'After another month, rack off oak onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a two weeks or when clear, optionally backsweeten with xylitol and bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from oak wood and organic carolina reaper chili'
     },
     Duduhu: {
         type: 'Spicy Ginger Metheglin',
@@ -333,7 +338,8 @@ var recipes = {
             'Fill to 1 gal., put into carboy, and airlock. Place in dark location at 60 - 75 degrees F.',
             'After one month, rack onto peeled and cubed ginger. SG check.',
             'After two months (or to taste) on ginger, rack off lees onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After two weeks or when clear, optionally backsweeten with xylitol and bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, ginger, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic ginger'
     },
     Watuda: {
         type: 'Sweet Metheglin',
@@ -369,7 +375,8 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy.',
             'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic cinnamon and vanilla'
     },
     Melawa: {
         type: 'Sweet Metheglin w/ Herbs',
@@ -386,7 +393,7 @@ var recipes = {
             '5 grams Safale US-05 yeast',
             '1 vanilla bean',
             '1 cinnamon stick',
-            '45 grams (assuming 1 gal = 5 bottles * 3 herb scoops per bottle * 3 gram scoop = 45 grams) herbs',
+            '60 grams (assuming 1 gal = 5 bottles * 3 herb portions per bottle * 4 gram portion = 60 grams) herbs',
             'Spring or tap water to 1 gal.',
         ],
         equipmentMisc: [
@@ -405,6 +412,7 @@ var recipes = {
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, bring herbs to boil in 1/4 cup water. Pitch mixture into santizied carboy and rack mead off lees and onto herbs.',
             'After two more eeks, rack onto crushed campden and potassium sorbate and let sit for two weeks or until SG reading stabilizes, then bottle.',
-        ]
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, herbs'
     },
 };
