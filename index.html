@@ -180,6 +180,7 @@
                 <strong>Batch Size: </strong>{{ size }}<br />
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
 
+                <hr />
                 <h5>Recipe Notes</h5> {{{ notes }}}
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
@@ -223,23 +224,31 @@
                     </li>
                 </ul>
 
+                <hr />
                 {{#if timeline }}
                 <h5>Timeline</h5>{{/if }} {{#each timeline }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
-                {{/each }} {{#if tastingNotes }}
+                {{/each }}
+
+                <hr />
+                {{#if tastingNotes }}
                 <h5>Tasting Notes</h5>{{/if }} {{#each tastingNotes }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
-                {{/each }} {{#if gravReadings }}
+                {{/each }}
+
+                <hr />
+                {{#if gravReadings }}
                 <h5>Gravity Readings</h5>{{/if }} {{#each gravReadings }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
                 </p>
                 {{/each }}
 
+                <hr />
                 <h5>Bottle Distribution</h5>
                 <ul>
                     {{#each bottleDistribution}}
