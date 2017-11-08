@@ -67,7 +67,7 @@ var meadData = [{
         ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
+    status: ['Fining and stabilizing', 'bottling', '2017-11-13']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
@@ -108,7 +108,7 @@ var meadData = [{
         ['2017-11-07', 'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['In Secondary', 'racking onto k-meta, k-sorbate, bentonite', '2017-11-06']
+    status: ['Fining and stabilizing', 'bottling', '2017-11-13']
 }, {
     batchID: 3,
     recipeName: 'Duduhu',
