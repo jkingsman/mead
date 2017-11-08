@@ -34,7 +34,7 @@ var meadData = [{
     bottleRangeMax: 5,
     size: '1 gal.',
     notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    openingDate: 'Open 2018-04 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
+    openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
         ['1', 'JKi'],
