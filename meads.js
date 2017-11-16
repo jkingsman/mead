@@ -2,7 +2,7 @@
 
 var meadData = [{
     batchID: 0,
-    recipeName: 'Wabozu',
+    recipeName: 'Firey Ginger Ale',
     bottleRangeMin: 0,
     bottleRangeMax: 0,
     size: '2L',
@@ -44,9 +44,9 @@ var meadData = [{
     status: [],
 }, {
     batchID: 1,
-    recipeName: 'Jutini',
+    recipeName: 'Simple Sweet Mead',
     bottleRangeMin: 1,
-    bottleRangeMax: 5,
+    bottleRangeMax: 4,
     size: '1 gal.',
     notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature. B0005 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
@@ -144,9 +144,9 @@ var meadData = [{
     status: []
 }, {
     batchID: 2,
-    recipeName: 'Jutini-α',
+    recipeName: 'Simple Semi-dry Mead',
     bottleRangeMin: 6,
-    bottleRangeMax: 10,
+    bottleRangeMax: 9,
     size: '1 gal.',
     notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature (and I won\'t be offended if this particular batch of mead isn\'t your favorite -- don\'t give up on mead! This is a slightly unusual one). B0010 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
@@ -339,7 +339,7 @@ var meadData = [{
 }];
 
 var recipes = {
-    Wabozu: {
+    'Fiery Ginger Ale': {
         type: 'Fiery Ginger Ale',
         volume: '2L',
         brewTime: [
@@ -365,7 +365,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, sugar, ginger, lemon juice, yeast'
     },
-    Jutini: {
+    'Simple Sweet Mead': {
         type: 'Simple Sweet Mead',
         volume: '1 gal',
         brewTime: [
@@ -400,7 +400,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    'Jutini-α': {
+    'Simple Semi-dry Mead': {
         type: 'Simple Semi-dry Mead',
         volume: '1 gal',
         brewTime: [
@@ -434,7 +434,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    Firogo: {
+    'Simple Ultra-dry Jet Fuel Mead': {
         type: 'Simple Ultra-dry Jet Fuel Mead',
         volume: '1 gal',
         brewTime: [
@@ -470,7 +470,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    Soravo: {
+    'Reaper Capsicumel': {
         type: 'Reaper Capsicumel',
         volume: '1 gal',
         brewTime: [
@@ -509,7 +509,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from oak wood and organic carolina reaper chili'
     },
-    Duduhu: {
+    'Spicy Ginger Metheglin': {
         type: 'Spicy Ginger Metheglin',
         volume: '1 gal',
         brewTime: [
@@ -546,7 +546,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, ginger, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic ginger'
     },
-    Watuda: {
+    'Sweet Metheglin': {
         type: 'Sweet Metheglin',
         volume: '1 gal',
         brewTime: [
@@ -583,7 +583,7 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic cinnamon and vanilla'
     },
-    Melawa: {
+    'Sweet Metheglin w/ Herbs': {
         type: 'Sweet Metheglin w/ Herbs',
         volume: '1 gal',
         brewTime: [

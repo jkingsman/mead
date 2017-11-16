@@ -123,6 +123,13 @@
             {{/if }}
         </ul>
         {{/each }}
+        <h4>All Meads</h4> {{#each this }}
+        <ul>
+            <li>
+                <a href="/#F{{padSerial this.batchID }}">F{{padSerial this.batchID }}</a>: ({{ this.recipeName }}; pitched {{ this.timeline.[0].[0] }})
+            </li>
+        </ul>
+        {{/each }}
     </script>
 
     <script id="recipeTemplate" type="text/x-handlebars-template">
