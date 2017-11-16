@@ -226,11 +226,6 @@ var meadData = [{
             'Racked off onto fixatives and finer',
         ],
         [
-            '2017-11-07',
-            0.998,
-            'Racked off onto fixatives and finer',
-        ],
-        [
             '2017-11-15',
             0.998,
             'Bottled!',
