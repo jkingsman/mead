@@ -33,8 +33,8 @@ var meadData = [{
     bottleRangeMin: 1,
     bottleRangeMax: 5,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness -- as always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
         ['001', 'JKi'],
@@ -67,15 +67,15 @@ var meadData = [{
         ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['Fining and stabilizing', 'bottling', '2017-11-13']
+    status: ['Fining and stabilizing', 'bottling', '2017-11-14']
 }, {
     batchID: 2,
     recipeName: 'Jutini-α',
     bottleRangeMin: 6,
     bottleRangeMax: 10,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a stronger yeast that should result in a semi-dry mead. This is a small batch and may or may not come out tasting like battery acid -- it will be high alcohol and quite dry; almost bone dry. As always, longer aging makes for a better mead!<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
-    openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
+    notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature (and I won\'t be offended if this particular batch of mead isn\'t your favorite -- don\'t give up on mead! This is a slightly unusual one).<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
         ['0006', 'JKi'],
@@ -105,10 +105,10 @@ var meadData = [{
     tastingNotes: [
         // date, notes
         ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.'],
-        ['2017-11-07', 'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age.']
+        ['2017-11-07', 'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age. Tastes as bone dry as it is.']
     ],
     // Status is [0]; next step is [1] on [2]
-    status: ['Fining and stabilizing', 'bottling', '2017-11-13']
+    status: ['Fining and stabilizing', 'bottling', '2017-11-14']
 }, {
     batchID: 3,
     recipeName: 'Duduhu',
