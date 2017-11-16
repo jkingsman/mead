@@ -58,13 +58,20 @@ var meadData = [{
         // date, OG, notes
         ['2017-10-09', 1.112, 'Pitched'],
         ['2017-10-23', 1.058, 'Racked off lees onto Campden to secondary'],
-        ['2017-11-07', 1.054, 'Racked off onto fixatives and finer']
+        ['2017-11-07', 1.054, 'Racked off onto fixatives and finer'],
+        ['2017-11-15', 1.046, 'Bottled!'],
     ],
-    images: ['img/f1mustevening.jpg', 'img/mixedmusts.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/bundled.jpg'],
+    images: [
+        'img/f1mustevening.jpg',
+        'img/mixedmusts.jpg',
+        'img/musts.jpg',
+        'img/ingredients.jpg',
+        'img/bundled.jpg',
+    ],
     tastingNotes: [
         // date, notes
         ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.'],
-        ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.']
+        ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.'],
     ],
     // Status is [0]; next step is [1] on [2]
     status: ['Fining and stabilizing', 'bottling', '2017-11-14']
@@ -82,7 +89,7 @@ var meadData = [{
         ['7', 'JKi'],
         ['8', 'HLu'],
         ['9', 'MWe'],
-        ['10', 'JFe']
+        ['10', 'JFe'],
     ],
     timeline: [
         // date, notes
@@ -99,11 +106,22 @@ var meadData = [{
         // date, OG, notes
         ['2017-10-09', 1.110, 'Pitched'],
         ['2017-10-23', 1.005, 'Racked off lees onto Campden to secondary'],
-        ['2017-11-07', 0.998, 'Racked off onto fixatives and finer']
+        ['2017-11-07', 0.998, 'Racked off onto fixatives and finer'],
+        ['2017-11-07', 0.998, 'Racked off onto fixatives and finer'],
+        ['2017-11-15', 0.998, 'Bottled!'],
     ],
-    images: ['img/f2bubbling.gif', 'img/f2mustevening.jpg', 'img/mixedmusts.jpg', 'img/f2must.jpg', 'img/musts.jpg', 'img/ingredients.jpg', 'img/f2yeast.jpg', 'img/bundled.jpg'],
+    images: [
+        'img/f2bubbling.gif',
+        'img/f2mustevening.jpg',
+        'img/mixedmusts.jpg',
+        'img/f2must.jpg',
+        'img/musts.jpg',
+        'img/ingredients.jpg',
+        'img/f2yeast.jpg',
+        'img/bundled.jpg',
+    ],
     tastingNotes: [
-        // date, notes
+        // date, notesW
         ['2017-10-23', 'Hot hot hot! Got a bit much of the lees in my glass but it tastes very hot and dry.'],
         ['2017-11-07', 'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age. Tastes as bone dry as it is.']
     ],
@@ -123,7 +141,7 @@ var meadData = [{
         ['12', 'Chartio Team'],
         ['13', 'Chartio Team'],
         ['14', 'Chartio Team'],
-        ['15', 'Chartio Team']
+        ['15', 'Chartio Team'],
     ],
     timeline: [
         // date, notes
@@ -134,7 +152,7 @@ var meadData = [{
     ],
     gravReadings: [
         // date, OG, notes
-        ['2017-10-25', 1.13, 'Pitched']
+        ['2017-10-25', 1.13, 'Pitched'],
     ],
     images: ['img/f3bubbling.gif', 'img/f3bubblesandgunk.jpg', 'img/f3wrapped.jpg'],
     tastingNotes: [],
