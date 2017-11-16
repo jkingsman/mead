@@ -48,7 +48,7 @@ var meadData = [{
     bottleRangeMin: 1,
     bottleRangeMax: 5,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature. B0005 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
@@ -93,7 +93,7 @@ var meadData = [{
         ],
         [
             '2017-11-15',
-            'Bottled! Only got four wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely!',
+            'Bottled! Only got four wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely! A week on bentonite was totally worthless -- it all clumped up in the bottom and did nothing or next to nothing (the small amount of clarifying was likely gravity and not the bentonite). Next time, we use Sparkoloid.',
         ],
     ],
     gravReadings: [
@@ -148,7 +148,7 @@ var meadData = [{
     bottleRangeMin: 6,
     bottleRangeMax: 10,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature (and I won\'t be offended if this particular batch of mead isn\'t your favorite -- don\'t give up on mead! This is a slightly unusual one).<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature (and I won\'t be offended if this particular batch of mead isn\'t your favorite -- don\'t give up on mead! This is a slightly unusual one). B0010 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
@@ -205,7 +205,7 @@ var meadData = [{
         ],
         [
             '2017-11-15',
-            'Bottled! Only got three and a half wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely!',
+            'Bottled! Only got three and a half wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely! A week on bentonite was totally worthless -- it all clumped up in the bottom and did nothing or next to nothing (the small amount of clarifying was likely gravity and not the bentonite). Next time, we use Sparkoloid.',
         ],
     ],
     gravReadings: [
