@@ -10,13 +10,13 @@ var meadData = [{
     openingDate: '2017-09-11',
     bottleDistribution: [
         // bottle #, person
-        ['1', 'JWK']
+        ['0001', 'JWK']
     ],
     timeline: [
         // date, notes
         ['2012-09-09', 'Must prepared.'],
         ['2017-09-10', 'Burped.'],
-        ['2017-09-11', 'Consumed.']
+        ['2017-09-11', 'Consumed.'],
     ],
     gravReadings: [
         // date, OG, notes
@@ -24,9 +24,9 @@ var meadData = [{
     images: [],
     tastingNotes: [
         // date, notes
-        ['2017-09-11', 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.']
+        ['2017-09-11', 'Lovely -- quite spicy and dry but excellent. Towards bottom of the bottle, floculated yeast gets a little gross. Carbonation disappeared exceedingly quickly.'],
     ],
-    status: []
+    status: [],
 }, {
     batchID: 1,
     recipeName: 'Jutini',
@@ -37,11 +37,11 @@ var meadData = [{
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
-        ['1', 'JKi'],
-        ['2', 'JKi'],
-        ['3', 'CBa'],
-        ['4', 'MMa'],
-        ['5', 'MBa']
+        ['001', 'JKi'],
+        ['002', 'JKi'],
+        ['003', 'CBa'],
+        ['004', 'MMa'],
+        ['005', 'MBa'],
     ],
     timeline: [
         // date, notes
@@ -70,8 +70,14 @@ var meadData = [{
     ],
     tastingNotes: [
         // date, notes
-        ['2017-10-23', 'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.'],
-        ['2017-11-07', 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.'],
+        [
+            '2017-10-23',
+            'Very tasty -- sweet and warm, but not overpowering in any way. Possible a bit sweeter than I\'d like but I\'m sure it will mellow.'
+        ],
+        [
+            '2017-11-07',
+            'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.'
+        ],
     ],
     // Status is [0]; next step is [1] on [2]
     status: ['Fining and stabilizing', 'bottling', '2017-11-14']
@@ -85,11 +91,11 @@ var meadData = [{
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
-        ['6', 'JKi'],
-        ['7', 'JKi'],
-        ['8', 'HLu'],
-        ['9', 'MWe'],
-        ['10', 'JFe'],
+        ['0006', 'JKi'],
+        ['0007', 'JKi'],
+        ['0008', 'HLu'],
+        ['0009', 'MWe'],
+        ['0010', 'JFe']
     ],
     timeline: [
         // date, notes
@@ -137,11 +143,11 @@ var meadData = [{
     openingDate: '2018-10-24',
     bottleDistribution: [
         // bottle #, person
-        ['11', 'JKi'],
-        ['12', 'Chartio Team'],
-        ['13', 'Chartio Team'],
-        ['14', 'Chartio Team'],
-        ['15', 'Chartio Team'],
+        ['0011', 'JKi'],
+        ['0012', 'Chartio Team'],
+        ['0013', 'Chartio Team'],
+        ['0014', 'Chartio Team'],
+        ['0015', 'Chartio Team']
     ],
     timeline: [
         // date, notes

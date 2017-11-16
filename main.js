@@ -65,17 +65,17 @@ function drawBatch(batch) {
     };
     var el = kjua(qrOptions);
 
-    // render into place on the page and add batch text
+    // render into place on the page and DON'T add batch text
     var qrCodeContainer = document.getElementById('qrCode');
-    qrCodeContainer.innerHTML = '<h3>' + batch.id + '</h3>';
+    // qrCodeContainer.innerHTML = '<h3>' + batch.id + '</h3>';
     qrCodeContainer.prepend(el);
 
-    // convert to canvas -> data URI and render into image that includes code and batch/bottle
-    html2canvas(qrCodeContainer, {
-        onrendered: function(canvas) {
-            document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
-        }
-    });
+    // // convert to canvas -> data URI and render into image that includes code and batch/bottle
+    // html2canvas(qrCodeContainer, {
+    //     onrendered: function(canvas) {
+    //         document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
+    //     }
+    // });
 
     // materialize init
     $('.collapsible').collapsible();
