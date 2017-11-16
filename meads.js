@@ -201,7 +201,7 @@ var meadData = [{
         ],
         [
             '2017-11-07',
-            'Racked onto other half of campden, potassium sorbate, and bentonite,
+            'Racked onto other half of campden, potassium sorbate, and bentonite',
         ],
         [
             '2017-11-15',
@@ -258,7 +258,7 @@ var meadData = [{
         [
             '2017-11-07',
             'Dry and slightly sour -- cooled off a bit, but not my favorite. Could be good with some xylitol but I think I\'m just gonna let it age. Tastes as bone dry as it is.',
-        ]
+        ],
         [
             '2017-11-15',
             'Oh man -- this is fantastic. Mellowed out a LOT after even two weeks. I\'m super excited for this; it\'s gonna taste just killer chilled. Perfect honey note; every so slightly sour and quite acidic but I\'m sure that will mellow.',
