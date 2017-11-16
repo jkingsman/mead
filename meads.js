@@ -579,7 +579,7 @@ var recipes = {
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
             'Place in dark location at 60 - 75 degrees F.',
             'After two weeks, rack off lees into sanitized carboy.',
-            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, hydrated bentonite slurry. SG check. After a week or when clear, bottle.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, optionally, clarifying agent (Sparkoloid or bentonite). SG check. After a week or when clear, bottle.',
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic cinnamon and vanilla'
     },
