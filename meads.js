@@ -173,39 +173,39 @@ var meadData = [{
         // date, notes
         [
             '2017-10-09 1830',
-            'Must prepared.'.
+            'Must prepared.',
         ],
         [
             '2017-10-09 1930',
-            'Carboy airlocked.'
+            'Carboy airlocked.',
         ],
         [
             '2017-10-09 2230',
-            'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.'.
+            'Lots of tiny bubbles; 100% surface coverage and about 2mm thick.',
         ],
         [
             '2017-10-10 0030',
-            'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!'.
+            'Creamy layer of top bubbles; bubble through airlock once every 10 seconds. These yeast are HUNGRY!',
         ],
         [
             '2017-10-11 1415',
-            'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth'.
+            'Bubbles every second; moved to warmed surroundings with towel around carboy for light and warmth',
         ],
         [
             '2017-10-23',
-            'No bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.'.
+            'No bubbling. Racked onto half a Campden tablet for secondary and had a taste. Realized this was in error; will rack onto other half when we go onto the sorbate.',
         ],
         [
             '2017-10-29',
-            'Zero airlock activity'.
+            'Zero airlock activity',
         ],
         [
             '2017-11-07',
-            'Racked onto other half of campden, potassium sorbate, and bentonite'.
+            'Racked onto other half of campden, potassium sorbate, and bentonite,
         ],
         [
             '2017-11-15',
-            'Bottled! Only got three and a half wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely!'.
+            'Bottled! Only got three and a half wine bottles out of it, which is kind of a bummer, but I\'m sure it will be lovely!',
         ],
     ],
     gravReadings: [
