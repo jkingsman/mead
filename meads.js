@@ -10,7 +10,7 @@ var meadData = [{
     openingDate: '2017-09-11',
     bottleDistribution: [
         // bottle #, person
-        ['1', 'JWK']
+        ['0001', 'JWK']
     ],
     timeline: [
         // date, notes
@@ -37,11 +37,11 @@ var meadData = [{
     openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
     bottleDistribution: [
         // bottle #, person
-        ['1', 'JKi'],
-        ['2', 'JKi'],
-        ['3', 'CBa'],
-        ['4', 'MMa'],
-        ['5', 'MBa']
+        ['001', 'JKi'],
+        ['002', 'JKi'],
+        ['003', 'CBa'],
+        ['004', 'MMa'],
+        ['005', 'MBa']
     ],
     timeline: [
         // date, notes
@@ -78,11 +78,11 @@ var meadData = [{
     openingDate: 'Open 2018-04-21 at the earliest; let age for a year (2018-10) or longer for optimum taste!',
     bottleDistribution: [
         // bottle #, person
-        ['6', 'JKi'],
-        ['7', 'JKi'],
-        ['8', 'HLu'],
-        ['9', 'MWe'],
-        ['10', 'JFe']
+        ['0006', 'JKi'],
+        ['0007', 'JKi'],
+        ['0008', 'HLu'],
+        ['0009', 'MWe'],
+        ['0010', 'JFe']
     ],
     timeline: [
         // date, notes
@@ -119,11 +119,11 @@ var meadData = [{
     openingDate: '2018-10-24',
     bottleDistribution: [
         // bottle #, person
-        ['11', 'JKi'],
-        ['12', 'Chartio Team'],
-        ['13', 'Chartio Team'],
-        ['14', 'Chartio Team'],
-        ['15', 'Chartio Team']
+        ['0011', 'JKi'],
+        ['0012', 'Chartio Team'],
+        ['0013', 'Chartio Team'],
+        ['0014', 'Chartio Team'],
+        ['0015', 'Chartio Team']
     ],
     timeline: [
         // date, notes
