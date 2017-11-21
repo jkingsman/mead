@@ -341,9 +341,9 @@ var meadData = [{
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'In primary',
-        'reracking onto ginger',
-        '2017-11-20',
+        'In secondary on ginger',
+        'rerack onto fixatives and fining agent',
+        '2018-01-20',
     ],
 }];
 
