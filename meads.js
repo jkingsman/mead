@@ -263,7 +263,7 @@ var meadData = [{
     status: [],
 }, {
     batchID: 3,
-    recipeName: 'Duduhu',
+    recipeName: 'Spicy Ginger Metheglin',
     bottleRangeMin: 11,
     bottleRangeMax: 15,
     size: '1 gal.',
@@ -310,6 +310,10 @@ var meadData = [{
             '2017-10-30 0800',
             'We have bubbles every two seconds! IT LIVES!!',
         ],
+        [
+            '2017-11-20 0900',
+            'Reracking onto 10oz (weight) of cubed garlic. Lost quite a bit of weight in the skins (purchased 17oz). Muslin bag of ginger fit but sank to bottom; no idea how I\'m gonna get that out. My hands reek of ginger. SG read 1.00 or a bit below, but the yeast are happily bubbling every 5 seconds or so, so clearly there\'s still something left to eat...',
+        ],
     ],
     gravReadings: [
         // date, OG, notes
@@ -318,13 +322,23 @@ var meadData = [{
             1.13,
             'Pitched',
         ],
+        [
+            '2017-11-20',
+            1.0,
+            'Reracked on ginger -- however, the yeast were so happy to be moved that they were bubbling away (almost like a soda) which doubtlessly reduced the density, so I\'m not sure how much I trust this -- it even read a bit below. I\'m gonna trust the FG and taste; beyond that, this reading was iffy.',
+        ],
     ],
     images: [
         'img/f3bubbling.gif',
         'img/f3bubblesandgunk.jpg',
         'img/f3wrapped.jpg',
     ],
-    tastingNotes: [],
+    tastingNotes: [
+        [
+            '2017-11-20',
+            'Hot and fiery, just like F0002 -- not shocked, it\'s the same recipe. Perhaps a bit more bitter, but that may have been the yeast weirdness/stress as it got started; I\'m sure it will age out',
+        ]
+    ],
     // Status is [0]; next step is [1] on [2]
     status: [
         'In primary',
