@@ -17,12 +17,12 @@ Handlebars.registerHelper("daysFromNow", function(date) {
     var today = new Date();
     var then = new Date(date);
     var timeDiff = then - today;
-    var dayDiff = Math.floor(((((timeDiff / 1000) / 60)  + today.getTimezoneOffset()) / 60) / 24) + 1;
+    var dayDiff = Math.floor(((((timeDiff / 1000) / 60) + today.getTimezoneOffset()) / 60) / 24) + 1;
 
     return dayDiff;
 });
 
-function leftPadSerial(serial, serialPadding = 4){
+function leftPadSerial(serial, serialPadding = 4) {
     return ("000000000000" + serial).substr(-serialPadding, serialPadding);
 }
 
