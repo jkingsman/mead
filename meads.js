@@ -332,6 +332,10 @@ var meadData = [{
         'img/f3bubbling.gif',
         'img/f3bubblesandgunk.jpg',
         'img/f3wrapped.jpg',
+        'img/f3strappedin.jpg',
+        'img/f3ginger.jpg',
+        'img/f3muslin.jpg',
+        'img/f3pitchedginger.jpg',
     ],
     tastingNotes: [
         [
