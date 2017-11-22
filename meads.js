@@ -2,7 +2,7 @@
 
 var meadData = [{
     batchID: 0,
-    recipeName: 'Firey Ginger Ale',
+    recipeName: 'Fierey Ginger Ale (2L)',
     bottleRangeMin: 0,
     bottleRangeMax: 0,
     size: '2L',
@@ -44,11 +44,11 @@ var meadData = [{
     status: [],
 }, {
     batchID: 1,
-    recipeName: 'Simple Sweet Mead',
+    recipeName: 'Simple Sweet Mead (1gal.)',
     bottleRangeMin: 1,
     bottleRangeMax: 4,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0005 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0005 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
@@ -144,11 +144,11 @@ var meadData = [{
     status: []
 }, {
     batchID: 2,
-    recipeName: 'Simple Semi-dry Mead',
+    recipeName: 'Simple Semi-dry Mead (1gal.)',
     bottleRangeMin: 6,
     bottleRangeMax: 9,
     size: '1 gal.',
-    notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0010 was discarded; insufficient amount of mead.<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0010 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
     openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
     bottleDistribution: [
         // bottle #, person
@@ -263,11 +263,11 @@ var meadData = [{
     status: [],
 }, {
     batchID: 3,
-    recipeName: 'Spicy Ginger Metheglin',
+    recipeName: 'Spicy Ginger Metheglin (1gal.)',
     bottleRangeMin: 11,
     bottleRangeMax: 15,
     size: '1 gal.',
-    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shop<br><br>Honeys used: 3lb Crocket Raw Arizona Desert Wildflower honey, .5lb Nature Nate\'s Raw Unfiltered honey.',
+    notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shop<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
     openingDate: '2018-10-24',
     bottleDistribution: [
         // bottle #, person
@@ -349,11 +349,131 @@ var meadData = [{
         'rerack onto fixatives and fining agent',
         '2018-01-20',
     ],
+},
+{
+    batchID: 4,
+    recipeName: 'Simple Semi-dry Mead (5gal.)',
+    bottleRangeMin: 16,
+    bottleRangeMax: 36,
+    size: '5 gal.',
+    notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, 1lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
+    openingDate: '2018-10-24',
+    bottleDistribution: [
+        // bottle #, person
+        [
+            '0016',
+            'MWe'
+        ],
+        [
+            '0017',
+            'CBi'
+        ],
+        [
+            '0018',
+            'JKi'
+        ],
+        [
+            '0019',
+            'JKi'
+        ],
+        [
+            '0020',
+            'JKi'
+        ],
+        [
+            '0021',
+            'JKi'
+        ],
+        [
+            '0022',
+            'JKi'
+        ],
+        [
+            '0023',
+            'JKi'
+        ],
+        [
+            '0024',
+            'JKi'
+        ],
+        [
+            '0025',
+            'JKi'
+        ],
+        [
+            '0026',
+            'JKi'
+        ],
+        [
+            '0027',
+            'JKi'
+        ],
+        [
+            '0028',
+            'JKi'
+        ],
+        [
+            '0029',
+            'JKi'
+        ],
+        [
+            '0030',
+            'JKi'
+        ],
+        [
+            '0031',
+            'JKi'
+        ],
+        [
+            '0032',
+            'JKi'
+        ],
+        [
+            '0033',
+            'JKi'
+        ],
+        [
+            '0034',
+            'JKi'
+        ],
+        [
+            '0035',
+            'JKi'
+        ],
+        [
+            '0036',
+            'JKi'
+        ],
+
+    ],
+    timeline: [
+        // date, notes
+        [
+            '2017-11-22',
+            'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc.',
+        ],
+    ],
+    gravReadings: [
+        // date, OG, notes
+        [
+            '2017-11-22',
+            0,
+            'Pitched',
+        ],
+    ],
+    images: [],
+    tastingNotes: [],
+    // Status is [0]; next step is [1] on [2]
+    status: [
+        'Pre-pitching',
+        'pitching',
+        '2017-11-22',
+    ],
 }];
 
 var recipes = {
-    'Fiery Ginger Ale': {
-        type: 'Fiery Ginger Ale',
+    'Fiery Ginger Ale (2L)': {
+        type: 'Fiery Ginger Ale (2L)',
         volume: '2L',
         brewTime: [
             '2 days',
@@ -378,8 +498,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, sugar, ginger, lemon juice, yeast'
     },
-    'Simple Sweet Mead': {
-        type: 'Simple Sweet Mead',
+    'Simple Sweet Mead (1gal.)': {
+        type: 'Simple Sweet Mead (1gal.)',
         volume: '1 gal',
         brewTime: [
             '2 week primary',
@@ -403,7 +523,7 @@ var recipes = {
             'Autosiphon/wine thief/hydrometer',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then Let sit for three minutes, then rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
@@ -413,8 +533,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    'Simple Semi-dry Mead': {
-        type: 'Simple Semi-dry Mead',
+    'Simple Semi-dry Mead (1gal.)': {
+        type: 'Simple Semi-dry Mead (1gal.)',
         volume: '1 gal',
         brewTime: [
             '2 week primary',
@@ -434,10 +554,10 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry  or Sparkoloid per label (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
@@ -447,8 +567,42 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    'Simple Ultra-dry Jet Fuel Mead': {
-        type: 'Simple Ultra-dry Jet Fuel Mead',
+    'Simple Semi-dry Mead (5gal.)': {
+        type: 'Simple Semi-dry Mead (5gal.)',
+        volume: '5 gal',
+        brewTime: [
+            '2 week primary',
+            '2 week secondary',
+            '1 week stabilization/clarifying',
+        ],
+        ingredients: [
+            '15 lbs honey',
+            '5 tsp LD Carlson Nutrient (diammonium phosphate/DAP)',
+            '5 tsp LD Carlson Energizer (yeast hulls)',
+            '5 grams Lavlin 71B-1122',
+            '4 gal. spring or tap water',
+        ],
+        equipmentMisc: [
+            '5 or 6.5 gal. carboy',
+            'Airlock',
+            'StarSan soln.',
+            '5 Campden tablets, crushed',
+            '2.5 tsp potassium sorbate',
+            'Sparkoloid per label (optional)',
+        ],
+        recipe: [
+            'Clean carboy with StarSan soln.; 1oz starsan for 5 gallons. Let sit for three minutes, then rinse until suds subside.',
+            'Add room temperature honey, then room temperature spring or tap water until volume of must is 5 gal.',
+            'Pour dry yeast into must and add DAP with yeast hulls.',
+            'Seal carboy and stir vigorously until honey and yeast are well mixed. SG check. Airlock carboy.',
+            'Place in dark location at 60 - 75 degrees F.',
+            'After two weeks, rack off lees into sanitized carboy or bucket for aging.',
+            'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, clarifying agent (Sparkoloid or bentonite). SG check. After a week or when clear, bottle.',
+        ],
+        fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
+    },
+    'Simple Ultra-dry Jet Fuel Mead (1gal.)': {
+        type: 'Simple Ultra-dry Jet Fuel Mead (1gal.)',
         volume: '1 gal',
         brewTime: [
             '2 week primary',
@@ -473,7 +627,7 @@ var recipes = {
             'Autosiphon/wine thief/hydrometer',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
@@ -483,8 +637,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
     },
-    'Reaper Capsicumel': {
-        type: 'Reaper Capsicumel',
+    'Reaper Capsicumel (1gal.)': {
+        type: 'Reaper Capsicumel (1gal.)',
         volume: '1 gal',
         brewTime: [
             '1 month primary',
@@ -507,10 +661,10 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry or Sparkoloid per label (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Add room temperature honey, then room temperature spring or tap water until volume of must is short of 1 gal. Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes.',
             'SG check.',
@@ -522,8 +676,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, xylitol, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from oak wood and organic carolina reaper chili'
     },
-    'Spicy Ginger Metheglin': {
-        type: 'Spicy Ginger Metheglin',
+    'Spicy Ginger Metheglin (1gal.)': {
+        type: 'Spicy Ginger Metheglin (1gal.)',
         volume: '1 gal',
         brewTime: [
             '3 week primary',
@@ -549,7 +703,7 @@ var recipes = {
             'Autosiphon/wine thief/hydrometer',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is shy of 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
             'Seal carboy and shake vigorously for 4 minutes. SG check.',
@@ -559,8 +713,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, ginger, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic ginger'
     },
-    'Sweet Metheglin': {
-        type: 'Sweet Metheglin',
+    'Sweet Metheglin (1gal.)': {
+        type: 'Sweet Metheglin (1gal.)',
         volume: '1 gal',
         brewTime: [
             '2 week primary',
@@ -582,10 +736,10 @@ var recipes = {
             'StarSan soln.',
             '1 Campden tablet, crushed',
             '0.5 tsp potassium sorbate',
-            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry (optional)',
+            '1.5 tbsp hydrated (2 tsp in .5 cup very hot water, agitate thoroughly, rest for 12 hours) bentonite slurry or Sparkoloid per label (optional)',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Boil vanilla bean and cinnamon stick in 1 cup water for 10 minutes.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must, add cinnamon and vanilla with water, and add DAP with yeast hulls.',
@@ -596,8 +750,8 @@ var recipes = {
         ],
         fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, flavor from organic cinnamon and vanilla'
     },
-    'Sweet Metheglin w/ Herbs': {
-        type: 'Sweet Metheglin w/ Herbs',
+    'Sweet Metheglin w/ Herbs (1gal.)': {
+        type: 'Sweet Metheglin w/ Herbs (1gal.)',
         volume: '1 gal',
         brewTime: [
             '2 week primary',
@@ -622,7 +776,7 @@ var recipes = {
             '0.5 tsp potassium sorbate',
         ],
         recipe: [
-            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Rinse until suds subside.',
+            'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
             'Bring vanilla bean and cinnamon stick to boil for 5 minutes.',
             'Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.',
             'Pour dry yeast into must and add DAP with yeast hulls.',
