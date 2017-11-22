@@ -354,7 +354,7 @@ var meadData = [{
     batchID: 4,
     recipeName: 'Simple Semi-dry Mead (5gal.)',
     bottleRangeMin: 16,
-    bottleRangeMax: 36,
+    bottleRangeMax: 35,
     size: '5 gal.',
     notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, 1lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
     openingDate: '2018-10-24',
@@ -370,7 +370,7 @@ var meadData = [{
         ],
         [
             '0018',
-            'JKi'
+            'HLu'
         ],
         [
             '0019',
@@ -440,11 +440,6 @@ var meadData = [{
             '0035',
             'JKi'
         ],
-        [
-            '0036',
-            'JKi'
-        ],
-
     ],
     timeline: [
         // date, notes
