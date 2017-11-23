@@ -48,7 +48,7 @@
          bottleRangeMin: 1,
          bottleRangeMax: 4,
          size: '1 gal.',
-         notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a yummy sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0005 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a low- to medium-sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0005 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
          openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
          bottleDistribution: [
              // bottle #, person
@@ -149,7 +149,7 @@
              ],
              [
                  '2017-11-07',
-                 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty yummy.',
+                 'Warming up -- nice and tasty; somewhat sweet. Ever so slightly carbonated! This is pretty good.',
              ],
          ],
          // Status is [0]; next step is [1] on [2]
