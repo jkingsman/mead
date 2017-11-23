@@ -53,20 +53,20 @@
          bottleDistribution: [
              // bottle #, person
              [
-                  '001', '
-                  JKi',
+                  '001',
+                  'JKi',
              ],
              [
-                  '002', '
-                  JKi',
+                  '002',
+                  'JKi',
              ],
              [
-                  '003', '
-                  MMa',
+                  '003',
+                  'MMa',
              ],
              [
-                  '004', '
-                  MBa',
+                  '004',
+                  'MBa',
              ],
          ],
          timeline: [
