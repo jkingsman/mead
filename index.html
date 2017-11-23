@@ -98,7 +98,7 @@
                     </ul>
                 </div>
                 <div id="calculators" class="col s12">
-                    <h3>Caclculator</h3>
+                    <h3>Calculator</h3>
                     <ul class="collapsible" data-collapsible="accordion" id="recipeEntryContainer">
                         <li>
                             <div class="collapsible-header">Generic Combination (Solve final value)</div>
@@ -121,18 +121,47 @@
                                     <label class="active" for="comboFinalVal_Val2">#2 Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="comboFinalVal_finalVal" type="text" class="validate">
+                                    <input disabled id="comboFinalVal_finalVal" type="text" class="validate">
                                     <label class="active" for="comboFinalVal_finalVal">Final Value</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="genericComboFinalVal()">Calculate</a>
                             </div>
                         </li>
                         <li>
-                            <div class="collapsible-header">Generic Combination (Solve unknown additive volume)</div>
+                            <div class="collapsible-header">Generic Combination (Solve additive volume)</div>
                             <div class="collapsible-body">
                                 $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$
                                 $$ \therefore $$
                                 $$ Vol_2 = \frac{Vol_1(Val_{final} - Val_1)}{Val_2 - Val_{final}} $$
+                                <div class="input-field">
+                                    <input id="comboVol2_vol1" type="text" class="validate">
+                                    <label class="active" for="comboVol2_vol1">Base Volume</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="comboVol2_val1" type="text" class="validate">
+                                    <label class="active" for="comboVol2_val1">Base Value</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="comboVol2_val2" type="text" class="validate">
+                                    <label class="active" for="comboVol2_val2">Additive Value</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="combovol2_finalVal" type="text" class="validate">
+                                    <label class="active" for="combovol2_finalVal">Final Value</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="comboVol2_vol2" type="text" class="validate">
+                                    <label class="active" for="comboVol2_vol2">Additive Volume</label>
+                                </div>
+                                <a class="waves-effect waves-light btn" onClick="genericComboAdditiveVol()">Calculate</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Generic Combination (Solve additive value)</div>
+                            <div class="collapsible-body">
+                                $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$
+                                $$ \therefore $$
+                                $$ Val_2 = \frac{Vol_1 * (val_{final} - Val_1)}{Vol_2} + Val_{final} $$
                                 <div class="input-field">
                                     <input id="comboVal2_vol1" type="text" class="validate">
                                     <label class="active" for="comboVal2_vol1">Base Volume</label>
@@ -142,18 +171,18 @@
                                     <label class="active" for="comboVal2_val1">Base Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="comboVal2_vol2" type="text" class="validate">
+                                    <input id="comboVal2_vol2" type="text" class="validate">
                                     <label class="active" for="comboVal2_vol2">Additive Volume</label>
-                                </div>
-                                <div class="input-field">
-                                    <input id="comboVal2_val2" type="text" class="validate">
-                                    <label class="active" for="comboVal2_val2">Additive Value</label>
                                 </div>
                                 <div class="input-field">
                                     <input id="comboval2_finalVal" type="text" class="validate">
                                     <label class="active" for="comboval2_finalVal">Final Value</label>
                                 </div>
-                                <a class="waves-effect waves-light btn" onClick="genericComboAdditiveVol()">Calculate</a>
+                                <div class="input-field">
+                                    <input disabled id="comboVal2_val2" type="text" class="validate">
+                                    <label class="active" for="comboVal2_val2">Additive Value</label>
+                                </div>
+                                <a class="waves-effect waves-light btn" onClick="genericComboAdditiveVal()">Calculate</a>
                             </div>
                         </li>
                         <li>
@@ -174,19 +203,19 @@
                                     <label class="active" for="finalSG_OEApprox">OE Approximation Constant (k)</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="finalSG_finalSG" type="text" class="validate">
+                                    <input disabled id="finalSG_finalSG" type="text" class="validate">
                                     <label class="active" for="finalSG_finalSG">Final SG</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="finalSG_finalABV" type="text" class="validate">
+                                    <input disabled id="finalSG_finalABV" type="text" class="validate">
                                     <label class="active" for="finalSG_finalABV">Final ABV</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="finalSG_maxABV" type="text" class="validate">
+                                    <input disabled id="finalSG_maxABV" type="text" class="validate">
                                     <label class="active" for="finalSG_maxABV">Theoretical Max ABV w/ Sugar Exhaustion</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="finalSG_warnings" type="text" class="validate">
+                                    <input disabled id="finalSG_warnings" type="text" class="validate">
                                     <label class="active" for="finalSG_warnings">Warnings</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="residualSugar()">Calculate</a>
@@ -210,7 +239,7 @@
                                     <label class="active" for="abv_OEApprox">OE Approximation Constant (k)</label>
                                 </div>
                                 <div class="input-field">
-                                    <input readonly id="abv_finalABV" type="text" class="validate">
+                                    <input disabled id="abv_finalABV" type="text" class="validate">
                                     <label class="active" for="abv_finalABV">Final ABV</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="abv()">Calculate</a>
@@ -224,7 +253,7 @@
                                 <a class="waves-effect waves-light btn" onClick="extendDate(4)">+4 weeks</a>
                                 <a class="waves-effect waves-light btn" onClick="extendDate(8)">+8 weeks</a>
                                 <div class="input-field">
-                                    <input readonly id="date_result" type="text" class="validate">
+                                    <input disabled id="date_result" type="text" class="validate">
                                     <label class="active" for="date_result">Result Date</label>
                                 </div>
                             </div>

@@ -11,14 +11,26 @@ function genericComboFinalVal(){
 }
 
 function genericComboAdditiveVol(){
-    const vol1 = Number(document.getElementById('comboVal2_vol1').value);
-    const val1 = Number(document.getElementById('comboVal2_val1').value);
-    const val2 = Number(document.getElementById('comboVal2_val2').value);
-    const valFinal = Number(document.getElementById('comboval2_finalVal').value);
+    const vol1 = Number(document.getElementById('comboVol2_vol1').value);
+    const val1 = Number(document.getElementById('comboVol2_val1').value);
+    const val2 = Number(document.getElementById('comboVol2_val2').value);
+    const valFinal = Number(document.getElementById('combovol2_finalVal').value);
     const result = (vol1 * (valFinal - val1)) / (val2 - valFinal);
     const roundedResult = Math.round(result * 100) / 100;
 
-    document.getElementById('comboVal2_vol2').value = roundedResult;
+    document.getElementById('comboVol2_vol2').value = roundedResult;
+    Materialize.updateTextFields();
+}
+
+function genericComboAdditiveVal(){
+    const vol1 = Number(document.getElementById('comboVal2_vol1').value);
+    const val1 = Number(document.getElementById('comboVal2_val1').value);
+    const vol2 = Number(document.getElementById('comboVal2_vol2').value);
+    const valFinal = Number(document.getElementById('comboval2_finalVal').value);
+    const result = ((vol1 * (valFinal - val1)) / vol2) + valFinal;
+    const roundedResult = Math.round(result * 100) / 100;
+
+    document.getElementById('comboVal2_val2').value = roundedResult;
     Materialize.updateTextFields();
 }
 

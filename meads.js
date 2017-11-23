@@ -2,7 +2,7 @@
 
  var meadData = [{
          batchID: 0,
-         recipeName: 'Fierey Ginger Ale (2L)',
+         recipeName: 'Fiery Ginger Ale (2L)',
          bottleRangeMin: 0,
          bottleRangeMax: 0,
          size: '2L',
@@ -58,7 +58,7 @@
              ],
              [
                   '002',
-                  'JKi',
+                  'MPl',
              ],
              [
                   '003',
