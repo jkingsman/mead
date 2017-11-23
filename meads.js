@@ -356,7 +356,7 @@
          bottleRangeMin: 16,
          bottleRangeMax: 35,
          size: '5 gal.',
-         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, 1lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
+         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
          openingDate: '2018-10-24',
          bottleDistribution: [
              // bottle #, person
@@ -445,14 +445,14 @@
              // date, notes
              [
                  '2017-11-22',
-                 'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc.',
+                 'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc,; it was fantastic to mix. SG may be low by ~.5lb; squeezed a tiny bit more out of the bottles.',
              ],
          ],
          gravReadings: [
              // date, OG, notes
              [
                  '2017-11-22',
-                 0,
+                 1.11,
                  'Pitched',
              ],
          ],
@@ -460,9 +460,9 @@
          tastingNotes: [],
          // Status is [0]; next step is [1] on [2]
          status: [
-             'Pre-pitching',
-             'pitching',
-             '2017-11-22',
+             'In primary',
+             'racking onto fixatives and finer',
+             '2017-12-06',
          ],
      }
  ];
@@ -568,8 +568,7 @@
          volume: '5 gal',
          brewTime: [
              '2 week primary',
-             '2 week secondary',
-             '1 week stabilization/clarifying',
+             '2 week stabilization/clarifying',
          ],
          ingredients: [
              '15 lbs honey',
