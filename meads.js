@@ -52,15 +52,27 @@
          openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
          bottleDistribution: [
              // bottle #, person
-             ['001', 'JKi'],
-             ['002', 'JKi'],
-             ['003', 'MMa'],
-             ['004', 'MBa'],
+             [
+                  '001', '
+                  JKi',
+             ],
+             [
+                  '002', '
+                  JKi',
+             ],
+             [
+                  '003', '
+                  MMa',
+             ],
+             [
+                  '004', '
+                  MBa',
+             ],
          ],
          timeline: [
              // date, notes
              [
-                 '2017-10-09 1830',
+                 '2017-10-09',
                  'Must prepared.',
              ],
              [
@@ -172,7 +184,7 @@
          timeline: [
              // date, notes
              [
-                 '2017-10-09 1830',
+                 '2017-10-09',
                  'Must prepared.',
              ],
              [
@@ -295,7 +307,7 @@
          timeline: [
              // date, notes
              [
-                 '2017-10-25 2130',
+                 '2017-10-25',
                  'Must prepared. Day after first day at Chartio, WOOO!',
              ],
              [
@@ -445,7 +457,7 @@
              // date, notes
              [
                  '2017-11-22',
-                 'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc,; it was fantastic to mix. SG may be low by ~.5lb; squeezed a tiny bit more out of the bottles.',
+                 'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc,; it was fantastic to mix. SG may be low by ~.5lb; squeezed a tiny bit more out of the bottles after SG check. No bubbles after a couple hours, but I found out the top & airlock aren\'t perfectly airtight so that may be why early pressure is leaking out (but I expect once the yeast pass the lag phase it\'ll start up).',
              ],
          ],
          gravReadings: [
@@ -456,7 +468,12 @@
                  'Pitched',
              ],
          ],
-         images: [],
+         images: [
+              'img/f4cleaning.jpg',
+              'img/f4honeyvol.jpg',
+              'img/f4honies.jpg',
+              'img/f4mixer.jpg',
+         ],
          tastingNotes: [],
          // Status is [0]; next step is [1] on [2]
          status: [
