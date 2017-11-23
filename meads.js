@@ -585,7 +585,7 @@
          volume: '5 gal',
          brewTime: [
              '2 week primary',
-             '2 week stabilization/clarifying',
+             '3 week stabilization/clarifying/secondary',
          ],
          ingredients: [
              '15 lbs honey',
@@ -608,8 +608,7 @@
              'Pour dry yeast into must and add DAP with yeast hulls.',
              'Seal carboy and stir vigorously until honey and yeast are well mixed. SG check. Airlock carboy.',
              'Place in dark location at 60 - 75 degrees F.',
-             'After two weeks, rack off lees into sanitized carboy or bucket for aging.',
-             'After two more weeks, rack onto crushed Campden tablet, potassium sorbate, and, clarifying agent (Sparkoloid or bentonite). SG check. After a week or when clear, bottle.',
+             'After two weeks, rack off lees into sanitized carboy and onto crushed Campden tablet, potassium sorbate, and, clarifying agent (Sparkoloid or bentonite). SG check. After three weeks, bottle.',
          ],
          fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite'
      },
