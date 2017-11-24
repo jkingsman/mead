@@ -459,6 +459,10 @@
                  '2017-11-22',
                  'Must prepared. Looking forward to this big batch! Made sure to hydrate yeast per packet instructions first. Stirred with a drill attachment and the drill bagged in a gallon ziploc to contain dust etc,; it was fantastic to mix. SG may be low by ~.5lb; squeezed a tiny bit more out of the bottles after SG check. No bubbles after a couple hours, but I found out the top & airlock aren\'t perfectly airtight so that may be why early pressure is leaking out (but I expect once the yeast pass the lag phase it\'ll start up).',
              ],
+             [
+                 '2017-11-23',
+                 'No airlock activity, so I was worried I thermal-shocked the yeast... Took a wine thief reading to confirm and it sank to the bottom because there were so many bubbles! Sealed the bucket with duct tape and now the airlock is bubbling happily.',
+             ],
          ],
          gravReadings: [
              // date, OG, notes
@@ -473,6 +477,7 @@
               'img/f4honeyvol.jpg',
               'img/f4honies.jpg',
               'img/f4mixer.jpg',
+              'img/f4bubbling.gif',
          ],
          tastingNotes: [],
          // Status is [0]; next step is [1] on [2]
