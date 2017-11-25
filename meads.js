@@ -368,7 +368,7 @@
          bottleRangeMin: 16,
          bottleRangeMax: 35,
          size: '5 gal.',
-         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
+         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)<br><br><h4>HJ Notes</h4>Nothing yet!',
          openingDate: '2018-10-24',
          bottleDistribution: [
              // bottle #, person
@@ -462,6 +462,10 @@
              [
                  '2017-11-23',
                  'No airlock activity, so I was worried I thermal-shocked the yeast... Took a wine thief reading to confirm and it sank to the bottom because there were so many bubbles! Sealed the bucket with duct tape and now the airlock is bubbling happily.',
+             ],
+             [
+                 '2017-11-24',
+                 'Internal pressure has equalized with the leaks -- there are no bubbles coming out of the airlock, but the water line will push itself to an almost-bubbling position even after being forced back to balance. There\'s therefore absolutely active CO2 production; it\'s just not fast enough to outpace the leaks.',
              ],
          ],
          gravReadings: [
