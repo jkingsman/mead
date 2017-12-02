@@ -76,10 +76,6 @@ function drawBatch(batch) {
     //         document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
     //     }
     // });
-
-    // materialize init
-    $('.collapsible').collapsible();
-    $('.slider').slider();
 }
 
 // check if valid batch; return index if so and -1 if not
@@ -170,6 +166,7 @@ $(document).ready(function() {
         var id = window.location.hash.slice(1);
         $('#serial').val(id);
         lookup();
+        setTitle('Batch Data')
     }
 
     // compile template and render current status
@@ -179,6 +176,7 @@ $(document).ready(function() {
     $('#currentStatusContainer').html(html);
 
     drawRecipes();
+    initializeMaterialize();
 });
 
 // handle enter keypress in input box
@@ -187,6 +185,33 @@ $("#serial").on('keyup', function(e) {
         lookup();
     }
 });
+
+function initializeMaterialize() {
+    $('ul.tabs').tabs({
+        onShow: function(tab){
+            switch(tab[0].id){
+                case 'pageContent':
+                    setTitle('Batch Data');
+                    break;
+                case 'recipes':
+                    setTitle('Recipes');
+                    break;
+                case 'calculators':
+                    setTitle('Calculators');
+                    break;
+            }
+        }
+    })
+
+    $('select').material_select();
+    $('.collapsible').collapsible();
+    $('.slider').slider();
+    Materialize.updateTextFields();
+}
+
+function setTitle(title){
+    document.title = "Mead Kiwi | " + title;
+}
 
 // hacky fix to make the page relaod when you click links to different meads
 window.onhashchange = function() {

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Mead Kiwi | Batch Lookup</title>
-    <link href="lib/icon.css" rel="stylesheet">
+    <title>Mead Kiwi</title>
+    <link rel="stylesheet" href="lib/icon.css" />
     <link rel="stylesheet" href="lib/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
@@ -105,23 +105,23 @@
                             <div class="collapsible-body">
                                 $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$
                                 <div class="input-field">
-                                    <input id="comboFinalVal_Vol1" type="text" class="validate">
+                                    <input id="comboFinalVal_Vol1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboFinalVal_Vol1">#1 Volume</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboFinalVal_Val1" type="text" class="validate">
+                                    <input id="comboFinalVal_Val1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboFinalVal_Val1">#1 Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboFinalVal_Vol2" type="text" class="validate">
+                                    <input id="comboFinalVal_Vol2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboFinalVal_Vol2">#2 Volume</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboFinalVal_Val2" type="text" class="validate">
+                                    <input id="comboFinalVal_Val2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboFinalVal_Val2">#2 Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="comboFinalVal_finalVal" type="text" class="validate">
+                                    <input disabled id="comboFinalVal_finalVal" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboFinalVal_finalVal">Final Value</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="genericComboFinalVal()">Calculate</a>
@@ -130,27 +130,25 @@
                         <li>
                             <div class="collapsible-header">Generic Combination (Solve additive volume)</div>
                             <div class="collapsible-body">
-                                $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$
-                                $$ \therefore $$
-                                $$ Vol_2 = \frac{Vol_1(Val_{final} - Val_1)}{Val_2 - Val_{final}} $$
+                                $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$ $$ \therefore $$ $$ Vol_2 = \frac{Vol_1(Val_{final} - Val_1)}{Val_2 - Val_{final}} $$
                                 <div class="input-field">
-                                    <input id="comboVol2_vol1" type="text" class="validate">
+                                    <input id="comboVol2_vol1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVol2_vol1">Base Volume</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboVol2_val1" type="text" class="validate">
+                                    <input id="comboVol2_val1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVol2_val1">Base Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboVol2_val2" type="text" class="validate">
+                                    <input id="comboVol2_val2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVol2_val2">Additive Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="combovol2_finalVal" type="text" class="validate">
+                                    <input id="combovol2_finalVal" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="combovol2_finalVal">Final Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="comboVol2_vol2" type="text" class="validate">
+                                    <input disabled id="comboVol2_vol2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVol2_vol2">Additive Volume</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="genericComboAdditiveVol()">Calculate</a>
@@ -159,27 +157,25 @@
                         <li>
                             <div class="collapsible-header">Generic Combination (Solve additive value)</div>
                             <div class="collapsible-body">
-                                $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$
-                                $$ \therefore $$
-                                $$ Val_2 = \frac{Vol_1 * (val_{final} - Val_1)}{Vol_2} + Val_{final} $$
+                                $$ Val_{final} = \frac{(Vol_1 * Val_1) + (Vol_2 * Val_2)}{Vol_1 + Vol_2} $$ $$ \therefore $$ $$ Val_2 = \frac{Vol_1 * (val_{final} - Val_1)}{Vol_2} + Val_{final} $$
                                 <div class="input-field">
-                                    <input id="comboVal2_vol1" type="text" class="validate">
+                                    <input id="comboVal2_vol1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVal2_vol1">Base Volume</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboVal2_val1" type="text" class="validate">
+                                    <input id="comboVal2_val1" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVal2_val1">Base Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboVal2_vol2" type="text" class="validate">
+                                    <input id="comboVal2_vol2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVal2_vol2">Additive Volume</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="comboval2_finalVal" type="text" class="validate">
+                                    <input id="comboval2_finalVal" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboval2_finalVal">Final Value</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="comboVal2_val2" type="text" class="validate">
+                                    <input disabled id="comboVal2_val2" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="comboVal2_val2">Additive Value</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="genericComboAdditiveVal()">Calculate</a>
@@ -188,34 +184,33 @@
                         <li>
                             <div class="collapsible-header">Final SG/Potential ABV</div>
                             <div class="collapsible-body">
-                                $$ ABV = k(OG - FG) \therefore ABV = kOG - kFG \therefore kFG = kOG - ABV $$
-                                $$ FG = OG - \frac{ABV}{k} $$
+                                $$ ABV = k(OG - FG) \therefore ABV = kOG - kFG \therefore kFG = kOG - ABV $$ $$ FG = OG - \frac{ABV}{k} $$
                                 <div class="input-field">
-                                    <input id="finalSG_yeastABV" type="text" class="validate">
+                                    <input id="finalSG_yeastABV" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_yeastABV">Yeast ABV Tolerance</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="finalSG_MustOG" type="text" class="validate">
+                                    <input id="finalSG_MustOG" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_MustOG">Must OG</label>
                                 </div>
                                 <div class="input-field">
-                                    <input value="132.715" id="finalSG_OEApprox" type="text" class="validate">
+                                    <input value="132.715" id="finalSG_OEApprox" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_OEApprox">OE Approximation Constant (k)</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="finalSG_finalSG" type="text" class="validate">
+                                    <input disabled id="finalSG_finalSG" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_finalSG">Final SG</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="finalSG_finalABV" type="text" class="validate">
+                                    <input disabled id="finalSG_finalABV" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_finalABV">Final ABV</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="finalSG_maxABV" type="text" class="validate">
+                                    <input disabled id="finalSG_maxABV" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_maxABV">Theoretical Max ABV w/ Sugar Exhaustion</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="finalSG_warnings" type="text" class="validate">
+                                    <input disabled id="finalSG_warnings" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="finalSG_warnings">Warnings</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="residualSugar()">Calculate</a>
@@ -227,19 +222,19 @@
                             <div class="collapsible-body">
                                 $$ ABV = k(OG - FG) $$
                                 <div class="input-field">
-                                    <input id="abv_MustOG" type="text" class="validate">
+                                    <input id="abv_MustOG" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="abv_MustOG">Must OG</label>
                                 </div>
                                 <div class="input-field">
-                                    <input id="abv_MustFG" type="text" class="validate">
+                                    <input id="abv_MustFG" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="abv_MustFG">Must FG</label>
                                 </div>
                                 <div class="input-field">
-                                    <input value="132.715" id="abv_OEApprox" type="text" class="validate">
+                                    <input value="132.715" id="abv_OEApprox" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="abv_OEApprox">OE Approximation Constant (k)</label>
                                 </div>
                                 <div class="input-field">
-                                    <input disabled id="abv_finalABV" type="text" class="validate">
+                                    <input disabled id="abv_finalABV" type="number" class="validate" step="0.001" min="0">
                                     <label class="active" for="abv_finalABV">Final ABV</label>
                                 </div>
                                 <a class="waves-effect waves-light btn" onClick="abv()">Calculate</a>
@@ -256,6 +251,45 @@
                                     <input disabled id="date_result" type="text" class="validate">
                                     <label class="active" for="date_result">Result Date</label>
                                 </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">ABV Conversions</div>
+                            <div class="collapsible-body">
+                                <div class="input-field">
+                                    <input id="abvConversion_volume" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abvConversion_volume">Volume</label>
+                                </div>
+                                <div class="input-field">
+                                    <select id="abvConversion_unit">
+                                      <option value="ml" selected>mL</option>
+                                      <option value="l">L</option>
+                                      <option value="floz">fl. oz.</option>
+                                      <option value="gal">gallons</option>
+                                    </select>
+                                    <label>Volume Units</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="abvConversion_abv" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abvConversion_abv">ABV</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="abv_resultEthanol" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abv_resultEthanol">mL Pure Ethanol</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="abv_resultLiquor" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abv_resultEthanol">Shots (1.75fl. oz. @ 40% ABV)</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="abv_resultWine" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abv_resultWine">Bottles of Wine (750mL @ 13% ABV)</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="abv_resultBeer" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="abv_resultEthanol">Bottles of Beer (12fl oz @ 7% ABV)</label>
+                                </div>
+                                <a class="waves-effect waves-light btn" onClick="abvConversion()">Calculate</a>
                             </div>
                         </li>
                     </ul>
@@ -450,11 +484,11 @@
     <script type="text/javascript" src="lib/handlebars.min.js"></script>
     <script type="text/javascript" src="lib/html2canvas.min.js"></script>
     <script type="text/javascript" src="lib/qrcode.min.js"></script>
-    <script type="text/javascript" src="meads.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="naming.js"></script>
-    <script type="text/javascript" src="calculators.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <script type="text/javascript" src="js/meads.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/naming.js"></script>
+    <script type="text/javascript" src="js/calculators.js"></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
 </body>
 
 </html>
