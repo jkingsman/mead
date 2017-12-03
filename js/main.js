@@ -2,8 +2,8 @@
 
 // convert markdown to HTML
 Handlebars.registerHelper("markdown", function(text) {
-    var converter = new showdown.Converter();
-    var renderedRecipe = converter.makeHtml(text);
+    const converter = new showdown.Converter();
+    const renderedRecipe = converter.makeHtml(text);
     return renderedRecipe;
 });
 
@@ -14,10 +14,10 @@ Handlebars.registerHelper("padSerial", function(text) {
 
 // convert given date into days remaining until/negative days past
 Handlebars.registerHelper("daysFromNow", function(date) {
-    var today = new Date();
-    var then = new Date(date);
-    var timeDiff = then - today;
-    var dayDiff = Math.floor(((((timeDiff / 1000) / 60) + today.getTimezoneOffset()) / 60) / 24) + 1;
+    const today = new Date();
+    const then = new Date(date);
+    const timeDiff = then - today;
+    const dayDiff = Math.floor(((((timeDiff / 1000) / 60) + today.getTimezoneOffset()) / 60) / 24) + 1;
 
     return dayDiff;
 });
@@ -33,7 +33,7 @@ function drawBatch(batch) {
 
     // inject gravity calculations
     if (batch.gravReadings.length > 0) {
-        var originalGravity = batch.gravReadings[0][1];
+        const originalGravity = batch.gravReadings[0][1];
         batch.gravReadings = batch.gravReadings.map(function(gravReading) {
             let abv = Math.round((originalGravity - gravReading[1]) * 13271.5) / 100;
             gravReading.push(abv);
@@ -42,13 +42,13 @@ function drawBatch(batch) {
     }
 
     // compile template
-    var source = $('#meadTemplate').html();
-    var template = Handlebars.compile(source);
-    var html = template(batch);
+    const source = $('#meadTemplate').html();
+    const template = Handlebars.compile(source);
+    const html = template(batch);
     $('#pageContent').html(html);
 
     // generate QR code
-    var qrOptions = {
+    const qrOptions = {
         render: 'image',
         crisp: true,
         ecLevel: 'H',
@@ -80,7 +80,7 @@ function drawBatch(batch) {
 
 // check if valid batch; return index if so and -1 if not
 function checkValidBatch(batchID) {
-    var batchIDs = meadData.map(function(batch) {
+    const batchIDs = meadData.map(function(batch) {
         return batch.batchID;
     });
 
@@ -100,9 +100,9 @@ function checkValidBottle(bottleID) {
 
 // validate ID and call draw function
 function lookup() {
-    var rawID = $('#serial').val(); // full ID
-    var idType = rawID[0].toUpperCase(); // first char (B or F)
-    var idNumber = Number(rawID.slice(1)); // numerical component
+    const rawID = $('#serial').val(); // full ID
+    const idType = rawID[0].toUpperCase(); // first char (B or F)
+    const idNumber = Number(rawID.slice(1)); // numerical component
 
     // check correct bottle/batch accordingly
     var dataID = -1;
@@ -118,8 +118,15 @@ function lookup() {
     }
 
     // generate padded serial and set shortlink
-    var paddedSerial = idType + leftPadSerial(idNumber);
-    window.location.hash = paddedSerial;
+    const paddedSerial = idType + leftPadSerial(idNumber);
+    if(window.location.hash.length < 1){
+        // if this is a direct entry, set the hash and ignore search
+        history.replaceState(null, 'Mead Kiwi | ' + paddedSerial, window.location.origin + '/#' + paddedSerial);
+    } else {
+        // if it's a link, just set the title
+        document.title = 'Mead Kiwi | ' + paddedSerial;
+    }
+
 
     // inject padded serial
     meadData[dataID].id = paddedSerial;
@@ -129,9 +136,9 @@ function lookup() {
 }
 
 function drawRecipes() {
-    var source = $('#recipeTemplate').html();
-    var template = Handlebars.compile(source);
-    for (var recipe in recipes) {
+    const source = $('#recipeTemplate').html();
+    const template = Handlebars.compile(source);
+    for (const recipe in recipes) {
 
         // determine which recipes it was used in
         var usedIn = [];
@@ -161,18 +168,23 @@ $(document).ready(function() {
     $('.modal').modal();
     $('#serial').focus();
 
-    // check for shortlink presence
+    if(window.location.search.length > 0){
+        // check for tab jump
+        const tabName = window.location.search.substr(1);
+        $('ul.tabs').tabs('select_tab', tabName);
+    }
+
     if (window.location.hash.length > 1) {
-        var id = window.location.hash.slice(1);
+        // check for shortlink presence
+        const id = window.location.hash.slice(1);
         $('#serial').val(id);
         lookup();
-        setTitle('Batch Data')
     }
 
     // compile template and render current status
-    var source = $('#currentStatusTemplate').html();
-    var template = Handlebars.compile(source);
-    var html = template(meadData);
+    const source = $('#currentStatusTemplate').html();
+    const template = Handlebars.compile(source);
+    const html = template(meadData);
     $('#currentStatusContainer').html(html);
 
     drawRecipes();
@@ -191,13 +203,13 @@ function initializeMaterialize() {
         onShow: function(tab){
             switch(tab[0].id){
                 case 'pageContent':
-                    setTitle('Batch Data');
+                    setTab('Batch Data', tab[0].id);
                     break;
                 case 'recipes':
-                    setTitle('Recipes');
+                    setTab('Recipes', tab[0].id);
                     break;
                 case 'calculators':
-                    setTitle('Calculators');
+                    setTab('Calculators', tab[0].id);
                     break;
             }
         }
@@ -209,8 +221,12 @@ function initializeMaterialize() {
     Materialize.updateTextFields();
 }
 
-function setTitle(title){
-    document.title = "Mead Kiwi | " + title;
+function setTab(title, search){
+    var hash = '';
+    if(window.location.hash.length > 1){
+        hash = window.location.hash;
+    }
+    history.replaceState(null, 'Mead Kiwi | ' + title, window.location.origin + '/?' + search + hash);
 }
 
 // hacky fix to make the page relaod when you click links to different meads
