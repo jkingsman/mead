@@ -6,7 +6,9 @@
          bottleRangeMin: 0,
          bottleRangeMax: 0,
          size: '2L',
-         notes: 'Very first brew; super dry ginger ale. Lots of flocculated yeast at the bottom.',
+         notes: [
+           'Very first brew; super dry ginger ale. Lots of flocculated yeast at the bottom.',
+         ],
          openingDate: '2017-09-11',
          bottleDistribution: [
              // bottle #, person
@@ -48,7 +50,11 @@
          bottleRangeMin: 1,
          bottleRangeMax: 4,
          size: '1 gal.',
-         notes: 'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a low- to medium-sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0005 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         notes: [
+           'This is one of my first two meads! This mead uses a weaker yeast that should result in a sweet mead. This is a small batch and should have a foward honey flavor, low alcohol, and a low- to medium-sweetness. Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you).',
+           'B0005 was discarded; insufficient amount of mead.',
+           'Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         ],
          openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
          bottleDistribution: [
              // bottle #, person
@@ -160,7 +166,11 @@
          bottleRangeMin: 6,
          bottleRangeMax: 9,
          size: '1 gal.',
-         notes: 'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you). B0010 was discarded; insufficient amount of mead.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         notes: [
+              'This is one of my first two meads! This mead uses a stronger yeast that <span style="text-decoration: line-through;">should result in a semi-dry mead</span> resulted in a bone dry mead. If it\'s too dry for your liking, you can stir a bit of honey into it to sweeten it up. Just go a bit at a time! Your palate will come to enjoy the dryness (maybe). Enjoy chilled or room temperature; leave the sediment in the bottom of the bottle (although it won\'t hurt you).',
+              'B0010 was discarded; insufficient amount of mead.',
+              'Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         ],
          openingDate: 'Open 2018-06 at the earliest; let age for a year (2018-11) or longer for optimum taste -- long aging makes better mead!',
          bottleDistribution: [
              // bottle #, person
@@ -279,7 +289,10 @@
          bottleRangeMin: 11,
          bottleRangeMax: 15,
          size: '1 gal.',
-         notes: 'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shop<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+         notes: [
+              'Celebratory metheglin for my first day at Chartio! (prepared a day after because I was exhausted.) Off to a slow start with some half cocked yeast (I assume), but rolling away happily after introducing another packet from the local homebrew shop',
+             'Honeys used (all are raw, unfiltered, and unpastuerized): 3lb Crocket wildflower, .5lb Nature Nate\'s',
+        ],
          openingDate: '2018-10-24',
          bottleDistribution: [
              // bottle #, person
@@ -368,7 +381,12 @@
          bottleRangeMin: 16,
          bottleRangeMax: 35,
          size: '5 gal.',
-         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)<br><br><h4>HJ Notes</h4><ul><li>1 gal separated prior to stabilization</li><li>Separate into 1L PET bottles</li><li>"Crash" upright for 48hrs</li><li>Drain into collection jar, shaking as necessary to dislodge liquid</li><li>Repeat twice more</li><li>Bottle</li></ul>Grav readings:',
+         notes: [
+              'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be crashed for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.',
+              'Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
+              '<h4>HJ Notes</h4>1 gal separated prior to stabilization, separate into 1L PET bottles, crash upright for 48hrs, drain into collection jar, shaking as necessary to dislodge liquid; repeat twice more and bottle.',
+              'HJ ABV readings: [pending]',
+         ],
          openingDate: '2018-10-24',
          bottleDistribution: [
              // bottle #, person

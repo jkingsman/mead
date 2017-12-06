@@ -399,7 +399,11 @@
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
 
                 <hr />
-                <h5>Recipe Notes</h5> {{{ notes }}}
+                <h5>Recipe Notes</h5>
+                {{#each notes }}
+                    {{{ this }}}
+                    <br /><br />
+                {{/each }}
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header">Click to view full recipe</div>
