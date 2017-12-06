@@ -368,7 +368,7 @@
          bottleRangeMin: 16,
          bottleRangeMax: 35,
          size: '5 gal.',
-         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)<br><br><h4>HJ Notes</h4><ul><li>1 gal separated prior to stabilization</li><li>Separate into 1L PET bottles</li><li>Crash upright for 48hrs</li><li>Drain into collection jar, shaking as necessary to dislodge liquid</li><li>Repeat twice more</li><li>Bottle</li></ul>Grav readings:',
+         notes: 'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.<br><br>Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)<br><br><h4>HJ Notes</h4><ul><li>1 gal separated prior to stabilization</li><li>Separate into 1L PET bottles</li><li>"Crash" upright for 48hrs</li><li>Drain into collection jar, shaking as necessary to dislodge liquid</li><li>Repeat twice more</li><li>Bottle</li></ul>Grav readings:',
          openingDate: '2018-10-24',
          bottleDistribution: [
              // bottle #, person
