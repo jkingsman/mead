@@ -442,21 +442,24 @@
                     </li>
                 </ul>
 
-                <hr /> {{#if timeline }}
+                {{#if timeline }}
+                <hr />
                 <h5>Timeline</h5>{{/if }} {{#each timeline }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
                 {{/each }}
 
-                <hr /> {{#if tastingNotes }}
+                {{#if tastingNotes }}
+                <hr />
                 <h5>Tasting Notes</h5>{{/if }} {{#each tastingNotes }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
                 {{/each }}
 
-                <hr /> {{#if gravReadings }}
+                {{#if gravReadings }}
+                <hr />
                 <h5>Gravity Readings</h5>{{/if }} {{#each gravReadings }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[2] }} -- {{ this.[1] }}SG ({{ this.[3] }}% ABV)<br />
