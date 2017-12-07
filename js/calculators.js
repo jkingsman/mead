@@ -1,4 +1,4 @@
-function genericComboFinalVal() {
+function genericComboFinalVal() { // eslint-disable-line no-unused-vars
     const vol1 = Number(document.getElementById('comboFinalVal_Vol1').value);
     const val1 = Number(document.getElementById('comboFinalVal_Val1').value);
     const vol2 = Number(document.getElementById('comboFinalVal_Vol2').value);
@@ -10,7 +10,7 @@ function genericComboFinalVal() {
     Materialize.updateTextFields();
 }
 
-function genericComboAdditiveVol() {
+function genericComboAdditiveVol() { // eslint-disable-line no-unused-vars
     const vol1 = Number(document.getElementById('comboVol2_vol1').value);
     const val1 = Number(document.getElementById('comboVol2_val1').value);
     const val2 = Number(document.getElementById('comboVol2_val2').value);
@@ -22,7 +22,7 @@ function genericComboAdditiveVol() {
     Materialize.updateTextFields();
 }
 
-function genericComboAdditiveVal() {
+function genericComboAdditiveVal() { // eslint-disable-line no-unused-vars
     const vol1 = Number(document.getElementById('comboVal2_vol1').value);
     const val1 = Number(document.getElementById('comboVal2_val1').value);
     const vol2 = Number(document.getElementById('comboVal2_vol2').value);
@@ -34,7 +34,11 @@ function genericComboAdditiveVal() {
     Materialize.updateTextFields();
 }
 
-function residualSugar() {
+function _abv(og, fg, k) {
+    return Math.round((k * (og - fg)) * 100) / 100;
+}
+
+function residualSugar() { // eslint-disable-line no-unused-vars
     const tolerance = Number(document.getElementById('finalSG_yeastABV').value);
     const og = Number(document.getElementById('finalSG_MustOG').value);
     const k = Number(document.getElementById('finalSG_OEApprox').value);
@@ -61,11 +65,7 @@ function residualSugar() {
     Materialize.updateTextFields();
 }
 
-function _abv(og, fg, k) {
-    return Math.round((k * (og - fg)) * 100) / 100;
-}
-
-function abv() {
+function abv() { // eslint-disable-line no-unused-vars
     const og = Number(document.getElementById('abv_MustOG').value);
     const fg = Number(document.getElementById('abv_MustFG').value);
     const k = Number(document.getElementById('abv_OEApprox').value);
@@ -74,7 +74,7 @@ function abv() {
     Materialize.updateTextFields();
 }
 
-function extendDate(weeks) {
+function extendDate(weeks) { // eslint-disable-line no-unused-vars
     const now = new Date();
     now.setDate(now.getDate() + (weeks * 7));
     const dateString = now.toISOString().slice(0, 10);
@@ -84,7 +84,7 @@ function extendDate(weeks) {
 }
 
 // originalUnit can be ml, l, floz, gal
-function _convertToMl(volume, originalUnit) {
+function _convertToMl(volume, originalUnit) { // eslint-disable-line no-unused-vars
     switch (originalUnit) {
     case 'ml':
         return volume;
@@ -95,19 +95,22 @@ function _convertToMl(volume, originalUnit) {
     case 'gal':
         return volume * 3785.41178;
     default:
-        console.error('No such unit!');
+        return 0;
     }
 }
 
-function abvConversion() {
+function abvConversion() { // eslint-disable-line no-unused-vars
     const volume = Number(document.getElementById('abvConversion_volume').value);
     const unit = document.getElementById('abvConversion_unit').value;
-    const abv = Number(document.getElementById('abvConversion_abv').value);
+    const givenAbv = Number(document.getElementById('abvConversion_abv').value);
 
-    const ethanolMl = _convertToMl(volume, unit) * (abv / 100);
-    const liquorShots = ethanolMl / 20.7014707; // 1.75fl.oz = 51.7536767 ml * .4 = 20.7014707 mL ethanol=
-    const wineBottles = ethanolMl / 97.5; // 750 ml * .13 = 97.5 mL ethanol=
-    const beerBottles = ethanolMl / 24.8417649; // 12fl.0z = 354.882355 ml * .07 = 24.8417649 mL ethanol=
+    const ethanolMl = _convertToMl(volume, unit) * (givenAbv / 100);
+    // 1.75fl.oz = 51.7536767 ml * .4 = 20.7014707 mL ethanol=
+    const liquorShots = ethanolMl / 20.7014707;
+    // 750 ml * .13 = 97.5 mL ethanol=
+    const wineBottles = ethanolMl / 97.5;
+    // 12fl.0z = 354.882355 ml * .07 = 24.8417649 mL ethanol=
+    const beerBottles = ethanolMl / 24.8417649;
 
     document.getElementById('abv_resultEthanol').value = Math.round(ethanolMl * 100) / 100;
     document.getElementById('abv_resultLiquor').value = Math.round(liquorShots * 100) / 100;
