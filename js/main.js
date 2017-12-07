@@ -1,19 +1,17 @@
 /* jshint esversion:6 */
 
 // convert markdown to HTML
-Handlebars.registerHelper("markdown", function(text) {
+Handlebars.registerHelper('markdown', (text) => {
     const converter = new showdown.Converter();
     const renderedRecipe = converter.makeHtml(text);
     return renderedRecipe;
 });
 
 // left pad serial with zeroes
-Handlebars.registerHelper("padSerial", function(text) {
-    return leftPadSerial(text);
-});
+Handlebars.registerHelper('padSerial', text => leftPadSerial(text));
 
 // convert given date into days remaining until/negative days past
-Handlebars.registerHelper("daysFromNow", function(date) {
+Handlebars.registerHelper('daysFromNow', (date) => {
     const today = new Date();
     const then = new Date(date);
     const timeDiff = then - today;
@@ -23,7 +21,7 @@ Handlebars.registerHelper("daysFromNow", function(date) {
 });
 
 function leftPadSerial(serial, serialPadding = 4) {
-    return ("000000000000" + serial).substr(-serialPadding, serialPadding);
+    return (`000000000000${serial}`).substr(-serialPadding, serialPadding);
 }
 
 // draw a given batch
@@ -34,8 +32,8 @@ function drawBatch(batch) {
     // inject gravity calculations
     if (batch.gravReadings.length > 0) {
         const originalGravity = batch.gravReadings[0][1];
-        batch.gravReadings = batch.gravReadings.map(function(gravReading) {
-            let abv = Math.round((originalGravity - gravReading[1]) * 13271.5) / 100;
+        batch.gravReadings = batch.gravReadings.map((gravReading) => {
+            const abv = Math.round((originalGravity - gravReading[1]) * 13271.5) / 100;
             gravReading.push(abv);
             return gravReading;
         });
@@ -63,12 +61,12 @@ function drawBatch(batch) {
         image: document.getElementById('kiwiBuffer'),
         minVersion: 5,
     };
-    var el = kjua(qrOptions);
-    el.style.width = "100%";
-    el.style.height = "auto";
+    const el = kjua(qrOptions);
+    el.style.width = '100%';
+    el.style.height = 'auto';
 
     // render into place on the page and DON'T add batch text
-    var qrCodeContainer = document.getElementById('qrCode');
+    const qrCodeContainer = document.getElementById('qrCode');
     // qrCodeContainer.innerHTML = '<h3>' + batch.id + '</h3>';
     qrCodeContainer.prepend(el);
 
@@ -82,16 +80,14 @@ function drawBatch(batch) {
 
 // check if valid batch; return index if so and -1 if not
 function checkValidBatch(batchID) {
-    const batchIDs = meadData.map(function(batch) {
-        return batch.batchID;
-    });
+    const batchIDs = meadData.map(batch => batch.batchID);
 
     return batchIDs.indexOf(batchID);
 }
 
 // check if valid batch; return index if so and -1 if not
 function checkValidBottle(bottleID) {
-    for (var i = 0; i < meadData.length; i++) {
+    for (let i = 0; i < meadData.length; i++) {
         if (bottleID >= meadData[i].bottleRangeMin && bottleID <= meadData[i].bottleRangeMax) {
             return i;
         }
@@ -107,7 +103,7 @@ function lookup() {
     const idNumber = Number(rawID.slice(1)); // numerical component
 
     // check correct bottle/batch accordingly
-    var dataID = -1;
+    let dataID = -1;
     if (idType === 'B') {
         dataID = checkValidBottle(idNumber);
     } else if (idType === 'F') {
@@ -121,12 +117,12 @@ function lookup() {
 
     // generate padded serial and set shortlink
     const paddedSerial = idType + leftPadSerial(idNumber);
-    if(window.location.hash.length < 1){
-        // if this is a direct entry, set the hash and ignore search
-        history.replaceState(null, 'Mead Kiwi | ' + paddedSerial, window.location.origin + '/#' + paddedSerial);
+    if (window.location.hash.length < 1) {
+    // if this is a direct entry, set the hash and ignore search
+        history.replaceState(null, `Mead Kiwi | ${paddedSerial}`, `${window.location.origin}/#${paddedSerial}`);
     } else {
-        // if it's a link, just set the title
-        document.title = 'Mead Kiwi | ' + paddedSerial;
+    // if it's a link, just set the title
+        document.title = `Mead Kiwi | ${paddedSerial}`;
     }
 
 
@@ -141,43 +137,42 @@ function drawRecipes() {
     const source = $('#recipeTemplate').html();
     const template = Handlebars.compile(source);
     for (const recipe in recipes) {
-
-        // determine which recipes it was used in
+    // determine which recipes it was used in
         var usedIn = [];
         /* jshint ignore:start */
-        meadData.forEach(function(batch) {
+        meadData.forEach((batch) => {
             if (batch.recipeName === recipe) {
-                usedIn.push("F" + leftPadSerial(batch.batchID) + " (" + batch.timeline[0][0] + ")");
+                usedIn.push(`F${leftPadSerial(batch.batchID)} (${batch.timeline[0][0]})`);
             }
         });
         /* jshint ignore:end */
 
-        var usedInString = 'Not used';
+        let usedInString = 'Not used';
         if (usedIn.length > 0) {
-            usedInString = "Batch usage: " + usedIn.join(', ');
+            usedInString = `Batch usage: ${usedIn.join(', ')}`;
         }
 
         // roll into big object for display
-        var rolledRecipe = recipes[recipe];
+        const rolledRecipe = recipes[recipe];
         rolledRecipe.name = recipe;
         rolledRecipe.usedInString = usedInString;
         $('#recipeEntryContainer').append(template(rolledRecipe));
     }
 }
 
-$(document).ready(function() {
+$(document).ready(() => {
     // initialize modal handling and focus the input field
     $('.modal').modal();
     $('#serial').focus();
 
-    if(window.location.search.length > 0){
-        // check for tab jump
+    if (window.location.search.length > 0) {
+    // check for tab jump
         const tabName = window.location.search.substr(1);
         $('ul.tabs').tabs('select_tab', tabName);
     }
 
     if (window.location.hash.length > 1) {
-        // check for shortlink presence
+    // check for shortlink presence
         const id = window.location.hash.slice(1);
         $('#serial').val(id);
         lookup();
@@ -194,7 +189,7 @@ $(document).ready(function() {
 });
 
 // handle enter keypress in input box
-$("#serial").on('keyup', function(e) {
+$('#serial').on('keyup', (e) => {
     if (e.keyCode == 13) {
         lookup();
     }
@@ -202,20 +197,20 @@ $("#serial").on('keyup', function(e) {
 
 function initializeMaterialize() {
     $('ul.tabs').tabs({
-        onShow: function(tab){
-            switch(tab[0].id){
-                case 'pageContent':
-                    setTab('Batch Data', tab[0].id);
-                    break;
-                case 'recipes':
-                    setTab('Recipes', tab[0].id);
-                    break;
-                case 'calculators':
-                    setTab('Calculators', tab[0].id);
-                    break;
+        onShow(tab) {
+            switch (tab[0].id) {
+            case 'pageContent':
+                setTab('Batch Data', tab[0].id);
+                break;
+            case 'recipes':
+                setTab('Recipes', tab[0].id);
+                break;
+            case 'calculators':
+                setTab('Calculators', tab[0].id);
+                break;
             }
-        }
-    })
+        },
+    });
 
     $('select').material_select();
     $('.collapsible').collapsible();
@@ -223,15 +218,15 @@ function initializeMaterialize() {
     Materialize.updateTextFields();
 }
 
-function setTab(title, search){
-    var hash = '';
-    if(window.location.hash.length > 1){
+function setTab(title, search) {
+    let hash = '';
+    if (window.location.hash.length > 1) {
         hash = window.location.hash;
     }
-    history.replaceState(null, 'Mead Kiwi | ' + title, window.location.origin + '/?' + search + hash);
+    history.replaceState(null, `Mead Kiwi | ${title}`, `${window.location.origin}/?${search}${hash}`);
 }
 
 // hacky fix to make the page relaod when you click links to different meads
-window.onhashchange = function() {
+window.onhashchange = function () {
     window.location.reload();
 };

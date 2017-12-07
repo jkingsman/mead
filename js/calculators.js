@@ -40,26 +40,25 @@ function residualSugar() {
     const k = Number(document.getElementById('finalSG_OEApprox').value);
 
     const maxABV = _abv(og, 1, k);
-    document.getElementById('finalSG_maxABV').value = maxABV + '%';
+    document.getElementById('finalSG_maxABV').value = `${maxABV}%`;
 
     // check for sugar exhaustion below tolerance
     if (maxABV < tolerance) {
-        document.getElementById('finalSG_finalABV').value = maxABV + '%';
-        document.getElementById('finalSG_finalSG').value = "1.00";
-        document.getElementById('finalSG_warnings').value = "Must sugar exhausted!";
+        document.getElementById('finalSG_finalABV').value = `${maxABV}%`;
+        document.getElementById('finalSG_finalSG').value = '1.00';
+        document.getElementById('finalSG_warnings').value = 'Must sugar exhausted!';
     } else if (maxABV > tolerance) {
         const fg = og - (tolerance / k);
-        document.getElementById('finalSG_finalABV').value = tolerance + '%';
+        document.getElementById('finalSG_finalABV').value = `${tolerance}%`;
         document.getElementById('finalSG_finalSG').value = Math.round(fg * 100) / 100;
-        document.getElementById('finalSG_warnings').value = "Yeast exhausted!";
+        document.getElementById('finalSG_warnings').value = 'Yeast exhausted!';
     } else {
-        document.getElementById('finalSG_finalABV').value = tolerance + '%';
-        document.getElementById('finalSG_finalSG').value = "1.00"
-        document.getElementById('finalSG_warnings').value = "Yeast and sugar exhausted!";
+        document.getElementById('finalSG_finalABV').value = `${tolerance}%`;
+        document.getElementById('finalSG_finalSG').value = '1.00';
+        document.getElementById('finalSG_warnings').value = 'Yeast and sugar exhausted!';
     }
 
     Materialize.updateTextFields();
-    return;
 }
 
 function _abv(og, fg, k) {
@@ -71,12 +70,12 @@ function abv() {
     const fg = Number(document.getElementById('abv_MustFG').value);
     const k = Number(document.getElementById('abv_OEApprox').value);
 
-    document.getElementById('abv_finalABV').value = _abv(og, fg, k) + "%";
+    document.getElementById('abv_finalABV').value = `${_abv(og, fg, k)}%`;
     Materialize.updateTextFields();
 }
 
 function extendDate(weeks) {
-    var now = new Date();
+    const now = new Date();
     now.setDate(now.getDate() + (weeks * 7));
     const dateString = now.toISOString().slice(0, 10);
 
@@ -85,18 +84,18 @@ function extendDate(weeks) {
 }
 
 // originalUnit can be ml, l, floz, gal
-function _convertToMl(volume, originalUnit){
-    switch(originalUnit){
-        case 'ml':
-            return volume;
-        case 'l':
-            return volume * 1000;
-        case 'floz':
-            return volume * 29.5735296;
-        case 'gal':
-            return volume * 3785.41178;
-        default:
-            console.error('No such unit!');
+function _convertToMl(volume, originalUnit) {
+    switch (originalUnit) {
+    case 'ml':
+        return volume;
+    case 'l':
+        return volume * 1000;
+    case 'floz':
+        return volume * 29.5735296;
+    case 'gal':
+        return volume * 3785.41178;
+    default:
+        console.error('No such unit!');
     }
 }
 
