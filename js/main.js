@@ -64,6 +64,8 @@ function drawBatch(batch) {
         minVersion: 5,
     };
     var el = kjua(qrOptions);
+    el.style.width = "100%";
+    el.style.height = "auto";
 
     // render into place on the page and DON'T add batch text
     var qrCodeContainer = document.getElementById('qrCode');
