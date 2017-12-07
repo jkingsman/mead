@@ -1,5 +1,3 @@
-/* jshint esversion:6 */
-
 // convert markdown to HTML
 Handlebars.registerHelper('markdown', (text) => {
     const converter = new showdown.Converter();

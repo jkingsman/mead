@@ -1,5 +1,3 @@
-/* jshint esversion: 6 */
-
 const meadData = [{
     batchID: 0,
     recipeName: 'Fiery Ginger Ale (2L)',
@@ -485,6 +483,10 @@ const meadData = [{
             '2017-11-24',
             'Internal pressure has equalized with the leaks -- there are no bubbles coming out of the airlock, but the water line will push itself to an almost-bubbling position even after being forced back to balance. There\'s therefore absolutely active CO2 production; it\'s just not fast enough to outpace the leaks.',
         ],
+        [
+            '2017-12-07',
+            'Reracked onto Campden and k-meta. Yeast were still going hard after getting kicked up; absolutely still activity. I\'ll let the HJ batch finish but the main bucket will be stopped, obviously. The gallon is airlocked so I\'m happy to just let that one bubble for a bit longer. Came away with 4.08 gallons in the main bucket. Will let settle for a couple weeks and decide if I want to sparkoloid.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -492,6 +494,11 @@ const meadData = [{
             '2017-11-22',
             1.11,
             'Pitched',
+        ],
+        [
+            '2017-12-06',
+            1.02,
+            'Racked onto preservatives',
         ],
     ],
     images: [
@@ -501,7 +508,12 @@ const meadData = [{
         'img/f4mixer.jpg',
         'img/f4bubbling.gif',
     ],
-    tastingNotes: [],
+    tastingNotes: [
+        [
+            '2017-12-06',
+            'Very sweet, pretty drinkable as is, much less hot, slightly carbonated. Tastiest post-ferment yet!',
+        ],
+    ],
     // Status is [0]; next step is [1] on [2]
     status: [
         'In primary',
