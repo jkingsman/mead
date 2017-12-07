@@ -399,11 +399,8 @@
                 <strong>Suggested Opening Date: </strong>{{ openingDate }}
 
                 <hr />
-                <h5>Recipe Notes</h5>
-                {{#each notes }}
-                    {{{ this }}}
-                    <br /><br />
-                {{/each }}
+                <h5>Recipe Notes</h5> {{#each notes }} {{{ this }}}
+                <br /><br /> {{/each }}
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header">Click to view full recipe</div>
@@ -452,17 +449,13 @@
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
-                {{/each }}
-
-                {{#if tastingNotes }}
+                {{/each }} {{#if tastingNotes }}
                 <hr />
                 <h5>Tasting Notes</h5>{{/if }} {{#each tastingNotes }}
                 <p>
                     <strong>{{ this.[0] }}</strong>&nbsp;{{ this.[1] }}<br />
                 </p>
-                {{/each }}
-
-                {{#if gravReadings }}
+                {{/each }} {{#if gravReadings }}
                 <hr />
                 <h5>Gravity Readings</h5>{{/if }} {{#each gravReadings }}
                 <p>
@@ -499,12 +492,31 @@
         </div>
     </script>
 
+    <script type="text/javascript">
+        var meadData = [];
+        var recipes = {};
+    </script>
+    <script type="text/javascript" src="js/batches/F0000.js"></script>
+    <script type="text/javascript" src="js/batches/F0001.js"></script>
+    <script type="text/javascript" src="js/batches/F0002.js"></script>
+    <script type="text/javascript" src="js/batches/F0003.js"></script>
+    <script type="text/javascript" src="js/batches/F0004.js"></script>
+
+    <script type="text/javascript" src="js/recipes/gingerAle.js"></script>
+    <script type="text/javascript" src="js/recipes/gingerMetheglin.js"></script>
+    <script type="text/javascript" src="js/recipes/jetFuel.js"></script>
+    <script type="text/javascript" src="js/recipes/reaperCapsicumel.js"></script>
+    <script type="text/javascript" src="js/recipes/simpleSemiDry.js"></script>
+    <script type="text/javascript" src="js/recipes/simpleSemiDry5Gal.js"></script>
+    <script type="text/javascript" src="js/recipes/simpleSweet.js"></script>
+    <script type="text/javascript" src="js/recipes/sweetMetheglin.js"></script>
+    <script type="text/javascript" src="js/recipes/sweetMetheglinWithHerbs.js"></script>
+
     <script type="text/javascript" src="lib/jquery.min.js"></script>
     <script type="text/javascript" src="lib/materialize.min.js"></script>
     <script type="text/javascript" src="lib/handlebars.min.js"></script>
     <script type="text/javascript" src="lib/html2canvas.min.js"></script>
     <script type="text/javascript" src="lib/qrcode.min.js"></script>
-    <script type="text/javascript" src="js/meads.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/naming.js"></script>
     <script type="text/javascript" src="js/calculators.js"></script>

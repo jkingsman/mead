@@ -1,0 +1,37 @@
+recipes['Sweet Metheglin w/ Herbs (1gal.)'] = {
+    type: 'Sweet Metheglin w/ Herbs (1gal.)',
+    volume: '1 gal',
+    brewTime: [
+        '2 week primary',
+        '2 week secondary',
+        '2 week stabilization/clarifying',
+    ],
+    ingredients: [
+        '3.5 lbs honey',
+        '1 tsp LD Carlson Nutrient (diammonium phosphate/DAP)',
+        '0.5 tsp LD Carlson Energizer (yeast hulls)',
+        '5 grams Safale US-05 yeast',
+        '1 vanilla bean',
+        '1 cinnamon stick',
+        '60 grams (assuming 1 gal = 5 bottles * 3 herb portions per bottle * 4 gram portion = 60 grams) herbs',
+        'Spring or tap water to 1 gal.',
+    ],
+    equipmentMisc: [
+        '1 gal. carboy',
+        'Airlock',
+        'StarSan soln.',
+        '1 Campden tablet, crushed',
+        '0.5 tsp potassium sorbate',
+    ],
+    recipe: [
+        'Clean 1 gal. carboy with StarSan soln.; .1oz starsan (.6 tsp) for half gallon. Let sit for three minutes, then rinse until suds subside.',
+        'Bring vanilla bean and cinnamon stick to boil for 5 minutes.',
+        'Add room temperature honey then room temperature spring or tap water until volume of must is 1 gal.',
+        'Pour dry yeast into must and add DAP with yeast hulls.',
+        'Seal carboy and shake vigorously for 4 minutes. SG check. Airlock carboy.',
+        'Place in dark location at 60 - 75 degrees F.',
+        'After two weeks, bring herbs to boil in 1/4 cup water. Pitch mixture into santizied carboy and rack mead off lees and onto herbs.',
+        'After two more eeks, rack onto crushed campden and potassium sorbate and let sit for two weeks or until SG reading stabilizes, then bottle.',
+    ],
+    fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite, herbs',
+};

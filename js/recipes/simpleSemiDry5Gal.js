@@ -1,0 +1,32 @@
+recipes['Simple Semi-dry Mead (5gal.)'] = {
+    type: 'Simple Semi-dry Mead (5gal.)',
+    volume: '5 gal',
+    brewTime: [
+        '2 week primary',
+        '3 week stabilization/clarifying/secondary',
+    ],
+    ingredients: [
+        '15 lbs honey',
+        '5 tsp LD Carlson Nutrient (diammonium phosphate/DAP)',
+        '5 tsp LD Carlson Energizer (yeast hulls)',
+        '5 grams Lavlin 71B-1122',
+        '4 gal. spring or tap water',
+    ],
+    equipmentMisc: [
+        '5 or 6.5 gal. carboy',
+        'Airlock',
+        'StarSan soln.',
+        '5 Campden tablets, crushed',
+        '2.5 tsp potassium sorbate',
+        'Sparkoloid per label (optional)',
+    ],
+    recipe: [
+        'Clean carboy with StarSan soln.; 1oz starsan for 5 gallons. Let sit for three minutes, then rinse until suds subside.',
+        'Add room temperature honey, then room temperature spring or tap water until volume of must is 5 gal.',
+        'Pour dry yeast into must and add DAP with yeast hulls.',
+        'Seal carboy and stir vigorously until honey and yeast are well mixed. SG check. Airlock carboy.',
+        'Place in dark location at 60 - 75 degrees F.',
+        'After two weeks, rack off lees into sanitized carboy and onto crushed Campden tablet, potassium sorbate, and, clarifying agent (Sparkoloid or bentonite). SG check. After three weeks, bottle.',
+    ],
+    fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite',
+};

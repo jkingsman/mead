@@ -1,3 +1,7 @@
+function leftPadSerial(serial, serialPadding = 4) {
+    return (`000000000000${serial}`).substr(-serialPadding, serialPadding);
+}
+
 // convert markdown to HTML
 Handlebars.registerHelper('markdown', (text) => {
     const converter = new showdown.Converter();
@@ -17,10 +21,6 @@ Handlebars.registerHelper('daysFromNow', (date) => {
 
     return dayDiff;
 });
-
-function leftPadSerial(serial, serialPadding = 4) {
-    return (`000000000000${serial}`).substr(-serialPadding, serialPadding);
-}
 
 // draw a given batch
 function drawBatch(batch) {
@@ -188,10 +188,18 @@ $(document).ready(() => {
 
 // handle enter keypress in input box
 $('#serial').on('keyup', (e) => {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
         lookup();
     }
 });
+
+function setTab(title, search) {
+    let hash = '';
+    if (window.location.hash.length > 1) {
+        hash = window.location.hash;
+    }
+    history.replaceState(null, `Mead Kiwi | ${title}`, `${window.location.origin}/?${search}${hash}`);
+}
 
 function initializeMaterialize() {
     $('ul.tabs').tabs({
@@ -214,14 +222,6 @@ function initializeMaterialize() {
     $('.collapsible').collapsible();
     $('.slider').slider();
     Materialize.updateTextFields();
-}
-
-function setTab(title, search) {
-    let hash = '';
-    if (window.location.hash.length > 1) {
-        hash = window.location.hash;
-    }
-    history.replaceState(null, `Mead Kiwi | ${title}`, `${window.location.origin}/?${search}${hash}`);
 }
 
 // hacky fix to make the page relaod when you click links to different meads
