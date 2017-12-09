@@ -8,6 +8,7 @@ meadData.push({
         'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be crashed for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.',
         'Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
         '<h4>HJ Notes</h4>1 gal separated prior to stabilization, separate into 1L PET bottles, crash upright for 48hrs, drain into collection jar, shaking as necessary to dislodge liquid; repeat twice more and bottle.',
+        'Letting it ferment to end-stage before crashing out.',
         'HJ ABV readings: [pending]',
     ],
     openingDate: '2018-10-24',
@@ -110,7 +111,11 @@ meadData.push({
         ],
         [
             '2017-12-07',
-            'Reracked onto Campden and k-meta. Yeast were still going hard after getting kicked up; absolutely still activity. I\'ll let the HJ batch finish but the main bucket will be stopped, obviously. The gallon is airlocked so I\'m happy to just let that one bubble for a bit longer. Came away with 4.08 gallons in the main bucket. Will let settle for a couple weeks and decide if I want to sparkoloid.',
+            'Reracked onto Campden and k-meta. Yeast were still going hard after getting kicked up; absolutely still activity. I\'ll let the HJ batch finish but the main bucket will be stopped, obviously, although the seal is so bad I doubt I\'d visually know if the yeast weren\'t settling in for the long nap. The gallon is airlocked so I\'m happy to just let that one bubble for a bit longer. Came away with 4.08 gallons in the main bucket. Will let settle for a couple weeks and decide if I want to sparkoloid.',
+        ],
+        [
+            '2017-12-08',
+            'HJ carboy is going about 1 bubble every 3 seconds! Wondering if the yeast will clear out the sugar or hit ABV limit first, but I don\'t mind either way since I want all the alcohol I can get before crashing. Still mentally debating on whether it will be worht backsweetening; right now the challenge is finding a freezer to crash it it.',
         ],
     ],
     gravReadings: [
@@ -141,8 +146,8 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'In primary',
-        'racking onto fixatives and finer',
-        '2017-12-06',
+        'Stabilizing (4gal) and completing fermentation for HJ (1gal)',
+        'bottling and crashing',
+        '2017-12-13',
     ],
 });

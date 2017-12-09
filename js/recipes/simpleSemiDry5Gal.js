@@ -3,7 +3,7 @@ recipes['Simple Semi-dry Mead (5gal.)'] = {
     volume: '5 gal',
     brewTime: [
         '2 week primary',
-        '3 week stabilization/clarifying/secondary',
+        '2 week stabilization/clarifying',
     ],
     ingredients: [
         '15 lbs honey',
@@ -26,7 +26,7 @@ recipes['Simple Semi-dry Mead (5gal.)'] = {
         'Pour dry yeast into must and add DAP with yeast hulls.',
         'Seal carboy and stir vigorously until honey and yeast are well mixed. SG check. Airlock carboy.',
         'Place in dark location at 60 - 75 degrees F.',
-        'After two weeks, rack off lees into sanitized carboy and onto crushed Campden tablet, potassium sorbate, and, clarifying agent (Sparkoloid or bentonite). SG check. After three weeks, bottle.',
+        'After two weeks or when fermented to desired completion, rack off lees into sanitized carboy and onto crushed Campden tablet, potassium sorbate. After one week, add clarifying agent (Sparkoloid or bentonite). SG check. After another week or when clear weeks, bottle.',
     ],
     fdaIngredients: 'water, raw organic honey, yeast, less than 0.5% of the following: yeast nutrients (diammonium phosphate, yeast ghosts), potassium metabisulfate, potassium sorbate, bentonite',
 };
