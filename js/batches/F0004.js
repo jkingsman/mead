@@ -112,6 +112,10 @@ meadData.push({
             '2017-12-07',
             'Reracked onto Campden and k-meta. Yeast were still going hard after getting kicked up; absolutely still activity. I\'ll let the HJ batch finish but the main bucket will be stopped, obviously. The gallon is airlocked so I\'m happy to just let that one bubble for a bit longer. Came away with 4.08 gallons in the main bucket. Will let settle for a couple weeks and decide if I want to sparkoloid.',
         ],
+        [
+            '2017-12-09',
+            'Screw it; added Sparkoloid (2/3 cup of 1tbsp hot mix in a cup of water). Gently agitated; will let sit for a week and hope it\'s good for bottling.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -124,6 +128,11 @@ meadData.push({
             '2017-12-06',
             1.02,
             'Racked onto preservatives',
+        ],
+        [
+            '2017-12-09',
+            1.021,
+            'Added clarifying agent',
         ],
     ],
     images: [
@@ -141,8 +150,8 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'In primary',
-        'racking onto fixatives and finer',
-        '2017-12-06',
+        'Clarifying and stabilizing',
+        'bottling',
+        '2017-12-16',
     ],
 });
