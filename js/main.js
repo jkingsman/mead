@@ -17,14 +17,44 @@ Handlebars.registerHelper('daysFromNow', (date) => {
     const today = new Date();
     const then = new Date(date);
     const timeDiff = then - today;
-    const dayDiff = Math.floor(((((timeDiff / 1000) / 60) + today.getTimezoneOffset()) / 60) / 24) + 1;
+    const dayDiff = ((((timeDiff / 1000) / 60) + today.getTimezoneOffset()) / 60) / 24;
 
-    return dayDiff;
+    return Math.floor(dayDiff) + 1;
 });
 
+function setTab(title, search) {
+    history.replaceState(null, `Mead Kiwi | ${title}`, `${window.location.origin}/?${search}${window.location.hash}`);
+}
+
+function initializeMaterialize() {
+    $('ul.tabs').tabs({
+        onShow(tab) {
+            switch (tab[0].id) {
+            case 'pageContent':
+                setTab('Batch Data', tab[0].id);
+                break;
+            case 'recipes':
+                setTab('Recipes', tab[0].id);
+                break;
+            case 'calculators':
+                setTab('Calculators', tab[0].id);
+                break;
+            default:
+                break;
+            }
+        },
+    });
+
+    $('select').material_select();
+    $('.collapsible').collapsible();
+    $('.slider').slider();
+    Materialize.updateTextFields();
+}
+
 // draw a given batch
-function drawBatch(batch) {
+function drawBatch(batchToDraw) {
     // inject recipe
+    const batch = batchToDraw;
     batch.recipe = recipes[batch.recipeName];
 
     // inject gravity calculations
@@ -65,15 +95,7 @@ function drawBatch(batch) {
 
     // render into place on the page and DON'T add batch text
     const qrCodeContainer = document.getElementById('qrCode');
-    // qrCodeContainer.innerHTML = '<h3>' + batch.id + '</h3>';
     qrCodeContainer.prepend(el);
-
-    // // convert to canvas -> data URI and render into image that includes code and batch/bottle
-    // html2canvas(qrCodeContainer, {
-    //     onrendered: function(canvas) {
-    //         document.getElementById('qrCode').innerHTML = '<img src="' + canvas.toDataURL() + '">';
-    //     }
-    // });
 }
 
 // check if valid batch; return index if so and -1 if not
@@ -85,7 +107,7 @@ function checkValidBatch(batchID) {
 
 // check if valid batch; return index if so and -1 if not
 function checkValidBottle(bottleID) {
-    for (let i = 0; i < meadData.length; i++) {
+    for (let i = 0; i < meadData.length; i += 1) {
         if (bottleID >= meadData[i].bottleRangeMin && bottleID <= meadData[i].bottleRangeMax) {
             return i;
         }
@@ -136,7 +158,7 @@ function drawRecipes() {
     const template = Handlebars.compile(source);
     for (const recipe in recipes) {
     // determine which recipes it was used in
-        var usedIn = [];
+        const usedIn = [];
         /* jshint ignore:start */
         meadData.forEach((batch) => {
             if (batch.recipeName === recipe) {
@@ -193,38 +215,5 @@ $('#serial').on('keyup', (e) => {
     }
 });
 
-function setTab(title, search) {
-    let hash = '';
-    if (window.location.hash.length > 1) {
-        hash = window.location.hash;
-    }
-    history.replaceState(null, `Mead Kiwi | ${title}`, `${window.location.origin}/?${search}${hash}`);
-}
-
-function initializeMaterialize() {
-    $('ul.tabs').tabs({
-        onShow(tab) {
-            switch (tab[0].id) {
-            case 'pageContent':
-                setTab('Batch Data', tab[0].id);
-                break;
-            case 'recipes':
-                setTab('Recipes', tab[0].id);
-                break;
-            case 'calculators':
-                setTab('Calculators', tab[0].id);
-                break;
-            }
-        },
-    });
-
-    $('select').material_select();
-    $('.collapsible').collapsible();
-    $('.slider').slider();
-    Materialize.updateTextFields();
-}
-
 // hacky fix to make the page relaod when you click links to different meads
-window.onhashchange = function () {
-    window.location.reload();
-};
+window.onhashchange = () => window.location.reload();
