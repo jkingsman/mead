@@ -118,6 +118,10 @@ meadData.push({
             '2017-11-15',
             'Oh man -- this is fantastic. Mellowed out a LOT after even two weeks. I\'m super excited for this; it\'s gonna taste just killer chilled. Perfect honey note; every so slightly sour and quite acidic but I\'m sure that will mellow.',
         ],
+        [
+            '2017-12-09',
+            'Hmmmm this needs some time. Pretty good, but the dryness is a little meh. Hint of wet cardboard on the finish; I think the clarifying without Campden did its toll and oxidized it a bit. Lesson learned for next time; if it\'s not on primary, it needs to be on Campden!',
+        ],
     ],
     // Status is [0]; next step is [1] on [2]
     status: [],

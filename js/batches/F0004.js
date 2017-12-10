@@ -121,6 +121,10 @@ meadData.push({
             '2017-12-09',
             'Screw it; added Sparkoloid (2/3 cup of 1tbsp hot mix in a cup of water). Gently agitated; will let sit for a week and hope it\'s good for bottling.',
         ],
+        [
+            '2017-12-09',
+            'I\'m an idiot. Just realized I added the stabilizing treatment for 5 gallons of wine to 4 gallons. Just had a taste... miraculously, despite a heavy abundance of sulfur, I think we\'re doing okay -- guess we\'re gonna chalk this one up to a lucky lesson learned.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -151,6 +155,10 @@ meadData.push({
         [
             '2017-12-06',
             'Very sweet, pretty drinkable as is, much less hot, slightly carbonated. Tastiest post-ferment yet!',
+        ],
+        [
+            '2017-12-10',
+            'Very sweet, WAY tastier than other batches. Sugar is a must; dry mead is yummy in the right mood but sweet mead is /always/ yummy, I think. I would happily drink this as is; super excited for tasting it after a few months.',
         ],
     ],
     // Status is [0]; next step is [1] on [2]
