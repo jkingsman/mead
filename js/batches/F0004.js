@@ -178,6 +178,6 @@ meadData.push({
     status: [
         'Aging (4gal) and completing fermentation for HJ (1gal)',
         'bottling and crashing',
-        '2017-12-16',
+        '2018-01-02??? Who reall knows at this point; these yeast are nuts',
     ],
 });
