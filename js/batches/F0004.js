@@ -92,7 +92,7 @@ meadData.push({
         ],
         [
             '0035',
-            'JKi',
+            'JKi -- sacrificial tasting',
         ],
     ],
     timeline: [
@@ -125,6 +125,10 @@ meadData.push({
             '2017-12-09',
             'I\'m an idiot. Just realized I added the stabilizing treatment for 5 gallons of wine to 4 gallons. Just had a taste... miraculously, despite a heavy abundance of sulfur, I think we\'re doing okay -- guess we\'re gonna chalk this one up to a lucky lesson learned.',
         ],
+        [
+            '2017-12-19',
+            'Hoooooo boy. This stuff is *GOOD*. Super thrilled with how this came out. Got it all bottled (some corks are somewhat protrude-y but I think they\'ll be okay) and am doing labels for them now. Got 19 good bottles and a sacrificial/yeasty tasting bottle. Bottle numbers increase in cloudiness.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -141,7 +145,12 @@ meadData.push({
         [
             '2017-12-09',
             1.021,
-            'Added clarifying agent',
+            'Added clarifying agent (4gal)',
+        ],
+        [
+            '2017-12-19',
+            1.021,
+            'Bottled (4gal)',
         ],
     ],
     images: [
@@ -160,10 +169,14 @@ meadData.push({
             '2017-12-10',
             'Very sweet, WAY tastier than other batches. Sugar is a must; dry mead is yummy in the right mood but sweet mead is /always/ yummy, I think. I would happily drink this as is; super excited for tasting it after a few months.',
         ],
+        [
+            '2017-12-19',
+            'Super tasty -- sweet, mild, not even that hot! This is definitely my best batch yet.',
+        ],
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'Stabilizing (4gal) and completing fermentation for HJ (1gal)',
+        'Aging (4gal) and completing fermentation for HJ (1gal)',
         'bottling and crashing',
         '2017-12-16',
     ],
