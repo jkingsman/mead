@@ -18,7 +18,7 @@ meadData.push({
         ],
         [
             '0007',
-            'JKi',
+            'RRaras & co. -- not super hot.',
         ],
         [
             '0008',
