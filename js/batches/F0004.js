@@ -159,6 +159,11 @@ meadData.push({
         'img/f4honies.jpg',
         'img/f4mixer.jpg',
         'img/f4bubbling.gif',
+        'img/f4bottles.jpg',
+        'img/f4sanitizing.jpg',
+        'img/f4filledbottles.jpg',
+        'img/f4bottled.jpg',
+        'img/f4glass.jpg',
     ],
     tastingNotes: [
         [
@@ -171,13 +176,13 @@ meadData.push({
         ],
         [
             '2017-12-19',
-            'Super tasty -- sweet, mild, not even that hot! This is definitely my best batch yet.',
+            'Super tasty -- sweet, mild, not even that hot! This is definitely my best batch yet. Dad\'s itching for another bottle!',
         ],
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
         'Aging (4gal) and completing fermentation for HJ (1gal)',
         'bottling and crashing',
-        '2018-01-02??? Who reall knows at this point; these yeast are nuts',
+        '2018-01-02',
     ],
 });
