@@ -74,6 +74,16 @@ function abv() { // eslint-disable-line no-unused-vars
     Materialize.updateTextFields();
 }
 
+function h20Removal() { // eslint-disable-line no-unused-vars
+    const preVol = Number(document.getElementById('h20Removal_preVol').value);
+    const preABV = Number(document.getElementById('h20Removal_preABV').value);
+    const postVol = Number(document.getElementById('h20Removal_postVol').value);
+
+    const postABV = Math.round((preABV * (preVol / postVol)) * 100) / 100;
+    document.getElementById('h20Removal_postABV').value = postABV;
+    Materialize.updateTextFields();
+}
+
 function extendDate(weeks) { // eslint-disable-line no-unused-vars
     const now = new Date();
     now.setDate(now.getDate() + (weeks * 7));

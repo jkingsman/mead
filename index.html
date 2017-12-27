@@ -231,6 +231,29 @@
                             </div>
                         </li>
                         <li>
+                            <div class="collapsible-header">H2O Volume Reduction ABV Impact</div>
+                            <div class="collapsible-body">
+                                $$ ABV = ABV_{intial} * \frac{V_{initial}{V_{final}} $$
+                                <div class="input-field">
+                                    <input id="h20Removal_preVol" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="h20Removal_preVol">Pre-evap Volume</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="h20Removal_preABV" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="h20Removal_preABV">Pre-evap ABV</label>
+                                </div>
+                                <div class="input-field">
+                                    <input id="h20Removal_postVol" type="number" class="validate" step="0.001" min="0">
+                                    <label class="active" for="h20Removal_postVol">Post-evap Volume</label>
+                                </div>
+                                <div class="input-field">
+                                    <input disabled id="h20Removal_postABV" type="text">
+                                    <label class="active" for="h20Removal_postABV">Post-evap ABV</label>
+                                </div>
+                                <a class="waves-effect waves-light btn" onClick="h20Removal()">Calculate</a>
+                            </div>
+                        </li>
+                        <li>
                             <div class="collapsible-header">SG to ABV</div>
                             <div class="collapsible-body">
                                 $$ ABV = k(OG - FG) $$
