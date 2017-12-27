@@ -5,11 +5,8 @@ meadData.push({
     bottleRangeMax: 35,
     size: '5 gal.',
     notes: [
-        'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be crashed for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well.',
+        'New big batch! Going with the classic recipe. 4 gals (~20 bottles) will be bottled classically; the remaining gallon will be crashed for HJ. Trying a shorter brew cycle this time; hopefully the bottle aging goes well. 1 gallon siphoned off for HJ.',
         'Honeys used (all are raw, unfiltered, and unpastuerized): 12lb Desert Creek, 3lb Crocket wildflower, .33lb Nature Nate\'s (a bit of extra honey for a bit of extra sweetness)',
-        '<h4>HJ Notes</h4>1 gal separated prior to stabilization, separate into 1L PET bottles, crash upright for 48hrs, drain into collection jar, shaking as necessary to dislodge liquid; repeat twice more and bottle.',
-        'Letting it ferment to end-stage before crashing out.',
-        'HJ ABV readings: [pending]',
     ],
     openingDate: '2018-10-24',
     bottleDistribution: [
@@ -114,10 +111,6 @@ meadData.push({
             'Reracked onto Campden and k-meta. Yeast were still going hard after getting kicked up; absolutely still activity. I\'ll let the HJ batch finish but the main bucket will be stopped, obviously, although the seal is so bad I doubt I\'d visually know if the yeast weren\'t settling in for the long nap. The gallon is airlocked so I\'m happy to just let that one bubble for a bit longer. Came away with 4.08 gallons in the main bucket. Will let settle for a couple weeks and decide if I want to sparkoloid.',
         ],
         [
-            '2017-12-08',
-            'HJ carboy is going about 1 bubble every 3 seconds! Wondering if the yeast will clear out the sugar or hit ABV limit first, but I don\'t mind either way since I want all the alcohol I can get before crashing. Still mentally debating on whether it will be worht backsweetening; right now the challenge is finding a freezer to crash it it.',
-        ],
-        [
             '2017-12-09',
             'Screw it; added Sparkoloid (2/3 cup of 1tbsp hot mix in a cup of water). Gently agitated; will let sit for a week and hope it\'s good for bottling.',
         ],
@@ -145,12 +138,12 @@ meadData.push({
         [
             '2017-12-09',
             1.021,
-            'Added clarifying agent (4gal)',
+            'Added clarifying agent',
         ],
         [
             '2017-12-19',
             1.021,
-            'Bottled (4gal)',
+            'Bottled',
         ],
     ],
     images: [
@@ -181,8 +174,5 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'Aging (4gal) and completing fermentation for HJ (1gal)',
-        'bottling and crashing',
-        '2018-01-02',
     ],
 });
