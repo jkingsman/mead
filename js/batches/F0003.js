@@ -54,6 +54,10 @@ meadData.push({
             '2017-11-20 0900',
             'Reracking onto 10oz (weight) of cubed garlic. Lost quite a bit of weight in the skins (purchased 17oz). Muslin bag of ginger fit but sank to bottom; no idea how I\'m gonna get that out. My hands reek of ginger. SG read 1.00 or a bit below, but the yeast are happily bubbling every 5 seconds or so, so clearly there\'s still something left to eat...',
         ],
+        [
+            '2018-01-28',
+            'Crystal clear mead accidentally agitated during moving; giving it another couple weeks to settle out.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -85,8 +89,8 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'In secondary on ginger',
-        'rerack onto fixatives and fining agent',
-        '2018-01-20',
+        'Clarifying on ginger',
+        'bottling',
+        '2018-02-14',
     ],
 });

@@ -46,6 +46,14 @@ meadData.push({
             '2017-12-08',
             'Carboy is going about 1 bubble every 3 seconds! Wondering if the yeast will clear out the sugar or hit ABV limit first, but I don\'t mind either way since I want all the alcohol I can get before crashing. Still mentally debating on whether it will be worth backsweetening; right now the challenge is finding a freezer to crash it in.',
         ],
+        [
+            '2018-01-31',
+            'Siphoned into plastic bottles; beginning cold crash.',
+        ],
+        [
+            '2018-02-11',
+            'All slushy; looking good! Giving it a few more days until I have the right equipment to continue.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -59,6 +67,11 @@ meadData.push({
             1.02,
             'Siphoned off',
         ],
+        [
+            '2018-01-31',
+            1.00,
+            'Begun crash',
+        ],
     ],
     images: [
         'img/f4cleaning.jpg',
@@ -71,8 +84,8 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'Completing fermentation',
-        'bottling and crashing',
-        '2018-01-02',
+        'Cold crashing',
+        'siphon off crashed sueprnatent',
+        '2018-01-04',
     ],
 });
