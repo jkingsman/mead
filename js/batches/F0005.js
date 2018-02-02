@@ -51,8 +51,12 @@ meadData.push({
             'Siphoned into plastic bottles; beginning cold crash.',
         ],
         [
-            '2018-02-11',
+            '2018-02-01',
             'All slushy; looking good! Giving it a few more days until I have the right equipment to continue.',
+        ],
+        [
+            '2018-02-01',
+            'LOL NVM. Looks like ~45% volume loss; man that was cold. Reprepped for Crash 2.',
         ],
     ],
     gravReadings: [
@@ -85,7 +89,7 @@ meadData.push({
     // Status is [0]; next step is [1] on [2]
     status: [
         'Cold crashing',
-        'siphon off crashed sueprnatent',
-        '2018-01-04',
+        'siphon off crashed supernatent 2',
+        '2018-01-02',
     ],
 });
