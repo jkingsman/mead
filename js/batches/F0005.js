@@ -58,6 +58,10 @@ meadData.push({
             '2018-02-01',
             'LOL NVM. Looks like ~45% volume loss; man that was cold. Reprepped for Crash 2.',
         ],
+        [
+            '2018-02-03',
+            'Crash 2 complete. 700ml remainder from 3785ml starting = 81.5% volume loss. Assuming hypothetical perfect water removal, it\'s 78% alcohol. Lol.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -89,7 +93,7 @@ meadData.push({
     // Status is [0]; next step is [1] on [2]
     status: [
         'Cold crashing',
-        'siphon off crashed supernatent 2',
-        '2018-01-02',
+        'siphon off crashed supernatent 3',
+        '2018-01-04',
     ],
 });
