@@ -71,6 +71,11 @@ meadData.push({
             1.0,
             'Reracked on ginger -- however, the yeast were so happy to be moved that they were bubbling away (almost like a soda) which doubtlessly reduced the density, so I\'m not sure how much I trust this -- it even read a bit below. I\'m gonna trust the FG and taste; beyond that, this reading was iffy.',
         ],
+        [
+            '2018-11-10',
+            1.0,
+            'Added campden tablet, half tbsp sorbate, half tsp sparkoloid',
+        ],
     ],
     images: [
         'img/f3bubbling.gif',
@@ -89,8 +94,8 @@ meadData.push({
     ],
     // Status is [0]; next step is [1] on [2]
     status: [
-        'Clarifying on ginger',
+        'Clarifying and stabilizing',
         'bottling',
-        '2018-02-14',
+        '2018-11-10',
     ],
 });
