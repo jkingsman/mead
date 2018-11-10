@@ -80,6 +80,11 @@ meadData.push({
             1.00,
             'Begun crash',
         ],
+        [
+            '2018-06-31',
+            1.00,
+            'Who knows?',
+        ],
     ],
     images: [
         'img/f4cleaning.jpg',
@@ -91,9 +96,5 @@ meadData.push({
     tastingNotes: [
     ],
     // Status is [0]; next step is [1] on [2]
-    status: [
-        'Cold crashing',
-        'siphon off crashed supernatent 3',
-        '2018-01-04',
-    ],
+    status: [],
 });
