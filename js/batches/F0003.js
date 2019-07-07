@@ -13,23 +13,15 @@ meadData.push({
     // bottle #, person
         [
             '0011',
-            'JKi',
+            'JKi (Not numbered; marked with G)',
         ],
         [
             '0012',
-            'Chartio Team',
+            'Chartio Team (Not numbered; marked with G)',
         ],
         [
             '0013',
-            'Chartio Team',
-        ],
-        [
-            '0014',
-            'Chartio Team',
-        ],
-        [
-            '0015',
-            'Chartio Team',
+            'Chartio Team (Not numbered; marked with G)',
         ],
     ],
     timeline: [
@@ -58,6 +50,10 @@ meadData.push({
             '2018-01-28',
             'Crystal clear mead accidentally agitated during moving; giving it another couple weeks to settle out.',
         ],
+        [
+            '2019-07-07',
+            'Oops. Bottled.',
+        ],
     ],
     gravReadings: [
     // date, OG, notes
@@ -76,6 +72,11 @@ meadData.push({
             1.0,
             'Added campden tablet, half tbsp sorbate, half tsp sparkoloid',
         ],
+        [
+            '2019-07-07',
+            0.994,
+            'Bottled.',
+        ],
     ],
     images: [
         'img/f3bubbling.gif',
@@ -85,17 +86,18 @@ meadData.push({
         'img/f3ginger.jpg',
         'img/f3muslin.jpg',
         'img/f3pitchedginger.jpg',
+        'img/IMG_20190707_120841.jpg'
     ],
     tastingNotes: [
         [
             '2017-11-20',
             'Hot and fiery, just like F0002 -- not shocked, it\'s the same recipe. Perhaps a bit more bitter, but that may have been the yeast weirdness/stress as it got started; I\'m sure it will age out',
         ],
+        [
+            '2019-07-07',
+            'Hot and super gingery. Not bad though! Probably will be excellent after aging.',
+        ],
     ],
     // Status is [0]; next step is [1] on [2]
-    status: [
-        'Clarifying and stabilizing',
-        'bottling',
-        '2018-11-10',
-    ],
+    status: [],
 });
